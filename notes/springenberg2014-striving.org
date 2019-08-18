@@ -1,0 +1,3 @@
+#+TITLE: Notes on: Springenberg, J. T., Dosovitskiy, A., Brox, T., & Riedmiller, M. A. (2014): Striving for simplicity: the all convolutional net
+
+* Tag                                                                  :read:

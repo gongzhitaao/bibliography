@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Kurakin, A., Goodfellow, I. J., & Bengio, S. (2016): Adversarial Machine Learning At Scale
+
+* Gist
+
+1. Adversarial training provides robustness to FGSM 1-step, but not for multiple
+   steps.
+2. Adversarial samples from iterative methods are less likely to be transferred
+   between networks.
+3. Increase of model capacity could help to increase robustness to adversarial
+   examples especially when used in conjunction with adversarial training.

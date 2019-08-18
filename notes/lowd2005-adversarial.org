@@ -1,0 +1,34 @@
+#+TITLE: Notes on: Lowd, D., & Meek, C. (2005): Adversarial learning
+
+* Gist
+
+** Problem
+
+Adversarial classifier reverse engineering (ACRE) learning problem, the task of
+learning sufficient information about a classifier to construct adversarial
+attacks.
+
+** Evaluation
+
+*** Datasets
+
+- Private, consists of 500,000 Hotmail messages, voluntarily hand-labeled by the
+  original recipients as /spam/ or /legitimate/.  From these, we extracted
+  ~290,000 Boolean features.
+
+*** Metrics
+
+- Adversarial cost, a linear function, defined as the weighted absolute
+  difference between feature values in the base instance, \(x^a\) , and those in
+  the target instance, \(x\).  The base instance is one randomly chosen from the
+  test set.
+
+** Method
+
+Change words in a spam email in the order of determined by the importance score
+to
+1. bypass the spam filter, while
+2. minimize the adversarial cost.
+
+The spam filter is a linear classifier (/naive Bayesian/ and /maximum entropy
+model/).

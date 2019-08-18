@@ -1,0 +1,47 @@
+#+TITLE: Notes on: Geirhos, R., Temme, C. R., Rauber, J., Sch\"utt, Heiko H, Bethge, M., & Wichmann, F. A. (2018): Generalisation in humans and deep neural networks
+
+* Gist
+
+** Problem
+
+Empirical study on generalization of human and neural network.
+
+** Evaluation
+
+*** Dataset
+
+- ImageNet
+
+*** Models
+
+- GoogleLeNet
+- VGG-19
+- ResNet-512
+
+*** Metrics
+
+- Entropy
+- Accuracy
+
+** Method
+
+Test model accuracy on images under different manipulations:
+1. undistorted
+2. grayscale
+3. low contrast
+4. high-pass
+5. low-pass (blurring)
+6. phase noise
+7. power equalization.
+8. opponent colour
+9. rotation
+10. Eidolon I, II and III
+11. additive uniform noise
+12. salt-and-pepper noise
+
+** Conclusion
+
+- Data augmentation with distortions alone may be insufficient to overcome the
+  generalization problem that we find.
+- DNN generalizes *well* under i.i.d. settings cite:zhang2016-understanding
+- DNN generalizes *poorly* under non-i.i.d. settings.

@@ -1,0 +1,27 @@
+#+TITLE: Notes on: Galloway, A., Taylor, G. W., & Moussa, M. (2018): Attacking Binarized Neural Networks
+
+* Gist
+
+** Problem
+
+Test whether quantized network is robust to adversarial samples: NO
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- CIFAR-10
+
+** Method
+
+- Adversarial generation: FGSM, JSMA and CW-L2.
+- Both white/black-box attack.
+- Test model trained with PGD cite:madry2017-towards.
+
+* Note
+
+- Standard first-in-literature paper.
+- Test only binarized network (weights are +1/-1, scaled optionally), what about
+  other precision?  I expect other precision networks would also have the same
+  problem.

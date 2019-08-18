@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Ebrahimi, J., Rao, A., Lowd, D., & Dou, D. (2017): HotFlip: White-Box Adversarial Examples for NLP
+
+* Gist
+
+white-box attack
+
+Model: char-CNN, highway layer, LSTM, and softmax output cite:kim2015-character.
+
+Instead of embedding vectors, the authors use *one-hot* encoded characters to
+represent words.
+
+Flip at character level and word level.  Character-level flip is much more
+successful.
+
+* Comments
+
+For translation, the decrease in BLEU is too small.

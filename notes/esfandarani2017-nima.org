@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Esfandarani, H. T., & Milanfar, P. (2017): NIMA: neural image assessment
+#+KEYWORDS: image qulity, cnn, earth mover's distance, emdc
+
+* Gist
+
+We introduce a novel approach to predict both technical and aesthetic qualities
+of images.
+
+We use the squared EMD (earth mover’s distance) loss, which shows a performance
+boost in classification with ordered classes.
+
+In training, input images are re-scaled to 256x256, and then a crop of size
+224x224 crop is randomly extracted.  This lessens potential over-fitting issues,
+especially when training on relatively small datasets.
+
+Another random data augmentation in our training process is horizontal flipping
+of the image crops.

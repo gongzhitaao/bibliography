@@ -1,0 +1,39 @@
+#+TITLE: Notes on: Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. A. (2013): Playing Atari With Deep Reinforcement Learning
+
+* Gist
+
+** Problem
+
+Let agent learn from raw game pixels.  Concretely, learn the Q-value function
+from raw pixels.
+
+** Evaluation
+
+*** Datasets
+
+- Atari games.
+
+*** Metrics
+
+- Total rewards per episode, very noisy
+- Moving average rewards.
+- Average of the maximum predicted Q on a held-out set.  Much smoother.  It
+  shows the average expected return you would get for a set of states.
+
+** Method
+
+- Q-value function is approximated with a neural network, map from a state to
+  the values of all possible actions.
+- Experience replay cite:lin1993-reinforcement.
+
+*** Details
+
+- RMSProp algorithm with mini-batch of 32
+- \epsilon-greedy with \epsilon annealed linearly from 1 to 0.1 in the first 1e6
+  frames, fixed after.
+- Train for 10 million frames.
+- Replay memory 1 million, *most recent* frames.
+- The agent /sees/ and /selects actions/ every \(k\) frames, and the action is
+  repeated on skipped frames.
+- Atari image is 210x160 with 128 colors image, being gray-scaled and
+  down-sampled to 110x84, cropped to 84x84 if necessary.

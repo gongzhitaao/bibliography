@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Gu, S., & Rigazio, L. (2014): Towards Deep Neural Network Architectures Robust To Adversarial Examples
+
+* Gist
+
+The authors proposed Deep Contractive Networks (DCNs), which incorporate a
+/layer-wise contractive penalty/ whose adversarial examples generated from such
+networks have significantly higher distortion.
+
+- Adding Gaussian noise helps recover some of the adversarial samples, which
+  seems to indicate the "blind-spots" are large and locally continuous.
+- (Denoise) Autoencoder successfully recover most adversarial samples.  However
+  D/AE+NN are vulnerable to new adversarial attack.
+- In the image data case, the effect of adversarial examples can be
+  significantly reduced by low-pass filtering, such as Gaussian blurring,
+  suggesting that adversarial noise mostly resides in high-frequency domain.

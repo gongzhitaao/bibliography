@@ -1,0 +1,32 @@
+#+TITLE: Notes on: Papernot, N., McDaniel, P., Jha, S., Fredrikson, M., Celik, Z. B., & Swami, A. (2015): The limitations of deep learning in adversarial settings
+
+* First Pass
+
+  The authors studied the adversarial problems and propose a new
+  algorithm to generate adversarial images and show a preliminary work
+  towards defenses against adversarial attacks.
+
+* Second Pass
+
+  We craft adversarial samples by constructing a mapping from input
+  perturbations to output variations.
+
+  Craft adversarial samples solely by /using knowledge of the DNN
+  architecture/.
+
+  Propose a clear picture of threat model taxonomy.
+
+  Note that we only considers attack conducted at test time, any
+  tampering of the training procedure is not considered.
+
+  Evaluating the DNN's /forward derivative/ in order to construct an
+  /adversarial saliency map/ that identifies the set of input features
+  relevant to the adversary's goal.  Perturbing the features
+  identified in this way quickly leads to the desired adversarial
+  output, for instance misclassification.
+
+  Use saliency map to determine which pixel to perturb.
+
+  The saliency map considers pairs of pixels and not individual pixels
+  because selecting pixels one at a time is too strict, and very few
+  pixels would meet the heuristic search criteria.

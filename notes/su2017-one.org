@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Su}, J., Vasconcellos Vargas, D., & Kouichi, S. (2017): One pixel attack for fooling deep neural networks
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- CIFAR-10
+
+*** Metrics
+
+- accuracy
+- label probabilities
+- number of target classes successfully reached
+- number of origin-target pairs
+
+** Method

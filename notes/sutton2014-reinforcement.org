@@ -1,0 +1,367 @@
+#+TITLE: Notes on: Sutton, R. S., & Barto, A. G. (2014): Reinforcement learning: an introduction
+
+* Table of Contents
+
+** Eligibility Traces
+
+*** n-Step TD Prediction
+
+*** The Forward View of \(\text{TD}(\lambda)\)
+
+    Backups can be done not just toward any n-step return, but toward
+    any average of n-step returns.
+
+*** The Backward View of \(\text{TD}(\lambda)\)
+
+    - Eligibility trace :: \(E_t(s)\)
+
+*** Replacing and Dutch Traces
+
+    - accumulating traces
+    - dutch traces
+    - replacing traces
+
+*** \(\text{Sarsa}(\lambda)\)
+
+*** Watkins's \(\text{Q}(\lambda)\)
+
+*** Off-policy \(\text{TD}(\lambda)\) and Expected \(\text{Sarsa}(\lambda)\)
+
+*** Implementation Issue
+
+** Planning and Learning with Tabular Methods
+
+   - Planning methods :: needs a model of the environment, e.g., DP,
+        heuristic search.
+   - Learning methods :: needs no model of the environment, e.g, MC,
+        TD.
+
+
+   - the heart of both kinds of methods is /the computation of value
+     functions/.
+
+*** Models and Planning
+
+    Models can be used to mimic or simulate experience.
+
+    - Distribution models :: produce a description of all possibilities
+         and their probabilities.
+    - Sample models :: produce just one of the possibilities, sampled
+         according to the probabilities.
+
+
+    Planning is computational process that takes a model as input and
+    produces or improves a policy for interacting with the modeled
+    environment
+
+    - State-space planning :: planning is viewed primarily as a search
+         through the /state space/ for an optimal policy or path to a
+         goal.
+    - +Plan-space planning+ :: planning is instead viewed as a search
+         through the /plan space/, e.g., evolutionary methods
+         /partial-order planning/.
+
+
+    State-space planning commons:
+    1. computing value functions as a key intermediate step toward
+       improving the policy, and
+    2. they compute their value functions by backup operations applied
+       to simulated experience.
+
+
+    State-space plannings differ:
+    1. the kinds of backups they do,
+    2. the order in which they do them, and
+    3. how long the backed-up information is retained.
+
+*** Dyna: Integrating Planning, Acting, and Learning
+
+    Within a planning agent, real experience may be used to improve
+    - the model, i.e., model-learning
+    - the value function and policy, i.e., direct RL
+
+*** When the Model Is Wrong
+
+    Greater difficulties arise when the environment changes to become
+    /better/ than it was before, and yet the formerly correct policy
+    does not reveal the improvement.  In these cases the modeling
+    error may not be detected for a long time, if ever.
+
+    - Dyna-Q
+    - Dyna-Q+
+    - Dyna-AC
+
+*** Prioritized Sweeping
+
+    backward focusing of planning computations
+
+    prioritized sweeping
+    - A queue is maintained of every state-action pair whose estimated
+      value would change nontrivially if backed up, /prioritized by the
+      size of the change/.
+    - When the top pair in the queue is backed up, the effect on each
+      of its predecessor pairs is computed.
+    - If the effect is greater than some small threshold, then the
+      pair is inserted or updated if exists.
+
+*** Planning as Part of Action Selection
+
+*** Heuristic Search
+
+    Heuristic search can be viewed as an extension of the idea of a
+    greedy policy beyond a single step.
+
+*** Monte Carlo Tree Search
+
+    It is most often used when the model of the world is /completely
+    known/ and /cheap to compute/, as it is in many games.
+
+** On-policy Prediction with Approximation
+
+*** Value-Function Approximation
+
+    - It is important that learning be able to occur online, while
+      interacting with the environment or with a model of the
+      environment.  Models should learn efficiently from
+      /incrementally/ acquired data.
+    - Handle nonstationary target functions.
+
+
+    Assumption: the distribution of states at which backups are done
+    and the distribution of weights errors are the same.
+
+    - on-policy distribution, stronger convergence results are
+      available for the on-policy distribution than for other
+      distributions.
+
+
+    Value function approximation (minimizing MSVE) and policy
+    improvement are not necessary consistent.
+
+*** Gradient-Descent Methods
+
+*** Linear Methods
+
+    - Coarse coding.  Features with large receptive fields give broad
+      generalization.  Initial generalization from one point to
+      another is indeed controlled by the size and shape of the
+      receptive fields, but acuity, the finest discrimination
+      ultimately possible, is controlled more by the /total number of
+      features/.
+      - Tile coding
+      - Radial Basis Functions (RBF)
+      - Kanerva coding.  It needs more features To handle more complex
+        tasks. There is not a great deal of experience with such
+        systems, but it suggests that their abilities increase in
+        proportion to their computational resources.  This is an area
+        of current research, and significant improvements in existing
+        methods can still easily be found.
+
+
+*** Should We Bootstrap
+
+    At this time it is unclear why methods that involve some
+    bootstrapping perform so much better than pure nonbootstrapping
+    methods.
+
+** Policy Gradient Methods
+
+
+
+* Summary
+
+  Elements of reinforcement learning:
+  - agent
+  - environment
+  - policy :: defines the learning agent's way of behaving at a given
+       time.
+  - reward signal :: defines the goal in a reinforcement learning
+       problem.  It indicates what is good in an immediate sense.
+  - value function :: specifies what is good in the long run.
+  - model of environment (optional) :: is something that mimics the
+       behavior of the environment, or more generally, that allows
+       inferences to be made about how the environment will behave.
+
+
+  When facing a problem, we need to specify:
+  - discounted/un-discounted
+  - episodic/continuous
+  - states
+  - actions
+  - rewards
+  - state-value function
+  - policy
+
+
+  Evolutionary methods have advantages on problems in which the
+  learning agent cannot accurately sense the state of its environment.
+
+  - Prediction problem :: estimate the state-action function
+  - Control problem :: optimize the policy
+
+
+  *Bootstrapping* refers to the degree to which an algorithm builds
+  its estimates from other estimates, like TD and DP, or does not,
+  like MC methods.
+
+  The practical consequences of all these new off-policy methods have
+  not yet been established.  Undoubtedly, the issues of high variance
+  introduced in Chapter 5 will arise.  There are also further issues
+  concerning the interaction with linear function approximation.  This
+  is an area ripe for further empirical and theoretical research.
+
+** Exploration and exploitation
+
+   The need to *balance exploration and exploitation* is a distinctive
+   challenge that arises in reinforcement learning:
+   - \epsilon-greedy
+   - upper-confidence-bound (UCB)
+   - gradient
+
+** Agent-environment boundary
+
+   The general rule we follow is that anything that cannot be changed
+   arbitrarily by the agent is considered to be outside of it and thus
+   part of its environment.
+
+   The agent–environment boundary represents the limit of the agent's
+   absolute control, not of its knowledge.
+
+** Goals and rewards
+
+   The reward signal is your way of communicating to the robot /what/
+   you want it to achieve, not /how/ you want it achieved.
+
+** Return
+
+   In general, we seek to maximize the /expected return/, \(G_t\).
+   \[G_t = R_{t+1} + R_{t+2} + \dots + R_T\]
+
+   The return might be infinite if \(T = \infty\) as in case of
+   continuing tasks.  In particular, we try to maximize the expected
+   discounted return
+   \[G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \dots =
+   \sum_{k=0}^\infity\gamma^k R_{t+k+1}\]
+   where \(0\leq\gamma\leq 1\) is the discount rate.
+
+** Miscellaneous
+
+  - Credit assignment problem :: How do you distribute credit for
+       success among the many decisions that may have been involved in
+       producing it? cite:minsky1961
+  - Backup diagram :: ???
+
+
+   In reinforcement learning, as in other kinds of learning, such
+   representational choices are at present more art than science.
+
+   In short, we don't fault an agent for not knowing something that
+   matters, but only for having known something and then forgotten it!
+
+   it is useful to think of the state at each time step as an
+   approximation to a Markov state, although one should remember that
+   it may not fully satisfy the Markov property.
+
+   We conclude that the inability to have access to a perfect Markov
+   state representation is probably not a severe problem for a
+   reinforcement learning agent.
+
+   state-value function, action-value function
+
+   Both processes (policy evaluation and policy improvement) stabilize
+   only when a policy has been found that is greedy with respect to
+   its own evaluation function.  This implies that the Bellman
+   optimality equation holds, and thus that the policy and the value
+   function are optimal.
+
+* Solve reinforcement learning problems
+
+  The convergence of following methods are proved.  However most
+  convergence proofs apply only to the table-based case of the
+  algorithm presented above, but some also apply to the case of
+  general linear function approximation.
+
+** Dynamic programming
+
+** Monte Carlo methods
+
+   Advantage over DP:
+   1. learn from actual experience
+   2. learn from simulated experience
+   3. computational expense of estimating the value of a single state
+      is independent of the number of states.
+
+
+   The only general way to ensure that all actions are selected
+   infinitely often is for the agent to continue to select them.
+   - on-policy :: attempts to evaluate or improve the policy that is
+        used to make decisions, e.g., Monte Carlo ES, Monte Carlo with
+        \epsilon-soft policy.
+   - off-policy :: evaluates or improves a policy different from that
+        used to generate the data.
+
+   Maintaining exploration
+   1. Exploring starts specifies that episodes start in a state-action
+      pair, and that every pair has a nonzero probability of being
+      selected as the start.
+   2. \epsilon-soft policy.
+
+** Time-Difference (TD) methods
+
+   Advantage over DP:
+   1. Do not require a model of the environment, of its reward and
+      next-state probability distributions.
+
+
+   Advantage over MC:
+   1. they are naturally implemented in an online, fully incremental
+      fashion.
+
+
+   - Batch Monte Carlo methods always find the estimates that minimize
+     mean-squared error on the training set
+   - Batch TD(0) always finds the estimates that would be exactly
+     correct for the maximum-likelihood model of the Markov process.
+     In general, batch TD(0) converges to the certainty-equivalence
+     estimate.
+
+
+   - Q-learning :: off-policy TD Control
+   - Sarsa :: ??
+   - Double learning :: ??
+   - Afterstates :: ??
+
+* TODO Show me your code [2/27]
+
+  - [ ] p87 Figure 3.8
+  - [ ] p102 Figure 4.4
+  - [ ] p105 Figure 4.6
+  - [X] p116 Example 5.1: Blackjack
+  - [X] p116 Figure 5.2
+  - [ ] p121 Example 5.3: Blackjack. This policy is the same as the
+    "basic" strategy of Thorp (1966) with the sole exception of the
+    leftmost notch in the policy for a usable ace, which is not
+    present in Thorp's strategy.  We are uncertain of the reason for
+    this discrepancy,
+  - [ ] p127 Example 5.4: Off-policy Estimation of a Blackjack State
+    Value
+  - [ ] p128 Figure 5.7 p128
+  - [ ] p128 Example 5.5: Infinite Variance
+  - [ ] p133 Exercise 5.8: Racetrack
+  - [ ] p143 Example 6.1: Driving Home
+  - [ ] p146 Example 6.2: Random Walk
+  - [ ] p148 Figure 6.4
+  - [ ] p152 Example 6.5: Windy Gridworld
+  - [ ] p152 Exercise 6.7: Windy Gridworld with King's Moves
+  - [ ] p153 Exercise 6.8: Stochastic Wind
+  - [ ] p154 Example 6.6: Cliff Walking
+  - [ ] p157 Example 6.7: Maximization Bias Example
+  - [ ] p166 Example 7.1: n-step TD Methods on the Random Walk
+  - [ ] p178 Example 7.2: Traces in Gridworld
+  - [ ] p193 Example 8.1: Dyna Maze
+  - [ ] p195 Example 8.2: Blocking Maze
+  - [ ] p196 Example 8.3: Shortcut Maze
+  - [ ] p199 Example 8.4: Prioritized Sweeping on Mazes
+  - [ ] p220 Example 9.1: Coarseness of Coarse Coding
+  - [ ] p228 Example 9.2: Mountain-Car Task
+  - [ ] p243 Example 11.1: An Access-Control Queuing Task

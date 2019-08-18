@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Mantas Luko\vsevi\vcius, & Jaeger, H. (2009): Reservoir Computing Approaches To Recurrent Neural Network Training
+
+* Gist
+
+Similar idea under different names
+- Reservoir model
+- Liquid State Machines cite:maass2002-real
+- Echo State Networks cite:jaeger2001-echo
+- Backpropagation decorrelation cite:steil2004-backpropagation
+
+The reservoir model:
+1. A recurrent neural network is /randomly/ created and remains unchanged during
+   training.  This RNN is called the /reservoir/.  It is passively excited by
+   the input signal and maintains in its state a nonlinear transformation of the
+   input history.
+2. The desired output signal is generated as a /linear combination/ of the
+   neuron's signals from the input-excited reservoir.  This linear combination
+   is obtained by linear regression, using the teacher signal as a target.
+
+Some jargon:
+1. Functions that transform an input \(u(n)\) into a (higher-dimensional) vector
+   \(x(n)\) are often called /kernels/, and traditionally denoted \(\phi(u(n))\)
+   in this context.
+2. Methods using kernels often employ the /kernel trick/, which refers to the
+   option afforded by many kernels of computing inner products in the
+   (high-dimensional, hence expensive) feature space of \(x\) more cheaply in
+   the original space populated by \(u\).
+
+The very fact of their multiplicity suggests that there is no clear winner in
+all aspects.
+
+the bulk of current RC research on reservoir methods is devoted to /optimal
+reservoir design/, or /reservoir optimization algorithms/.
+
+1. Generic reservoir recipes: generate a /big/, /sparsely/ (e.g., 20%) and
+   /randomly connected/ reservoir.  An important element for ESNs to work is
+   that the reservoir should have the /echo state property/.

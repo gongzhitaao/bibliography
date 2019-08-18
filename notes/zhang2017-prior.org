@@ -1,0 +1,4 @@
+#+TITLE: Notes on: Zhang, J., Liu, Y., Luan, H., Xu, J., & Sun, M. (2017): Prior knowledge integration for neural machine translation using posterior regularization
+#+KEYWORDS: prior knowledge, posterior regularization
+
+* Gist

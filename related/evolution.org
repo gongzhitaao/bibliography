@@ -1,0 +1,79 @@
+#+TITLE: Evolution
+#+STARTUP: content
+
+* Related [0/36]
+
+** TODO cite:xie2017-genetic
+** TODO cite:real2017-large
+** TODO cite:miikkulainen2017-evolving
+** TODO cite:liu2017-hierarchical search the neural network architecture
+** TODO cite:zoph2016-neural
+** TODO cite:fernando2016-convolution
+** TODO cite:liang2015-evolutionary
+** TODO cite:wierstra2014-natural
+** TODO cite:sinha2014-bilevel
+** TODO cite:sher2011-dxnn
+** TODO cite:koppejan2011-neuroevolutionary
+** TODO cite:stanley2009-hypercube
+** TODO cite:gomez2008-accelerated
+** TODO cite:floreano2008-neuroevolution
+** TODO cite:schmidhuber2007-training
+
+many RNN problems involving long-term dependencies that were considered
+challenging benchmarks in the 1990s, turned out to be trivial in that they could
+be solved by random weight guessing.  That is, these problems were difficult
+only because learning relied solely on gradient information -- there was
+actually a high density of solutions in the weight space, but the error surface
+was too rough to be exploited using the local gradient.
+
+** TODO cite:stanley2005-real
+** TODO cite:igel2003-neuroevolution
+** TODO cite:stanley2002-evolving
+** TODO cite:stanley2002-efficient
+** TODO cite:alvarez2002-neural
+
+evolves the representation of inputs to layers, rather than the structure of the
+network or the activation.  /symbolic regression/ is used to find adequate
+functional expressions for representation.  The transform function takes the
+form \[S = (A\oplus B)\oplus (C\oplus D)\] Where, \(A, B, C, D\) are either
+random values in a range \([-Z, Z]\) or an variable, \(\oplus\) is a
+mathematical operation, randomly selected from \(+, -, \times, /, \log\), etc.
+
+** TODO cite:toffoli2000-what
+** TODO cite:castillo2000-g
+** TODO cite:yao1999-evolving
+** TODO cite:gomez1999-solving
+** TODO cite:moriarty1997-forming
+** TODO cite:gomez1997-incremental
+** TODO cite:topchy1996-fast
+
+fitness is calculated for each neuron instead of the whole network.  The main
+perspective idea of this method is the transition from a population of
+independent networks to a population of cooperative individuals (i.e. hidden
+units) that form network fitness altogether.
+
+** TODO cite:whitley1995-genetic
+** TODO cite:fogel1994-introduction
+** TODO cite:back1994-selective
+** TODO cite:zhang1993-evolving
+** TODO cite:gruau1993-adding
+** TODO cite:whitley1989-genitor
+
+rank-based allocation of reproductive trials is better than fitness-based.
+
+** TODO cite:montana1989-training
+
+
+demonstrates a successful example of applying GA to neural network learning.
+Many different operators are tried, there is, however, no significant
+improvement over plain GA.
+
+** TODO cite:davis1989-mapping
+
+showed how any neural network can be rewritten as a type of genetic algorithm
+called a /classifier system/ and vice versa.
+
+** TODO cite:hinton1987-how
+
+learning guides evolution, i.e., combining global search with local search may
+benefit the learning process.

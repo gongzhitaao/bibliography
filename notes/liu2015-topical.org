@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Liu, Y., Liu, Z., Chua, T., & Sun, M. (2015): Topical Word Embeddings.
+
+* Gist
+
+** Problem
+
+Framework for multi-prototype word embeddings.
+
+** Assumption
+
+** Evaluation
+
+*** Datasets
+
+*** Metrics
+
+** Method

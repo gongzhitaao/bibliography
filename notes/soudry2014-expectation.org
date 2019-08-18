@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Soudry, D., Hubara, I., & Meir, R. (2014): Expectation backpropagation: parameter-free training of multilayer neural networks with continuous or discrete weights
+
+* First Pass
+
+  The authors proposed training neural network with expectation
+  propagation (EP), a variational Bayes methods often used in
+  probabilistic graphical models.

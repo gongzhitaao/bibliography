@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Jastrz\c ebski, S., Kenton, Z., Arpit, D., Ballas, N., Fischer, A., Bengio, Y., & Storkey, A. (2017): Three factors influencing minima in sgd
+#+KEYWORDS: minima, batch size, learning rate, equilibrium distribution, memorization
+
+* Gist
+
+- Noise :: defined as the ratio of learning rate to batch size
+
+Increasing the noise by increasing the ratio of learning rate to batch size
+increases the probability of wider compared to deeper minima.
+
+- the equilibrium distribution of parameter after running SGD for long enough.
+- the probability of ending in the region near a minima, which leads to the
+  claim that SGD favors wider rather than sharper minima.
+
+Better generalization correlates with higher noise, i.e., flatter minima.
+
+The endpoint and dynamics of SGD are approximately invariant if the batch size
+and learning rate are simultaneously rescaled by the same amount.
+
+Learning annealing: at the beginning with high noise, SGD favors width over
+depth of a region, then as the noise decreases, SGD prioritizes the depth more
+strongly.

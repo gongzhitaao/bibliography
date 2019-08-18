@@ -1,0 +1,23 @@
+#+TITLE: Notes on: Kim, M., & Smaragdis, P. (2016): Bitwise Neural Networks
+
+* First Pass
+
+  The authors propose using 1 bit for each weight and employ only
+  basic bit logic in neural network.  Experiment on MNIST seems
+  promising.
+
+* Second Pass
+
+  XNOR is an extended XOR
+
+  |  A |  B | Output |
+  |----+----+--------|
+  | -1 | -1 |     +1 |
+  | -1 | +1 |     -1 |
+  | +1 | -1 |     -1 |
+  | +1 | +1 |     +1 |
+
+  operation: XNOR and bit counting
+
+  1. Train using normal EBP with weight compression technique
+  2. Do noisy EBP to get bit-wise network

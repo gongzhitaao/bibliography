@@ -1,0 +1,23 @@
+#+TITLE: Notes on: LeCun, Y., Chopra, S., Hadsell, R., Ranzato, M., & Huang, F. (2006): A tutorial on energy-based learning
+#+KEYWORDS: energy based model, collapsed solution
+
+* Gist
+
+1. *Energy loss*, while this loss will push down on the energy of the desired
+   answer, it will not pull up on any other energy.  With some architectures,
+   this can lead to a /collapsed solution/ in which the energy is constant and
+   equal to zero.
+2. *Generalized Perceptron Loss*, Minimizing this loss has the effect of pushing
+   down on energy for compatible configurations, while pulling up on the energy
+   of the answer produced by the model.  However, there is no mechanism for
+   creating an energy gap between the correct answer and the incorrect ones.
+   Thus, it might also produce a flat energy surface.
+3. *Generalized Margin Losses*, is a more robust version of the generalized
+   perceptron loss.
+   1. hinge loss
+   2. log loss
+   3. LVQ2 loss
+   4. MCE loss
+   5. square-square loss
+   6. square-exponential loss
+4. *Negative Log-likelihood Loss*

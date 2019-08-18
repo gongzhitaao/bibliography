@@ -1,0 +1,1 @@
+#+TITLE: Notes on: Arora, S., Ge, R., Liang, Y., Ma, T., & Zhang, Y. (2017): Generalization and equilibrium in generative adversarial nets (gans)

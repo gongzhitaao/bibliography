@@ -1,0 +1,37 @@
+#+TITLE: Natural Language Processing
+
+* Classic [1/1]
+
+- [X] cite:bengio2003-neural
+
+* Text Classification
+
+- [X] cite:conneau2016-very shows that deeper convnet is better at text
+  classification problem.
+
+* Embedding
+
+- [X] cite:cao2017-cw2vec
+
+* Translation
+
+* TODO Recent Work [1/9]
+:PROPERTIES:
+:LAST_REPEAT: [2018-02-26 Mon 08:59]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2018-02-26 Mon 08:59]
+- State "DONE"       from "TODO"       [2018-02-18 Sun 07:51]
+- State "DONE"       from "TODO"       [2018-02-14 Wed 15:56]
+- State "DONE"       from "TODO"       [2018-02-04 Sun 15:13]
+:END:
+
+- [ ] cite:li2017-adversarial
+- [ ] cite:zhang2018-byte
+- [X] cite:gehring2017-convolutional
+- [ ] cite:gillick2015-multilingual
+- [ ] cite:zhang2017-which
+- [ ] cite:zhang2017-deconvolutional
+- [ ] cite:xiong2017-multi
+- [ ] cite:jia2016-data
+- [ ] cite:zhang2015-feedforward

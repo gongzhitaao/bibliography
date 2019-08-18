@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Pathak}, J., Lu, Z., Hunt, B.~R., Girvan, M., & Ott, E. (2017): Using machine learning to replicate chaotic attractors and calculate lyapunov exponents from data
+
+* Gist
+
+Dataset:
+1. the Lorenz system, and
+2. the Kuramoto-Sivashinsky (KS) equation.
+
+* Comment
+
+Time-series prediction with reservoir computing model.  The input data is from
+chaos systems.
+
+If we use LSTM, would it be better?

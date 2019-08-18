@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Athalye}, A., Carlini, N., & Wagner, D. (2018): Obfuscated gradients give a false sense of security: circumventing defenses to adversarial examples
+
+* Gist
+
+** Problem
+
+Show that the all the defenses can be circumvented.  They appear to work due to
+gradient masking.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- CIFAR-10
+- ImageNet
+
+*** Metrics
+
+- Accuracy
+
+* Note
+
+This work successfully breaks 9 defense method published in ICLR 2018.

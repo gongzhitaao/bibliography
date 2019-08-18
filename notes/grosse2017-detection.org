@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Grosse, K., Manoharan, P., Papernot, N., Backes, M., & McDaniel, P. (2017): On the (statistical) detection of adversarial examples
+
+* Gist
+
+Since adversarial examples are not drawn from the same distribution.

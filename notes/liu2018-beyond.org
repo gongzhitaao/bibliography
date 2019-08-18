@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Liu, B., Fu, J., Kato, M. P., & Yoshikawa, M. (2018): Beyond narrative description: generating poetry from images by multi-adversarial training
+
+* Gist
+
+* Note
+
+1. One problem is evaluation.  "Turing test carried out with over 500 human
+   subjects, among which 30 evaluators are poetry experts, demonstrates the
+   effectiveness of our approach" shows that the evaluation is much more
+   expensive.

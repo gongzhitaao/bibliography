@@ -1,0 +1,18 @@
+#+TITLE: Notes on: Watkins, C. J., & Dayan, P. (1992): Q-learning
+
+* First Pass
+
+  The authors theoretically proof that Q-learning always converges.
+  Convergence also holds for two extension algorithms.
+
+* Second Pass
+
+  Q value is action-value, i.e,, In other words, the \(Q\) value is
+  the expected discounted reward for executing action \(a\) at state
+  \(x\) and following policy \(\pi\) thereafter.
+
+  The object is Q-learning is to estimate the \(Q\) values for an
+  /optimal policy/.
+
+  Although there may be more than one optimal policy, the Q values are
+  unique.

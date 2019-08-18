@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Sun, K., Wang, J., Kalousis, A., & Marchand-Maillet, S. (2015): Space-Time Local Embeddings
+
+* Problem
+
+  Dimension reduction
+
+* Method
+
+  Use semi-Riemannian space-time instead of Euclidean space, i.e., it
+  uses as dissimilarity measure /interval/ instead of Euclidean
+  distance.
+
+  An optimal embedding can be obtained by minimizing the KL divergence
+  from the input p to the output p(Y).
+
+* TODO Implementation
+
+  Have not figured out yet.  I do not fully understand the procedure
+  of mapping a n-dimensional Euclidean space to (s + t)-dimensional
+  semi-Riemannian space.
+
+* Experiment
+
+  Compared with SNE and t-SNE.

@@ -1,0 +1,49 @@
+#+TITLE: Notes on: Tram\`er, Florian, Papernot, N., Goodfellow, I., Boneh, D., & McDaniel, P. 2017: The space of transferable adversarial examples
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- MNIST, subset 3 and 7
+- Drebin cite:arp2014-drebin, Android malware dataset
+
+*** Models
+
+- LR
+- SVM
+- MLP
+- CNN
+
+** Method
+
+Three characteristic directions:
+- legitimate direction, data point x to the nearest clean data point xx of a
+  different category.
+- adversarial direction, data point x to one of its adversarial counterparts.
+- random direction
+
+Distances:
+- Distance to the decision boundary is defined as the legitimate distance.
+- Inter-boundary distance is defined as the absolute difference of the
+  difference decision boundary distances of two models.
+
+They explain why adversarial examples transfer: since the adversarial distance
+is larger than the inter-boundary distance.
+
+Adversarial training does not move the decision boundary much, thus it provides
+a false sense of security.
+
+** Conclusion
+
+- Informally, the number of orthogonal adversarial directions is proportional to
+  the increase in loss (a proxy for the distance from x to the decision
+  boundary) and inversely proportional to the smoothness of the loss function
+  and the perturbation magnitude.
+- Adversarial training only slightly increase the inter-distance, not enough to
+  thwart the adversarial examples.
+- The adversarial samples are crafted by perturbing features used in the model
+  to make predictions.

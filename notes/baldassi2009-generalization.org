@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Baldassi, C. (2009): Generalization learning in a perceptron with binary synapses
+
+* First Pass
+
+* Second Pass
+
+  Each synapse has a discretized hidden state, called plasticity.

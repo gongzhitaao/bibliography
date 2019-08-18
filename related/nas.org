@@ -1,0 +1,14 @@
+#+TITLE: Neural Architecture Search
+#+STARTUP: content
+#+COLUMNS: %TODO %40ITEM %20TAGS
+
+* Related [3/8]
+
+** DONE cite:ying2019-nas Nas-Bench-101: Towards Reproducible Neural Architecture Search
+** DONE cite:xie2019-exploring Exploring Randomly Wired Neural Networks for Image Recognition
+** TODO cite:elsken2019-neural Neural Architecture Search: a Survey
+** TODO cite:real2018-regularized Regularized Evolution for Image Classifier Architecture Search
+** TODO cite:pham2018-efficient Efficient Neural Architecture Search via Parameters Sharing
+** DONE cite:liu2018-darts DARTS: Differentiable Architecture Search
+** TODO cite:liu2017-progressive Progressive Neural Architecture Search
+** TODO cite:liu2017-hierarchical Hierarchical Representations for Efficient Architecture Search

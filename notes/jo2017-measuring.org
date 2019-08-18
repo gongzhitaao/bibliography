@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Jo}, J., & Bengio, Y. (2017): Measuring the tendency of cnns to learn surface statistical regularities
+#+KEYWORDS: fft, superficial cues, statistical regularity
+
+* Gist
+
+Thus we provide quantitative evidence supporting the hypothesis that deep CNNs
+tend to learn surface statistical regularities in the dataset rather than
+higher-level abstract concepts.
+
+The current incarnation of deep neural networks exhibit a tendency to learn
+*surface statistical regularities* as opposed to *higher level abstractions* in
+the dataset.  For tasks such as object recognition, due to the strong
+statistical properties of natural images, these superficial cues that the deep
+neural network have learned are sufficient for high performance generalization,
+but in a narrow distributional sense.

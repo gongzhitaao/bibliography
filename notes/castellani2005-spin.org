@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Castellani, T., & Cavagna, A. (2005): Spin-glass theory for pedestrians
+#+STARTUP: entitiespretty
+
+* Gist
+
+| H | Hamiltonian        |
+| J | random coupling    |
+| \sigma | degrees of freedom |

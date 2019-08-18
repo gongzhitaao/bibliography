@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Fawzi, A., Moosavi-Dezfooli, S., & Frossard, P. (2016): Robustness of classifiers: from adversarial to random noise
+
+* Gist
+
+To improve the robustness to semi-random noise, our analysis encourages to
+impose geometric constraints on the curvature of the decision boundary, as we
+have shown the existence of an intimate relation between the robustness of
+classifiers and the curvature of the decision boundary.

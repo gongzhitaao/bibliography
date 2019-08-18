@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Baity-Jesi}, M., Sagun, L., Geiger, M., Spigler, S., Ben Arous, G., Cammarota, C., LeCun, Y., … (2018): Comparing dynamics: deep neural networks versus glassy systems
+
+* Gist
+
+The existence of different phases depending on whether the network is
+under-parameterized or over-parameterized.
+
+The training process of a deep neural network (DNN) shares very strong
+similarities with the physical dynamics of /disordered systems/:
+1. the loss function plays the role of the energy,
+2. the weights are the degrees of freedom, and
+3. the dataset corresponds to the parameters defining the energy function.
+
+The randomness in the data is akin to what is called "quenched disorder" in the
+physics literature.
+
+Two main observables have been identified as central to characterize the slow
+dynamics of physical systems.
+1. energy as a function of time
+2. two-time correlation function used to investigate the out-of-equilibrium
+   dynamics.
+
+Dynamics slows down because of the emergence of flat directions that ultimately
+lead to diffusion at or close to the bottom of the landscape.

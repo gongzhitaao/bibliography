@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Rolnick, D., & Tegmark, M. (2018): The power of deeper networks for expressing natural functions
+
+* Gist
+
+** Problem
+
+Show the size (depth, width) needed for approximating a polynomial function.

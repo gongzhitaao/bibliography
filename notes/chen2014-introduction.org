@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Chen, T. (2014): Introduction to boosted trees
+
+* Notes
+
+  - Most heuristics maps well to objectives, taking the formal
+    - information gain -> training loss
+    - pruning -> regularization defined by #node
+    - max depth -> constraint on the function space
+    - smoothing leaf values -> L2 regularization on leaf weights

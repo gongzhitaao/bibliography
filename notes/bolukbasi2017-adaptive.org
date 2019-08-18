@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Bolukbasi, T., Wang, J., Dekel, O., & Saligrama, V. (2017): Adaptive neural networks for fast test-time prediction
+
+* Gist
+
+We exploit the fact that natural data is typically a mix of easy examples and
+difficult examples, and we posit that the easy examples do not require the full
+power and complexity of a massive DNN.
+
+After each layer, there is a policy (binary classifier) deciding whether to
+proceed to the next layer or exit right now.
+
+Similarly, the author also dynamically choose which network to evaluate.  Simple
+examples are evaluated with a smaller network while difficult ones a larger
+network.

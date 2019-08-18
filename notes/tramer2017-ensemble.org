@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Tram\`er, Florian, Kurakin, A., Papernot, N., Boneh, D., & McDaniel, P. (2017): Ensemble adversarial training: attacks and defenses
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- ImageNet
+
+*** Models
+
+- Inception v3
+- Inception v4
+
+** Method
+
+Augment training data with adversarial examples from other models.

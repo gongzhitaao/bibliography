@@ -1,0 +1,63 @@
+#+TITLE: Notes on: Yao, Y., Viswanath, B., Cryan, J., Zheng, H., & Zhao, B. Y. (2017): Automated crowdturfing attacks and defenses in online review systems
+
+* Gist
+
+** Problem
+
+- /Automatically/ generate good spam reviews to boost the ratings.
+- Filter out these spams.
+
+** Evaluation
+
+*** Datasets
+
+- Yelp Dataset Challenge 2017
+- Yelp labeled spam/ham reviews
+  - Yelp Bos, SF cite:molavi2013-iolaus
+  - Yelp all cite:rayana2015-collective
+  - Yelp Chicago cite:mukherjee2013-what
+
+*** Metrics
+
+- Spam quality measurement:
+  - similarity feature, maximum cosine similarity between unigram features among
+    all pairs of sentences.
+  - structural features, the number of words, the number of sentences, the
+    average sentence length and the average word length.
+  - syntactic features, percentages of (distinct) nouns, verbs, adjectives and
+    adverbs, first personal pronouns, and second personal pronouns.
+  - semantic features, percentage of subjective words, percentage of objective
+    words, percentage of positive words and percentage of negative
+    words cite:baccianella2010-sentiwordnet.
+- Spam effectiveness:
+  - precision and recall on a SVM binary classifier.
+  - Plagiarism check cite:schleimer2003-winnowing.
+  - Human evaluation fake/real, usefulness of fake reviews.
+
+** Method
+
+Generate spams:
+- Given one topic word \(C\) and a set of lots of reference reviews \(T\), find
+  all nouns in \(T\) that are close to \(C\) in terms of concept
+  relatedness cite:pedersen2004-wordnet, the nouns are collected in \(P\).
+- Generate fake \(R\) reviews by sampling from a RNN language model.
+- Replace nouns in \(R\) that are close to \(C\) by sampling from \(P\) based on
+  their closeness.
+
+Sampling temperature in [0, 1], the higher the better.
+
+Filter spams: character-level distribution is different
+- Trained in unsupervised fashion two character-level language model, one on
+  real reviews, the other on fake reviews.
+- Feed the test review into two models respectively, obtain two scores.  The
+  review belongs to the category with the higher score.
+
+* Note
+
+This is related to adversarial but slightly different.
+
+- When generating adversarials, we wish to generate reviews that models and
+  humans disagree on their tones, e.g., sentimental classification, hate/benign
+  speech.
+- When generating spams, we mainly wish to generate /fake positive/ reviews to
+  boost the ratings while bypass the spam detector.

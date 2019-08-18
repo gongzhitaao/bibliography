@@ -1,0 +1,18 @@
+#+TITLE: Notes on: Sagun, L., L\'eon Bottou, & LeCun, Y. (2016): Singularity of the hessian in deep learning
+
+* Gist
+
+We show how the data and the architecture depends on the eigenvalues of the
+Hessian of the loss function.
+
+1. We observe that the top discrete eigenvalues (large positive values) depend
+   on the data, and the bulk of the eigenvalues (near zero) depend on the
+   architecture.
+2. As we keep growing the size of the network, we observe that the discrete part
+   that depends on data remains the same, but the concentration around zero
+   sharpens.
+
+We show that the Hessian of the loss functions in deep learning is degenerate.
+
+Next obvious question is to find low energy paths between solutions to show the
+kind of flatness in such landscapes.

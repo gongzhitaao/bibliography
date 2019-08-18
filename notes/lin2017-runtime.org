@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Lin, J., Rao, Y., Lu, J., & Zhou, J. (2017): Runtime Neural Pruning
+#+KEYWORDS: markov decision process, qlearning
+
+* Gist
+
+Dynamically deactivate some kernels to save computation.
+
+1. model the network pruning as a Markov decision process (MDP),
+2. train the decision network by reinforcement learning,
+3. redefine the action of pruning to reduce the number of decisions.

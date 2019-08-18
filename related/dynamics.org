@@ -1,0 +1,55 @@
+#+TITLE: Learning Dynamics
+#+STARTUP: content
+#+COLUMNS: %TODO %40ITEM %20TAGS
+
+* Visualization [0/17]
+
+** TODO cite:murdoch2018-beyond
+** TODO cite:bordes2018-iteratively
+** TODO cite:sundararajan2017-axiomatic
+** TODO cite:smilkov2017-smoothgrad
+** TODO cite:shrikumar2017-learning
+** TODO cite:radford2017-learning
+
+shows that one LSTM node corresponds to the sentiment (positive/negative).
+
+** TODO cite:murdoch2017-automatic
+** TODO cite:kindermans2018-learning
+** TODO cite:strobelt2016-visual
+** TODO cite:lundberg2016-unexpected
+** TODO cite:li2016-understanding
+** TODO cite:carter2016-experiments
+** TODO cite:karpathy2015-visualizing
+** TODO cite:bach2015-pixel
+** TODO cite:zeiler2013-visualizing
+** TODO cite:simonyan2013-deep
+** TODO cite:erhan2009-visualizing
+
+
+* Hypothesis [0/25]
+
+** NEXT cite:tachet2018-learning
+** TODO cite:rolnick2018-power
+** TODO cite:kawaguchi2018-generalization
+** TODO cite:lin2017-why
+** TODO cite:arpit2017-closer
+** TODO cite:freeman2016-topology
+** TODO cite:baldassi2016-local
+** TODO cite:baldassi2016-learning
+** TODO cite:sagun2014-explorations
+** TODO cite:huang2013-entropy
+** TODO cite:touchette2011-basic
+** TODO cite:waestlund2009-replica
+** TODO cite:schwartz2008-introduction
+** TODO cite:dasgupta2008-introduction
+** TODO cite:krzakala2007-gibbs
+** TODO cite:rivoire2004-properties
+** TODO cite:brunel2004-optimal
+** TODO cite:parisi2002-physical
+** TODO cite:engel2001-statistical
+** TODO cite:franz1995-recipes
+** TODO cite:gutfreund1990-capacity
+** TODO cite:gardner1989-three
+** TODO cite:gardner1988-optimal
+** TODO cite:mezard1985-replicas
+** TODO cite:hooft1984-quantum

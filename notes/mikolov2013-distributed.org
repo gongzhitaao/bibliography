@@ -1,0 +1,26 @@
+#+TITLE: Notes on: Mikolov, T., Sutskever, I., Chen, K., Corrado, G., & Dean, J. (2013): Distributed representations of words and phrases and their compositionality
+
+* Gist
+
+** Problem
+
+Learn distributed representation of words, i.e., the word embedding.
+
+** Evaluation
+
+*** Datasets
+
+Internal Google dataset, 692K vocabulary size.
+
+*** Metrics
+
+Phrase analogy task.
+
+** Method
+
+** Miscellaneous
+
+To learn vector representation for phrases, we first find words that appear
+frequently together, and infrequently in other contexts.  For example, /New York
+Times/ and /Toronto Maple Leafs/ are replaced by unique tokens in the training
+data, while a bigram /this is/ will remain unchanged.

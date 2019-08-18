@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Arora, S., & Zhang, Y. (2017): Do Gans Actually Learn the Distribution? An Empirical study
+
+The current paper introduces a new empirical test for the support size of the
+trained distribution, and uses it to find that unfortunately these problems do
+arise in many well-regarded GAN training methods.

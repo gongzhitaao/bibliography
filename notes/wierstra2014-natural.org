@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Wierstra, D., Schaul, T., Glasmachers, T., Sun, Y., Peters, J., & Schmidhuber, J\"urgen 2014: Natural Evolution Strategies
+#+STARTUP: entitiespretty
+
+* Gist
+
+Natural Evolution Strategies
+
+natural gradient, plain gradient
+
+The key idea of the natural gradient is to remove this dependence on
+the parameterization by relying on a more "natural" measure of
+distance \(D(\theta\prime || \theta)\) between probability distributions \(\pi(z|\theta)\)
+and \(\pi(z|\theta\prime)\).
+
+Fisher information matrix
+
+fitness shaping, adaptation sampling, rotationally symmetric
+distributions
+
+Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+
+black-box optimization problems

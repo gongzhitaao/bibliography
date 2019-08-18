@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Layek, G. (2015): An introduction to dynamical systems and chaos
+
+* Gist
+
+** Chapter 1
+
+The mathematical deﬁnition of stability, construction of *Lyapunov function*,
+and *Lyapunov theorem* are extensively used for analyzing the stability of a
+particular class of systems.  Also, *Lyapunov exponent*, assuming the
+exponential growth/decay with time of nearby orbits are applied for quantifying
+in chaotic motions.
+
+In qualitative analysis we mainly look for the following solution behaviors:
+1. Local stability of ﬁxed points for a system;
+2. Analyzing the existence of periodic/quasi-periodic solutions, limit cycle,
+   relaxation oscillation, hysteresis, etc.
+3. Local and asymptotic solution behaviors of a system;
+4. Topological features of flows such as bifurcations, catastrophe, topological
+   equivalence, transitiveness, etc.

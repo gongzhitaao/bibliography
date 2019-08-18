@@ -1,0 +1,128 @@
+#+TITLE: Notes on: Pennington, J., Socher, R., & Manning, C. (2014): Glove: global vectors for word representation
+
+* Gist
+
+Proposes a method to obtain Word embedding.
+
+#+begin_quote
+The *statistics of word occurrences* in a corpus is the primary source of
+information available to all unsupervised methods for learning word
+representations, and although many such methods now exist, the question still
+remains as to how meaning is generated from these statistics, and how the
+resulting word vectors might represent that meaning.
+#+end_quote
+
+* Method
+
+- \(X\) is the matrix of word-word co-occurrence counts, where \(X_{ij}\)
+  tabulates the number of times word \(j\) occurs in the context of word \(i\).
+  Let \(X_i = \sum_k X_ik\) be the number of times any word appears in the
+  context of word \(i\).
+- \(P_{ij} = P(j | i) = X_{ij} / X_i\) is the probability of word \(j\) appears
+  in the context of word \(i\).
+
+\begin{equation}
+  F(w_i, w_j, \widetilde{w_k}) = \frac{P_{ik}}{P_{jk}}
+\end{equation}
+
+#+begin_quote
+Since vector spaces are inherently linear structures, the most natural way to do
+this is with vector differences.
+#+end_quote
+
+\begin{equation}
+  F(w_i - w_j, \widetilde{w_k}) = \frac{P_{ik}}{P_{jk}}
+\end{equation}
+
+Preserve linear structure while mapping from vectors to scalar.
+
+\begin{equation}
+  F((w_i - w_j)^T \widetilde{w_k}) = \frac{P_{ik}}{P_{jk}}
+\end{equation}
+
+A word and a context word are interchangeable.  The above model is not invariant
+under such exchange.
+
+Constraint: \(F\) be a homomorphism between the groups \((\mathcal{R}, +)\) and
+\((\mathcal{R}_{>0}, \times)\).
+
+\begin{equation}
+  F((w_i - w_j)^T \widetilde{w_k}) = \frac{F(w_i^T \widetilde{w_k})}{F(w_{j}^T \widetilde{w_k})}
+\end{equation}
+
+where,
+
+\begin{equation}
+  F(w_i^T \widetilde{w_k}) = P_{ik} = \frac{X_{ik}}{X_i}
+\end{equation}
+
+Let \(F = \exp\), we have
+
+\begin{equation}
+  w_i^T \widetilde{w_k} = \log P_{ik} = \log X_{ik} - \log X_i
+\end{equation}
+
+Absorb \(\log X_i\) into a bias \(b_i\), add \(\widetilde{b_k}\) to restore
+symmetry, shift to avoid arithmetic error, finally we have,
+
+\begin{equation}
+  w_i^T \widetilde{w_k} + b_i + \widetilde{b_k} = \log{(1 + X_{ik})}
+\end{equation}
+
+The cost function
+
+\begin{equation}
+  J = \sum_{i, j}^V f(X_{ij})(w_i^T \widetilde{w_k} + b_i + \widetilde{b_k} - \log{(1 + X_{ik})})^2
+\end{equation}
+
+Weighting function \(f\) has the following properties:
+1. \(f(0) = 0\), \(\lim_{x\to 0}f(x)\log^2 x\) is finite
+2. non-decreasing so that rare co-occurrences are not over-weighted.
+3. relatively small so that frequent co-occurrences are not over-weighted.
+
+\begin{equation}
+  f(x) =
+  \begin{cases}
+  (x / x_{max})^\alpha\qquad &\text{if } x < x_{max} \\
+  1 & otherwise
+  \end{cases}
+\end{equation}
+
+* Training
+
+** Datasets
+
+- 2010 Wikipedia dump with 1 billion tokens
+- 2014 Wikipedia dump with 1.6 billion tokens
+- Gigaword 5 which has 4.3 billion tokens
+- Gigaword5 + Wikipedia2014 with 6 billion tokens
+- Common Crawl with 42 billion tokens of web data
+
+Preprocessing:
+- tokenize
+- build a vocab of 400k most frequent words
+- build a matrix of co-occurrence counts, word pairs that are \(d\) words apart
+  contribute \(1/d\) to the total count.
+
+** Hyperparameters
+
+- \(x_max = 100\), \(\alpha = 3/4\), context window size 10 to the left and 10
+  to the right (20 in total)
+- Trained with AdaGrad cite:duchi2011-adaptive, initial learning rate 0.05, 50
+  epochs for vectors <300 dimensions, 100 epochs otherwise.
+
+* Test
+
+** Tasks
+
+- Word Analogy :: cite:mikolov2013-efficient.  Example: =a= is to =b= as =c= is to ?
+- Word Similarity :: WordSim-353 cite:finkelstein2001-placing,
+     MC cite:miller1991-contextual, RG cite:rubenstein1965-contextual,
+     SCWS cite:huang2012-improving and RW cite:luong2013-better.
+- Named Identity Recognition :: coNLL-2013 cite:ratinov2009-design.
+
+** Comparison
+
+- SVD
+- CBOW cite:mikolov2013-efficient
+- SG cite:mikolov2013-efficient

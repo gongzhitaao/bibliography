@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Lin, Z., Courbariaux, M., Memisevic, R., & Bengio, Y. (2015): Neural Networks With Few Multiplications
+
+* First Pass
+
+  The authors proposed to quantize outputs at each hidden layer during
+  backpropagation to replace most multiplication with bit shifting
+  operation, thus reducing the training time.
+
+* Second Pass
+
+  They argue that 3-4 bits are enough for the hidden layer outputs.

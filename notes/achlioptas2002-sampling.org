@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Achlioptas, D., McSherry, F., & Sch\"olkopf, Bernhard (2002): Sampling techniques for kernel methods
+#+KEYWORDS: random, quantization, kernel, pca, svm
+
+* Gist
+
+Sampling Gram matrices
+1. randomly drop entries, and
+2. quantize the whole matrix.
+
+* Comment
+
+Provides some guidance on how to choose quantization scheme theoretically.

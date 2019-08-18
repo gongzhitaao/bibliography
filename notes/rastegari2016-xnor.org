@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Rastegari, M., Ordonez, V., Redmon, J., & Farhadi, A. (2016): Xnor-net: imagenet classification using binary convolutional neural networks
+
+* First Pass
+
+  The authors propose yet another binarized convolution networks and
+  XNOR-networks which achieves same accuracy as AlexNet on ImageNet.
+  And it outperforms recent binary network.  In addition it could run
+  on CPU efficiently.
+
+* Second Pass
+
+  minimize L2 loss between the original weight \(W\) and binary filter
+  \(B\) with a scaling factor \(\alpha\).
+
+  1. Binary network
+
+     binary weights, addition and subtraction
+
+  2. XNOR network
+
+     binary weights and input, XNOR operation

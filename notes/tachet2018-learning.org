@@ -1,0 +1,13 @@
+#+TITLE: Notes on: Tachet des Combes}, R., Pezeshki, M., Shabanian, S., Courville, A., & Bengio, Y. (2018): On the learning dynamics of deep neural networks
+
+* Gist
+
+** Problem
+
+Explore the learning dynamics of neural nets.
+
+** Conclusion
+
+1. *Independent mode learning*.  Learning happens independently between
+   different classes, i.e. classes induce a partition of the network
+   activations, corresponding to orthogonal modes of the data.

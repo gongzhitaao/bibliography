@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Dong-Hyun Lee, Zhang, S., Biard, A., & Bengio, Y. (2014): Target Propagation
+
+* First Pass
+
+  The authors proposed another optimization method called /target
+  propagation/ for neural network because they want to address the
+  limitation of back-propagation and try more biologically plausible
+  scheme.

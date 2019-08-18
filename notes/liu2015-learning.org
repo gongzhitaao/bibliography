@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Liu, P., Qiu, X., & Huang, X. (2015): Learning context-sensitive word embeddings with neural tensor skip-gram model.
+
+* Gist
+
+** Problem
+
+New architecture to learn multi-prototype word embeddings.
+
+** Assumption
+
+We assume that the single-prototype word embedding can be regarded as a mixture
+of its different prototypes, while the topic embedding is the averaged vector of
+all the words under this topic.
+
+** Evaluation
+
+1. Word similarity task.
+2. Text classification task.
+
+*** Datasets
+
+1. Training: Wikipedia (April 2010)
+2. Testing:
+   1. Stanford's Contextual Word Similarities (SCWS) cite:huang2012-improving
+   2. 20NewsGroup
+
+*** Metrics
+
+1. Spearman's correlation
+2. Accuracy, precision, recall and F1
+
+** Method
+
+Each word is still single embedding, different senses are extracted by
+interacting with the topics embedding.
+
+Margin rank loss with margin fixed to 1.

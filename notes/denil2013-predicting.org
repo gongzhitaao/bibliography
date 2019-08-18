@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Denil, M., Shakibi, B., Dinh, L., Ranzato, M., & Freitas, N. d. (2013): Predicting parameters in deep learning
+#+KEYWORDS: matrix factoring, feature prediction, over parameterized
+
+* Gist
+
+The key to constructing a good first factor is exploiting smoothness in the
+structure of the inputs.  When we have prior knowledge of the smoothness
+structure we expect to see (e.g. in natural images), we can impose this
+structure directly through the choice of factor.  When no such prior knowledge
+is available we show that it is still possible to make a good data driven
+choice.
+
+Prior knowledge:
+1. single layer network trained in an unsupervised fashion
+2. Fourier or wavelet bases
+3. kernel ridge regression
+
+the /first layer/ features of a neural network trained on natural image patches
+tend to be /globally smooth/ with local edge features, similar to local /Gabor
+features/.  Given this structure, representing the value of each pixel in the
+feature separately is redundant, since it is highly likely that the value of a
+pixel will be equal to a weighted average of its neighbours.  Taking advantage
+of this type of structure means we do not need to store weights for every input
+in each feature.

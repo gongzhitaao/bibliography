@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Chaudhari}, P., & Soatto, S. (2017): Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks
+
+* Gist
+
+SGD minimizes an average potential over the posterior distribution of weights
+along with an entropic regularization term.
+
+The most likely locations of SGD are not the local minima, nor the saddle
+points, of the original loss.

@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Zhu, L., Kim, S., Hara, M., & Aono, M. (2018): Remarkable problem-solving ability of unicellular amoeboid organism and its mechanism
+
+* Gist
+
+** Problem
+
+Traveling salesman problem (TSP) near-optimal solution by Amoeba.
+
+** Conclusion
+
+Amoeba seems to find high quality near-optimal solution in linear time with
+different algorithms than ours.

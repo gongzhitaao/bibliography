@@ -1,0 +1,18 @@
+#+TITLE: Notes on: Nguyen, A., Yosinski, J., & Clune, J. (2016): Multifaceted feature visualization: uncovering the different types of features learned by each neuron in deep neural networks
+
+* Contribution
+
+  1. Improves the state of the art of activation maximization by
+     producing higher quality images with more global structure,
+     details, context, more natural colors, and
+  2. shows the multiple feature facets each neuron detects, which
+     provides a more comprehensive understanding of each neuron's
+     function.
+  3. Proposes *center-biased regularization* technique, which reduces
+     optimization's tendency to produce repeated object fragments and
+     instead tends to produce one central object.
+
+* Future Work
+
+  Automatically identifying the true number of facets is an important,
+  open scientific question raised, but not answered, by this paper.

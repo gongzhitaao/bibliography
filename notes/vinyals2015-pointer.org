@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Vinyals, O., Fortunato, M., & Jaitly, N. (2015): Pointer Networks
+
+* Summary
+
+  We introduce a new neural architecture to learn the conditional
+  probability of an output sequence with elements that are discrete
+  tokens corresponding to positions in an input sequence.
+
+* Problem
+
+  Using /pointer network/, they give approximate solutions to
+  1. finding planar convex hulls,
+  2. computing Delaunay triangulations, and
+  3. the planar Travelling Salesman Problem

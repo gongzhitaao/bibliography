@@ -1,0 +1,35 @@
+#+TITLE: Notes on: Iyyer, M., Wieting, J., Gimpel, K., & Zettlemoyer, L. (2018): Adversarial Example Generation With Syntactically Controlled Paraphrase Networks
+
+* Gist
+
+** Problem
+
+Main goal: Paraphrase with desired/controlled syntactic structure.
+Side product: adversarial sentences by varying syntactic structure.
+
+** Evaluation
+
+*** Datasets
+
+- ParaNMT-50M cite:wieting2017-pushing
+- Stanford Sentiment Tree-bank (SST) cite:socher2013-recursive
+- SICK entailment detection cite:marelli2014-semeval
+
+*** Metrics
+
+- human evaluation
+
+** Method
+
+- The paraphrasing data is generated via
+  back-translation cite:wieting2017-pushing.
+- A Parser cite:manning2014-stanford is used to get the syntax structure.
+- First two level of the syntax tree is used as the template to generate via
+  LSTM the complete syntax tree.
+- The syntactic structure is encoded via LSTM into a fixed dimension vector,
+  which is fed into the decoder, along with other decoder inputs, i.e.,
+  ground-truth of previous word and attention-weighted previous state.
+
+* Note
+
+Paraphrasing is naturally difficult for the network to recognize.

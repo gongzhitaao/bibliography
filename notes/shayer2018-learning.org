@@ -1,0 +1,25 @@
+#+TITLE: Notes on: Shayer, O., Levi, D., & Fetaya, E. (2018): Learning discrete weights using the local reparameterization trick
+
+* Gist
+
+** Problem
+
+Quantize network, binary or ternary.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- CIFAR-10
+- ImageNet
+
+*** Metrics
+
+- Accuracy
+
+** Method
+
+The +1/-1 or +1/0/-1 can be seen as the result from a multinomial distribution.
+We learn the parameters for the distribution.  The weights in the resulting
+network are sampled from the distributions, respectively.

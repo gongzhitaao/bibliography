@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Chen, X., Duan, Y., Houthooft, R., Schulman, J., Sutskever, I., & Abbeel, P. (2016): Infogan: interpretable representation learning by information maximizing generative adversarial nets
+
+* First Pass
+
+  The use GAN to disentangle features from images in an unsupervised
+  way.
+
+* Second Pass

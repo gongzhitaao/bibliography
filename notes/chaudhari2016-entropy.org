@@ -1,0 +1,16 @@
+#+TITLE: Notes on: Chaudhari, P., Choromanska, A., Soatto, S., & LeCun, Y. (2016): Entropy-sgd: biasing gradient descent into wide valleys
+
+* Gist
+
+local entropy
+
+Energy landscape near a local minimum discovered by SGD is almost flat
+for a wide variety of deep networks irrespective of their
+architecture, input data or training methods.
+
+Bias the optimization towards flat regions that have low
+generalization error (low local entropy).
+
+* Summary
+
+Prefer local minima that have flat areas locally which generalize well.

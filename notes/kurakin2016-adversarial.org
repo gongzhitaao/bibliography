@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Kurakin, A., Goodfellow, I., & Bengio, S. (2016): Adversarial examples in the physical world
+
+* First Pass
+
+  The authors studied physical adversarial images because they want to
+  test whether adversarial photos pose a threat to learning system.
+
+* Second Pass
+
+  None of the described methods guarantees that generated image will
+  be misclassified.
+
+  Methods to generate adversarial examples
+  - Fast method
+  - Iterative fast method
+  - Least-likely class method
+
+
+  Blur, noise and JPEG encoding have a higher destruction rate However
+  none of these transformations destroy 100% of adversarial examples,
+  which coincides with the "photo transformation" experiment.

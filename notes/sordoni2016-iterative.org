@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Sordoni, A., Bachman, P., & Bengio, Y. (2016): Iterative Alternating Neural Attention for Machine Reading
+
+* First Pass
+
+  The authors proposed a novel architecture, iterative neural
+  attention model to tackle machine comprehension task, the Cloze
+  test.

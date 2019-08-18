@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Goodfellow, I.~J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville}, A., Bengio, Y., ... (2014): Generative Adversarial Networks
+
+* First Pass
+
+  The authors proposed a framework to train generative model, the
+  generative adversarial network.
+
+* Second Pass
+
+  - We train discriminator to maximize the probability of assigning
+    the correct label to both training examples and samples from
+    generator.
+  - We train generator to minimize the probability discriminator gets
+    right, \(\log(1 - D(G(z)))\).
+  - During the early phases, generator is poor, so they train
+    generator to /maximize/ \(log(D(G(z)))\).
+
+
+  How to evaluate generative model?

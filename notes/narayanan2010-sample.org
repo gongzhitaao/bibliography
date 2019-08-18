@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Narayanan, H., & Mitter, S. (2010): Sample complexity of testing the manifold hypothesis
+
+* Gist
+
+* Notes
+
+Researchers speculate that for many AI tasks, their relevant data lie on a
+manifold that is of much lower dimension than the full sample space

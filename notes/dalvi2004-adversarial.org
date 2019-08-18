@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Dalvi, N., Domingos, P., Sanghai, S., Verma, D., & others,  (2004): Adversarial classification
+
+* First Pass
+
+  The authors studied the adversary attack because they wanted to find
+  out possible ways to defend against attacks.
+
+* Second Pass
+
+  - We first formalize the problem as a game between a cost-sensitive
+    classifier and a cost-sensitive adversary
+  - adversary-unaware/aware

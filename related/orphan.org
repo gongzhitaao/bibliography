@@ -1,0 +1,7 @@
+#+TITLE: Reading List
+
+* Recent Work
+
+- cite:xiao2018-dynamical
+- [[file:~/.local/data/bibliography/orphan/biggan.pdf]] BigGAN
+- cite:pham2018-efficient neural architecture search

@@ -1,0 +1,28 @@
+#+TITLE: Polysemy Embedding
+
+* Related
+
+- [ ] cite:sun2017-simple
+- [ ] cite:shi2017-jointly
+- [ ] cite:lin2017-structured
+- [ ] cite:lee2017-muse
+- [ ] cite:wang2016-cse
+- [ ] cite:vu2016-k
+- [ ] cite:li2016-multi
+- [ ] cite:li2016-learning
+- [ ] cite:hu2016-different
+- [ ] cite:brazinskas2016-embedding
+- [ ] cite:arora2016-linear
+- [ ] cite:neelakantan2015-efficient
+- [ ] cite:li2015-do
+- [ ] cite:iacobacci2015-sensembed
+- [ ] cite:guo2014-learning
+- [ ] cite:jorge-botana2011
+- [X] cite:athiwaratkun2017-multimodal
+- [X] cite:liu2015-topical
+- [X] cite:liu2015-learning
+- [X] cite:vilnis2014-word
+- [X] cite:tian2014-probabilistic
+- [X] cite:huang2012-improving
+- [X] cite:reisinger2010-multi
+- [X] cite:schuetze1998-automatic

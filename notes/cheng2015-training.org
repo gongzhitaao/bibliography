@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Cheng, Z., Soudry, D., Mao, Z., & Lan, Z. (2015): Training binary multilayer neural networks for image classification using expectation backpropagation
+
+* First Pass
+
+  The authors applied expectation backpropagation to binary weight
+  network which is successfully trained on MNIST with negligible loss
+  of accuracy.
+
+* Second Pass
+
+  Given the labeled dataset, the aim is to find the weights \(W\) to
+  maximize the posterior probability \(P(W\vert D)\).
+
+  With the posterior, one can obtain the most probable weight
+  configuration to minimize the expected zero-one loss over the
+  outputs using the Maximum A Posteriori (MAP) estimation.
+
+  - Approximation 1 :: the mean-field approximation is used to
+       approximate \(P(W\vert D_n)\).
+  - Approximation 2 :: is performed by assuming that the neural fan-in
+       is large, namely, a large number of units in the previous layer
+       is connected to each unit in the next layer.

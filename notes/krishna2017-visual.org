@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Krishna, R., Zhu, Y., Groth, O., Johnson, J., Hata, K., Kravitz, J., Chen, S., … (2017): Visual genome: connecting language and vision using crowdsourced dense image annotations
+
+* Gist
+
+The Visual Genome dataset consists of SEVEN main components: *region
+descriptions*, *objects*, *attributes*, *relationships*, *region graphs*, *scene
+graphs*, and *question answer pairs*.

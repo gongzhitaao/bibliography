@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Guo}, C., Rana, M., Cisse, M., & van der Maaten, L. (2017): Countering Adversarial Images Using Input Transformations
+
+* Gist
+
+Use image transformation to remove adversarial noise.
+
+1. image cropping and re-scaling
+2. bit-depth reduction
+3. JPEG compression
+4. total variance minimization
+5. image quilting

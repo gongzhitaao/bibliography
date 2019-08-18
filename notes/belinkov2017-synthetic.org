@@ -1,0 +1,36 @@
+#+TITLE: Notes on: Belinkov, Y., & Bisk, Y. (2017): Synthetic and natural noise both break neural machine translation
+#+KEYWORDS: char cnn, nmt, out of vocabulary, oov
+
+* Gist
+
+To increase robustness, structure-invariant word representations and robust
+training on noisy texts.
+
+We find that a model based on a character convolutional neural network is able
+to simultaneously learn representations robust to multiple kinds of noise.
+
+Our goal is two fold:
+1. initiate a conversation on robust training and modeling techniques in NMT,
+   and
+2. promote the creation of better and more linguistically accurate artificial
+   noise to be applied to new languages and tasks.
+
+We experiment with three different NMT systems with access to character
+information at different levels.
+1. cite:lee2016-fully
+2. cite:sennrich2017-nematus
+3. cite:klein2017-opennmt
+
+Corpus: TED talks parallel corpus prepared for IWSLT 2016
+
+Synthetic noise:
+- Swap :: The first and simplest source of noise is swapping two letters
+     (e.g. noise -> nosie).
+- Middle Random :: Randomize the order of all the letters in a word except for
+     the first and last (noise -> nisoe).
+- Fully Random :: As we are unaware of any strong results on the importance of
+     the first and last letters we also include completely randomized words
+     (noise -> iones).
+- Keyboard Typo :: Using the traditional keyboards for our languages, we
+     randomly replace one letter in each word with an adjacent key (noise ->
+     noide).

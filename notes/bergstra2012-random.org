@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Bergstra, J., & Bengio, Y. (2012): Random search for hyper-parameter optimization
+
+* Problem
+
+  Addresses the hyper-parameter optimizing problem.
+
+  Hyper-parameters are parameters of the learning algorithm itself,
+  rather than the model parameter.
+
+* Conclusion
+
+  This work shows that random search is a natural baseline against
+  which to judge progress in the development of adaptive (sequential)
+  hyper-parameter optimization algorithms.
+
+  Our analysis casts some light on why recent "High Throughput"
+  methods achieve surprising success -- they appear to search through
+  a large number of hyper-parameters because most hyper-parameters do
+  not matter much.

@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Athiwaratkun}, B., & Wilson, A.~G. (2017): Multimodal Word Distributions
+
+* Gist
+
+This method uses an energy-based maximum margin objective, where we wish to
+maximize the similarity of distributions of nearby words in sentences.
+
+\[L(w, c, c^\prime) = max(0, m - \log E(w, c) + \log E(w, c^\prime))\]
+
+\(c\) is the word that appear near \(w\) in the training set, \(c^\prime\) is a
+random word (negative sampling), \(m\) is the margin.
+
+** Word Sampling
+
+*** Subsampling
+
+The word \(w\) is discarded with probability \(p = 1 - \sqrt(t / f(w))\), where
+\(f(w)\) is the frequency of word \(w\) in the training corpus and \(t\) is a
+frequency threshold.
+
+*** Negative distribution
+
+U(w)^{3/4} which is a distorted version of the unigram distribution \(U(w)\)
+that also serves to diminish the relative importance of frequent words.

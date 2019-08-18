@@ -1,0 +1,25 @@
+#+TITLE: Notes on: Ge, R., Huang, F., Jin, C., & Yuan, Y. (2015): Escaping from saddle points-online stochastic gradient for tensor decomposition.
+#+STARTUP: entitiespretty
+
+* Gist
+
+This paper answers:
+
+Given a non-convex function \(f\) with many saddle points, what
+properties of \(f\) will guarantee stochastic gradient descent to
+converge to a local minimum efficiently?
+
+Optimizing a non-convex function is NP-hard in general.  The
+difficulty comes from two aspects.
+1. The function may have many local minima, and it might be hard to
+   find the best one (global minimum) among them.
+2. Even finding a local minimum might be hard as there can be many
+   saddle points which have 0-gradient but are not local minima.
+
+- Stationary point :: \(w\) is a stationary point if \(\nabla f(w) = 0\),
+     it could be a local minimum, maximum or saddle point.
+
+* References
+
+- [ ] cite:dauphin2014-identifying
+- [ ] cite:choromanska2014-loss

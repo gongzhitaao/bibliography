@@ -1,0 +1,29 @@
+#+TITLE: Notes on: Xie, C., Wang, J., Zhang, Z., Ren, Z., & Yuille, A. L. (2017): Mitigating Adversarial Effects Through Randomization
+
+* Gist
+
+** Problem
+
+Defend against adversarial images by randomly resizing (a little bit) and
+padding the input image.
+
+** Evaluation
+
+*** Datasets
+
+- 5k images from ImageNet.
+
+*** Models
+
+- Inception v3
+- ResNet v2
+- Inception-ResNet v2
+
+** Method
+
+Randomly resize (a small amount) and pad an input image before feeding it into
+the classifier.
+
+* Note
+
+Why One-pixel padding/resizing is effective?  What does the network learn?

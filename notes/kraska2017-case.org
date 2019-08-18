@@ -1,0 +1,33 @@
+#+TITLE: Notes on: Kraska}, T., Beutel, A., Chi, E.~H., Dean, J., & Polyzotis, N. (2017): The case for learned index structures
+
+* Gist
+
+In summary, we have demonstrated that machine learned models have the potential
+to provide significant benefits over state-of-the-art database indexes, and we
+believe this is a fruitful direction for future research.
+
+- range index, b-tree
+- point index, hash map
+- learned index, bloom-filter
+
+** Learned Index Framework (LIF)
+
+Rather, given a trained Tensorflow model, LIF automatically extracts all weights
+from the model and generates efficient index structures in C++ based on the
+model specification.
+
+** Recursive Model Index (RMI)
+
+In general, hyper parameters are optimized using a simple grid-search.
+
+Note, that hybrid indexes allow us to bound the worst case performance of
+learned indexes to the performance of B-Trees.
+
+** Existence Index
+
+A good hash function for a point index is one with few collisions among keys,
+whereas a good hash function for a Bloom filter would be one that has lots of
+collisions among keys and lots of collisions among non-keys, but few collisions
+of keys and non-keys.
+
+For instance, keeping track of blacklisted phishing URLs.

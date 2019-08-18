@@ -1,0 +1,26 @@
+#+TITLE: Notes on: Weston, J., Chopra, S., & Bordes, A. (2014): Memory Networks
+
+* First Pass
+
+  The authors studied a novel mechanism, memory network, combining
+  inference components with memory components because they want to
+  solve the Q&A problem.
+
+* Second Pass
+
+  - I (input) :: word embedding
+  - G (generalization) :: simple hash
+  - O (output feature map) :: compute score between input and every
+       memory, find the memory with highest score.  If more than one
+       memory slots is to be supported, the score function takes more
+       than one parameter.
+  - R (response) :: compute score between each word in dictionary with
+       previously select memories and input, return the word with
+       highest score.
+
+
+  The scoring function is an embedding model.
+
+  supervised training.
+
+  Limited verbs and sentence structures.

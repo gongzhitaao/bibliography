@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Huang, H., & Kabashima, Y. (2014): Origin of the computational hardness for learning with binary synapses
+
+* First Pass
+
+  The authors analyze the weight space of binary perceptron from the
+  perspective of statistic physics and proved with Franz-Parisi
+  potential that the solutions are isolated for any finite constraint
+  density.

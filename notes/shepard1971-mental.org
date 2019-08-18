@@ -1,0 +1,16 @@
+#+TITLE: Notes on: Shepard, R. N., & Metzler, J. (1971): Mental rotation of three-dimensional objects
+
+* Gist
+
+** Problem
+
+Observe mental rotation when recognizing objects.
+
+** Conclusion
+
+1. to make the required comparison they first had to imagine one object as
+   rotated into the same orientation as the other and that they could carry out
+   this /mental rotation/ at no greater than a certain limiting rate
+2. since they perceived the two-dimensional pictures as objects in
+   three-dimensional space, they could imagine the rotation around whichever
+   axis was required with equal ease.

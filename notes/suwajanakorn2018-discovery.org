@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Suwajanakorn, S., Snavely, N., Tompson, J. J., & Norouzi, M. (2018): Discovery of latent 3d keypoints via end-to-end geometric reasoning
+
+* Gist
+
+** Problem
+
+Predict key points for objects in 2D images.
+
+** Evaluation
+
+*** Datasets
+
+- ShapeNet cite:chang2015-shapenet
+
+** Method
+
+Loss composes multiple parts.
+- Multiple view consistency.  Difference of coordinates of corresponding key
+  points in 2D images of two different views.  This loss alone will result in
+  all points in one place.
+- Misfit between estimation relative rotation via
+  Procrustes cite:schoenemann1966-generalized.
+
+- Translation /equivariance/ :: key points coordinate is described by a
+     probability distribution over all pixels where the expected value is the
+     predicted coordinate.
+- Break symmetry :: a separate binary network predicts the coarse orientation,
+     i.e., face left or right.
+- Separation loss :: no two key points should be together.
+- Silhouette consistency :: all points should lie within the objects, accessing
+     a binary mask during training.
+
+* Notes
+
+- The key points are not always related to the
+  vertices cite:biederman1987-recognition
+- Does not perform well on real image, e.g., ImageNet.

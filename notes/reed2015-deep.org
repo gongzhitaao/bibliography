@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Reed, S. E., Zhang, Y., Zhang, Y., & Lee, H. (2015): Deep visual analogy-making
+
+* Gist
+
+** Problem
+
+(A, B; C, D?): A is to B as C is to D.  D is unknown, the goal is to infer D by
+transforming C by apply the transformation A to B.
+
+** Evaluation
+
+*** Dataset
+
+- 2D geometry shapes
+- Animate character http://lpc.opengameart.org
+- Cars cite:fidler2012-object
+
+*** Metrics
+
+Loss
+
+* Note
+
+** The Big Picture
+
+We denote a valid /analogy/ as a 4-tuple ~A:B::C:D~, often spoken as ~A~ is to ~B~ as ~C~
+is to ~D~.  Given such an analogy, there are several questions one might ask:
+- ~A?B::C?D~ What is the common relationship?
+- ~A:B?C:D~ Are ~A~ and ~B~ related in the same way that ~C~ and ~D~ are related?
+- ~A:B::C:?~ What is the result of applying the transformation ~A:B~ to ~C~?
+
+** Idea
+
+The model needs to remember the objects internally.  Can we separate the memory
+from the attribute?
+
+https://goo.gl/PDuVot

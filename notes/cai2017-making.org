@@ -1,0 +1,27 @@
+#+TITLE: Notes on: Cai, J., Shin, R., & Song, D. (2017): Making Neural Programming Architectures Generalize Via Recursion
+
+* Gist
+
+One common strategy to improve generalization is to use *curriculum
+learning*, where the model is trained on inputs of gradually
+increasing complexity.
+
+
+- model architecture
+- training procedure, i.e., training data and optimization process
+
+one common evaluation metric is how well the learned model
+generalizes, e.g., trained on shorter inputs and tested on longer
+inputs.
+
+We hypothesize that the reason for this is that the neural network
+learns to spuriously depend on specific characteristics of the
+training examples that are irrelevant to the true program semantics,
+such as length of the training inputs, and thus fails to generalize to
+more complex inputs.
+
+provable guarantees about generalization
+
+* Reference
+
+- [ ] cite:reed2016-neural

@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Konda, V. R., & Tsitsiklis, J. N. (2000): Actor-critic algorithms
+
+* Gist
+
+1. Actor-only methods work with a parameterized family of policies.  A possible
+   drawback of such methods is that the gradient estimators may have a large
+   variance, i.e., non-stationary target.
+2. Critic-only methods rely exclusively on value function approximation and aim
+   at learning an approximate solution to the Bellman equation, which will then
+   hopefully prescribe a near-optimal policy.

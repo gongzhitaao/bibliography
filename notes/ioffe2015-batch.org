@@ -1,0 +1,13 @@
+#+TITLE: Notes on: Ioffe, S., & Szegedy, C. (2015): Batch normalization: accelerating deep network training by reducing internal covariate shift
+
+When the input distribution to a learning system changes, it is said
+to experience covariate shift cite:shimodaira2000.
+
+If, however, we could ensure that the distribution of nonlinearity
+inputs remains more stable as the network trains, then the optimizer
+would be less likely to get stuck in the saturated regime, and the
+training would accelerate.
+
+- Internal Covariate Shift :: is the change in the distribution of
+     network activations due to the change in network parameters
+     during training.

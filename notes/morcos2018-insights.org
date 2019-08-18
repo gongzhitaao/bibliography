@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Morcos, A., Raghu, M., & Bengio, S. (2018): Insights on representational similarity in neural networks with canonical correlation
+
+* Gist
+
+Use CCA cite:raghu2017-svcca to compare the similarity of different neural
+network.
+
+1. Groups of networks which generalize converge to more similar solutions than
+   those which memorize.
+2. Wider networks converge to more similar solutions than narrower networks.
+3. Networks with identical topology but distinct learning rates converge to a
+   small set of diverse solutions.
+4. RNNs exhibit bottom-up convergence.  Across sequence timesteps, however, we
+   find that RNN representations vary significantly.
+
+** Method
+
+Each neuron has a CCA vector.
+- Those that continue to change after network stabilizes are noises.
+- Those that stabilize early are the important ones.

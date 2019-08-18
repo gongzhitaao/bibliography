@@ -1,0 +1,61 @@
+#+TITLE: Notes on: Sch\"utze, Hinrich (1998): Automatic Word Sense Discrimination
+
+* Gist
+
+** Problem
+
+Word disambiguation: /sense discrimination/ and sense labeling.
+
+This paper focuses on sense discrimination, i.e., distinguish the meanings of
+words in different contexts.
+
+** Assumptions
+
+if the ambiguous word's occurrences are clustered into a large number of
+clusters (e.g., 10), then the clusters can capture fine contextual distinctions.
+Consider the example of space.  For a small number of clusters, only the senses
+/outer space/ and /limited extent in one, two, or three dimensions/ are
+separated.  If the word's occurrences are clustered into more clusters, then
+finer distinctions such as the one between /office space/ and /exhibition space/
+are also discovered.
+
+** Evaluation
+
+*** Datasets
+
+New York Times: Jun 1989 - Oct 1990 for training, May 1989, Nov 1990 for test.
+
+Test on 20 words: 10 natural ambiguous words and 10 artificial ambiguous words.
+The Artificial ambiguous words are formed by way where two or more words, e.g.,
+/banana/ and /door/, are conflated into a new word /banana/door/.  All
+occurrences of either word in the corpus are then replaced by the new word.
+
+*** Metrics
+
+** Methods
+
+Context-Group Discrimination.
+
+- First-order co-occurrence :: the context representation from the words that
+     the ambiguous word directly occurs with in a particular context.``
+- Second-order co-occurrence :: the context representation from the words that
+     these words in turn co-occur with in the training corpus.
+
+Second-order co-occurrence information is /less sparse/ and /more robust/ than
+first-order information.
+
+Word vectors are represented using global/local co-occurrence.
+1. For global one, the top 20k most frequent words are selected, each word is
+   represented as a 0-1 vector.  1 indicates the candidate word co-occur with
+   the corresponding frequent words, 0 otherwise.  20k by 20k matrix.
+2. For local one, the most frequent 1k words are chosen in a window of size 50
+   centered at the candidate words.  The \(\chi^2\) test is used to select the
+   frequent local words. 1k by 1k matrix.
+
+The word vectors are reduced to 100 dimension by SVD (singular value
+decomposition)
+
+Context vectors are weighted (by idf, i.e., inverse document frequency) average
+of word vectors.
+
+Sense vectors are the centroids obtained by clustering context vectors.

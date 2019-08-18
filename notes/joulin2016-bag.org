@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Joulin, A., Grave, E., Bojanowski, P., & Mikolov, T. (2016): Bag of Tricks for Efficient Text Classification
+
+* Summary
+
+  Our approach does not require sophisticated inference at test time,
+  making its learned representations easily reusable on different
+  problems.
+
+* Problem
+
+  We evaluate the quality of our model on two different tasks, namely
+  *tag prediction* and *sentiment analysis*.

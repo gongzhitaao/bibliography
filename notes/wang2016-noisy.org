@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Wang, Y., & Xu, H. (2016): Noisy Sparse Subspace Clustering
+#+KEYWORDS: Subspace clustering, robustness, stability, compressive sensing, sparse
+
+* Gist
+
+It is now widely known that many high dimensional data including motion
+trajectories, face images, network hop counts, movie ratings and social graphs
+can be modeled as samples drawn from the union of multiple low-dimensional
+linear subspaces.

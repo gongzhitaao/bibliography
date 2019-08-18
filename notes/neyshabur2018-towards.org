@@ -1,0 +1,16 @@
+#+TITLE: Notes on: Neyshabur}, B., Li, Z., Bhojanapalli, S., LeCun, Y., & Srebro, N. (2018): Towards understanding the role of over-parametrization in generalization of neural networks
+
+* Gist
+
+The closeness of learned weights to initialization in the over-parametrized
+setting can be understood by considering the limiting case as the number of
+hidden units go to infinity, as considered in
+cite:bengio2006-convex,bach2017-breaking.  In this extreme setting, just
+training the top layer of the network, which is a convex optimization problem
+for convex losses, will result in minimizing the training error, as the randomly
+initialized hidden layer has all possible features.  Intuitively, the large
+number of hidden units here represent all possible features and hence the
+optimization problem involves just picking the right features that will minimize
+the training loss.  This suggests that as we over-parameterize the networks, the
+optimization algorithms need to do less work in tuning the weights of the hidden
+units to find the right solution.

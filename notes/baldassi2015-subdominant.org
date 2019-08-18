@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Baldassi, C., Ingrosso, A., Lucibello, C., Saglietti, L., & Zecchina, R. (2015): Subdominant dense clusters allow for simple learning and high computational performance in neural networks with discrete synapses
+
+* First Pass
+
+  The authors propose methods to prove the existence of dense
+  subdominant solution regions for network with discrete connections
+  which was shown being exponentially dominated by isolated solutions
+  that are extremely hard to find algorithmically.
+
+* Second Pass
+
+  Biological considerations and recent experimental evidence
+  cite:oconnor2005-graded,oconnor2005-graded suggest that synaptic
+  efficacies store a few bits each (between 1 and 5)
+
+  The optimal synaptic configurations are typically geometrically
+  isolated (i.e., they have mutual Hamming distances of order N), and
+  thus are even harder to find for local search strategies.
+
+  spin glass theory

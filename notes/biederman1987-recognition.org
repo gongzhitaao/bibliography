@@ -1,0 +1,59 @@
+#+TITLE: Notes on: Biederman, I. (1987): Recognition-by-components: a theory of human image understanding.
+
+* Gist
+
+** Problem
+
+Primal access in recognizing a complete object.
+
+** Hypothesis
+
+1. Access to the mental representation of an object should not be dependent on
+   absolute judgments of quantitative detail, because such judgments are slow
+   and error prone.
+
+   For example, distinguishing among just several levels of the degree of
+   curvature or length of an object typically requires more time than that
+   required for the identification of the object itself.  Consequently, such
+   quantitative processing cannot be the controlling factor by which recognition
+   is achieved.
+
+2. The information that is the basis of recognition should be relatively
+   invariant with respect to orientation and modest degradation.
+
+3. Partial matches should be computable.
+
+   A theory of object interpretation should have some principled means for
+   computing a match for occluded, partial, or new exemplars of a given
+   category.  We should be able to account for the human's ability to identify,
+   for example, a chair when it is partially occluded by other furniture, or
+   when it is missing a leg, or when it is a new model.
+
+Within the temporal and contextual constraints of primal access, the stages up
+to and including the identification of components are assumed to be *bottom-up*.
+/A delay in the determination of an object's components should have a direct
+effect on the identification latency of the object/
+
+The representation of an object would thus be a *structural description* that
+expressed the relations among the components.
+
+Edge-based descriptions are thus sufficient for primal access.
+
+Filling-in processes require an image (retinal or iconic), not merely a memory
+representation, and sufficient time (on the order of 200 ms) to be successfully
+executed.
+
+We conclude that the filling-in of contours, whether at mid-segment or vertex,
+is a process that can be completed within 1s.
+
+But mental rotation rates appear to be too slow and effortful to account for the
+ease and speed with which transfer occurs between different orientations in
+depth of the same object.
+
+* Thoughts
+
+- Object identification: feature extraction and memory retrieval.
+
+* Note
+
+- Related to cite:suwajanakorn2018-discovery

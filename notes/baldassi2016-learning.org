@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Baldassi, C., Gerace, F., Lucibello, C., Saglietti, L., & Zecchina, R. (2016): Learning may need only a few bits of synaptic precision
+
+* Gist
+
+- *equilibrium analysis*, i.e. using a flat measure, study the
+  capacity of the network
+- *large deviation analysis*, i.e., solutions are reweighted to
+  enhance those of high local density
+- the capacity of the network saturates rather fast with the number of
+  internal synaptic states
+- most solutions to the training problem are isolated, Franz-Parisi
+  potential
+- but there exist dense subdominant regions of solutions that are
+  easily accessible
+
+In all these cases, the neuronal threshold \(\theta\) needs to be
+chosen optimally in order to maximize the capacity.
+
+Local entropy landscape is very different from the energy landscape.

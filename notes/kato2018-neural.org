@@ -1,0 +1,31 @@
+#+TITLE: Notes on: Kato, H., Ushiku, Y., & Harada, T. (2018): Neural 3d mesh renderer
+#+KEYWORDS: neural renderer, rasterization, mesh, 3d
+
+* Gist
+
+** Problem
+
+Using neural network to render 3d mesh into 2d image.  The convention technique,
+rasterization, is non-differentiable.
+
+Applications:
+1. single-image 3D mesh reconstruction with silhouette image supervision, and
+2. gradient-based 3D mesh editing with 2D supervision, e.g., 3D version of style
+   transfer cite:gatys2016-image and [[https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html][DeepDream]].
+
+** Evaluation
+
+*** Datasets
+
+- ShapeNetCore cite:chang2015-shapenet compared with cite:yan2016-perspective
+
+*** Metrics
+
+- Reconstruction accuracy by voxel IoU (higher is better)
+
+** Method
+
+3D formats:
+1. voxels
+2. point cloud
+3. polygon mesh

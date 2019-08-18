@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Saad, D., & Marom, E. (1990): Training feed forward nets with binary weights via a modified chir algorithm
+
+* First Pass
+
+  The authors successfully trained binary weight networks by choice of
+  internal representations (CHIR) method.
+
+* Second Pass
+
+  The objective function is sum of squared error (SSE).
+
+  It is a layer-wise training.  Suppose we have \(L\) layers, with 0
+  being the input layer, \(L\) the output layer, \(o^l\) is the output
+  of layer \(l\), e.g., \(o^0\) is the input, \(o^L\) is the network
+  output.  And \(W^l\) is the weight from layer \(l-1\) to
+  \(o^{l-1}\).  \(o^{l-1}\) is referred to as the internal
+  representation of layer \(l\), and \(w^l\) the internal weight of
+  layer \(l\).
+
+  First modify \(W^L\) and \(o^{L-1}\) by minimizing the energy
+  function, which is defined in terms of \(W^L\), \(o^{L-1}\) and
+  ground truth.  The proceed with the previous layer.
+
+  It can deal with discrete weight values.

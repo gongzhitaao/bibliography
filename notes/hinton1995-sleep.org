@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Hinton, G., Dayan, P., Frey, B., & Neal, R. (1995): The "wake-sleep" algorithm for unsupervised neural networks
+
+* First Pass
+
+  The authors propose a novel unsupervised learning method for neural
+  network which combines recognition (wake phase) and generation
+  (sleep phase) to force the network to learn economical
+  representations that capture the underlying regularities in the
+  data.

@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Zoph, B., & Le, Q. V. (2016): Neural Architecture Search With Reinforcement Learning
+
+* Gist
+
+neural architecture search, gradient based.
+
+Each child is trained until convergence.
+
+- Controller :: A recurrent neural network that generates a sequence
+     of architectural hyperparameters of neural networks.
+
+* Experiment
+
+CIFAR10, Penn Tree Bank (PTB) dataset

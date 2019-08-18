@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Liu, Y., Chen, X., Liu, C., & Song, D. (2017): Delving into transferable adversarial examples and black-box attacks
+
+* Gist
+
+- gradient directions of different models are orthogonal to each other
+- decision boundaries of different models align well with each other

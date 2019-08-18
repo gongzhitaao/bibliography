@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Kingma, D.~P, & Welling, M. (2013): Auto-Encoding Variational Bayes
+
+- Goal :: Efficient approximate posterior inference in almost any
+     model with continuous latent variables and/or parameters.
+- Problem :: Intractability and large dataset.
+- Solution ::
+  1. Efficient approximate maximum likelihood (ML) or maximum a
+     posteriori (MAP) estimation for the parameters \theta.
+  2. Efficient approximate posterior inference of the latent
+     variable \(z\) given an observed value \(x\) for a choice of
+     parameters \theta.
+  3. Efficient approximate marginal inference of the variable \(x\).

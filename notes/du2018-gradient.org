@@ -1,0 +1,27 @@
+#+TITLE: Notes on: Du}, S., Zhai, X., Poczos, B., & Singh, A. (2018): Gradient Descent Provably Optimizes Over-Parameterized Neural Networks
+
+* Gist
+
+** Problem
+
+Theoretically explain why SGD reduces loss to 0 despite of non-convex surface
+and over-parameterized function.
+
+** Assumption
+
+1. 1-hidden layer network with 1 unconstrained output.
+2. The loss is MSE.
+
+** Method
+
+Study the time dynamics of prediction.
+
+1. Weight time dynamic is defined as the gradient w.r.t loss,
+   e.g. \(\frac{dw}{dt} = \frac{\partial L}{\partial w}\).
+2. Then \(\frac{dy}{dt}\) is defined in terms of \(\frac{dw}{dt}\)
+
+** Conclusion
+
+1. The SGD finds global minimum.
+2. The activation pattern does not change much.
+3. The final weight is very close to the initialization in L2 distance.

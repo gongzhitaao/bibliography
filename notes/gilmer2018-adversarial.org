@@ -1,0 +1,26 @@
+#+TITLE: Notes on: Gilmer}, J., Metz, L., Faghri, F., Schoenholz, S.~S., Raghu, M., Wattenberg, M., & Goodfellow, I. (2018): Adversarial Spheres
+
+* Gist
+
+** Problem
+
+Understand adversarial examples: for this dataset we show a fundamental
+trade-off between /the amount of test error/ and /the average distance to
+nearest error/.
+
+** Evaluation
+
+*** Datasets
+
+- Synthesized concentric spheres
+  - dynamically sample from the distribution
+  - fixed training set.
+
+*** Metrics
+
+Accuracy
+
+** Method
+
+Obtain a theoretical boundary based on a simpler model trained on a simple
+synthesized dataset, i.e., the quadratic network on concentric spheres.

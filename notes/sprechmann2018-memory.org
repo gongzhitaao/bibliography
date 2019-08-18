@@ -1,0 +1,52 @@
+#+TITLE: Notes on: Sprechmann, P., Jayakumar, S., Rae, J., Pritzel, A., Badia, A. P., Uria, B., Vinyals, O., … (2018): Memory-based parameter adaptation
+
+* Gist
+
+** Problem
+
+Tackle catastrophic forgetting in continual/incremental learning tasks.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- ImageNet
+- Penn Treebank, PTB
+- WikiText-2
+
+*** Tasks
+
+- Continual learning: sequential distributional shift, i.e., dealing with the
+  problem of sequentially learning multiple tasks without the ability to revisit
+  a task.
+
+  Permuted MNIST setup cite:goodfellow2013-maxout: each task was given by a
+  different random permutation of the pixels of the MNIST dataset.  A chaining
+  of 20 different tasks (20 different permutations) are trained sequentially.
+  Tested on all tasks it had been trained on thus far.
+
+- Incremental learning: shifts in task label distributions
+
+  As a parametric model is ResNet v1.  Pre-trained on a random subset of the
+  ImageNet dataset containing *half* of the classes.  Then presented all 1000
+  classes and evaluated how quickly the network can acquire this knowledge,
+  i.e., perform well across all 1000 classes.
+
+  - Unbalanced datasets
+
+  Similar to previous, but only showed a tenth of the data for half the new
+  classes and all data for the other half.
+
+- Language modeling: domain shifts
+
+** Method
+
+Inspired by complementary learning systems (CLS) theory:
+1. gradual acquisition of structured knowledge
+2. rapid learning of the specifics of individual experiences
+
+MbPA:
+1. the parametric component (embedding and output network) learns slowly but
+   generalizes well.
+2. the non-parametric component (the memory)

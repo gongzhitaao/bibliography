@@ -1,0 +1,40 @@
+#+TITLE: Notes on: Adi, Y., Kermany, E., Belinkov, Y., Lavi, O., & Goldberg, Y. (2016): Fine-grained Analysis of Sentence Embeddings Using Auxiliary Prediction Tasks
+
+* First Pass
+
+  The authors studied the properties of sentence representations
+  because they want to find out the language information being
+  captured.
+
+  They propose a series of prediction tasks to better understand the
+  sentence representations.
+
+* Second Pass
+
+  Prediction tasks
+  - length task.  Predict length, i.e., number of words.
+  - word-content task.  Given a sentence representation \(s\) and a
+    word representation \(\bm{w}\), the goal of the classifier is to
+    determine whether each word \(w\) appears in the sentence, with
+    access to neither \(\bm{w}\) nor \(s\).
+  - word-order task.  Pair-wise order classification, i.e., whether
+    two words appear in the same order.
+
+
+  Representations
+  - continuous bag-of-words (CBOW)
+  - encoder-decoder (ED), LSTM
+
+
+  MLP with single hidden layer, ReLU activation
+
+  Conclusion
+  - LSTM auto-encoders are more effective at encoding word order than
+    word content.
+  - BLEU over the decoder output is sub-optimal for evaluating the
+    encoders quality since Adding more hidden units sometimes degrades
+    the encoders ability to encode word content which is /not
+    correlated/ with the BLEU scores of the decoder.
+
+
+  No theoretic analysis, only empirical evaluation.

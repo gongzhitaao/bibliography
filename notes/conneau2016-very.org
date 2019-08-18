@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Conneau, A., Schwenk, H., Lo\"\ic Barrault, & LeCun, Y. (2016): Very deep convolutional networks for natural language processing
+
+* Gist
+
+Create a very deep ConvNet as a text model.

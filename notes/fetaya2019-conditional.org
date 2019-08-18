@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Fetaya}, E., Jacobsen, J\"orn-Henrik, & Zemel, Richard (2019): Conditional Generative Models Are Not Robust
+
+* Gist
+
+Propose that non-robustness (e.g., adversarial examples, failure to detect
+outliers) is due to the likelihood-based density modeling.
+
+#+begin_quote
+We conclude that likelihood-based density modeling and robust classification may
+fundamentally be at odds with one another as important aspects of the problem
+are not captured by this training and evaluation metric.
+#+end_quote

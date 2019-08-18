@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Kuleshov, V., Thakoor, S., Lau, T., & Ermon, S. (2018): Adversarial examples for natural language classification problems
+
+* Gist
+
+** Problem
+
+Generate adversarial text for text classification problem.
+
+** Evaluation
+
+*** Datasets
+
+- Trec07p, spam/ham emails
+- Yelp Dataset Challenge 2015
+- [[https://github.com/GeorgeMcIntire/fake_real_news_dataset][Fake News]]
+
+*** Models
+
+- Naive Bayes
+- 1-layer LSTM with a softmax
+- wordcnn cite:kim2014-convolutional
+- charcnn cite:conneau2016-very

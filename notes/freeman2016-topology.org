@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Freeman}, C., & Bruna, J. (2016): Topology and geometry of half-rectified network optimization
+#+KEYWORDS: level set, loss surface
+
+* Gist
+
+1. The landscape of deep linear networks has a radically different topology from
+   that of deep half-rectified ones, and
+2. the energy landscape in the non-linear case is fundamentally controlled by
+   the interplay between the smoothness of the data distribution and model
+   over-parameterization.
+
+Our main theoretical contribution is to prove that half-rectified single layer
+networks are asymptotically connected, and we provide explicit bounds that
+reveal the aforementioned interplay.

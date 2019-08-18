@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Tsang, M., Cheng, D., & Liu, Y. (2018): Detecting statistical interactions from neural network weights
+
+* Gist
+
+** Problem
+
+Detect the non-additive statistical interactions of input features for neural
+network, which helps interpreting the neural network.
+
+** Evaluation
+
+*** Datasets
+
+- Fake
+  - Custom arbitrary functions with known interactions.
+- Real
+  - The *Cal housing dataset* is a regression dataset with /21k/ data points for
+    predicting California housing prices.
+  - The *bike sharing dataset* contains /17k/ data points of weather and seasonal
+    information to predict the hourly count of rental bikes in a bike-share
+    system.
+  - The *Higgs Boson dataset* has /800k/ data points for classifying whether a
+    particle environment originates from the decay of a Higgs Boson.
+  - The *letter recognition dataset* contains /20k/ data points of transformed
+    features for binary classification of letters on a pixel display.
+
+*** Baselines
+
+- Two-Way ANOVA
+- Hierarchical Lasso (HierLasso)
+- RuleFit
+- Additive Groves (AG)
+
+* Notes
+
+Interesting, but might not provide two much insight when there are too many
+input features.

@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Biggio, B., Nelson, B., & Laskov, P. (2011): Support Vector Machines Under Adversarial Label Noise.
+
+Our model is based on a simple assumption that any label may be
+flipped with a fixed probability.
+
+We show that this noise can be compensated for by correcting the
+kernel matrix of SVM with a specially structured matrix, which depends
+on the noise parameters of our model.

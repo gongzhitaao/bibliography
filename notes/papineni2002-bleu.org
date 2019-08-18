@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Papineni, K., Roukos, S., Ward, T., & Zhu, W. (2002): Bleu: a method for automatic evaluation of machine translation
+
+* Gist
+
+MT evaluation system requires two ingredients:
+1. a numerical "translation closeness" metric
+2. a corpus of good quality human reference translations
+
+Modeled after /word error rate/ in speech recognition.
+
+The main idea is to use a weighted average of variable length phrase matches
+against the reference translations.
+
+1. sharing common words
+
+clipped count
+
+\[count_{clip} = min(count, max_ref_count)\]
+
+modified unigram precision
+
+\[BLEU = \exp(\min(0, 1-r/c))\times\exp\left\(\sum w_n\log p_n\right\)\]

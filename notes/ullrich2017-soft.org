@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Ullrich, K., Meeds, E., & Welling, M. (2017): Soft Weight-Sharing for Neural Network Compression
+
+* Gist
+
+* Reference
+
+- [ ] cite:hinton1993-keeping
+- [ ] cite:nowlan1992-simplifying

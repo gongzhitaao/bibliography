@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Kawaguchi}, K., & Bengio, Y. (2018): Generalization in machine learning via analytical learning theory
+
+* Gist
+
+analytical (measure-theoretic) learning theory vs statistical learning theory
+
+- the star-discrepancy evaluates how well a dataset captures a normalized
+  measure.
+- variation in the sense of Hardy and Krause computes how a function varies in
+  total w.r.t. each small perturbation of every cross combination of its
+  variables.

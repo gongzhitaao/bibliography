@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Peck, J., Roels, J., Goossens, B., & Saeys, Y. (2017): Lower bounds on the robustness to adversarial perturbations
+
+* Gist
+
+In this work, we derive lower bounds on the robustness of neural networks
+directly in terms of their model parameters.  We consider only feedforward
+networks comprised of convolutional layers, pooling layers, fully-connected
+layers and softmax layers.

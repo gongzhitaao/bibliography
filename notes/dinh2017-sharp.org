@@ -1,0 +1,23 @@
+#+TITLE: Notes on: Dinh, L., Pascanu, R., Bengio, S., & Bengio, Y. (2017): Sharp Minima Can Generalize For Deep Nets
+
+* Gist
+
+Three directions of explaining why deep neural networks work, which
+correspond, respectively, to low /approximation/, /optimization/ and
+/estimation/ error.
+
+1. deep networks can efficiently approximate certain functions.
+2. look at the structure of the error surface to analyze how trainable
+   these models are.
+3. how well these models can generalize.
+
+* Summary
+
+It has been observed empirically that minima found by standard deep
+learning algorithms that generalize well tend to be flatter than found
+minima that did not generalize well.  However, the non-identifiability
+of the model induced by symmetries, allows one to alter the flatness
+of a minimum without affecting the function it represents.
+
+In brief, the sharpness of a minimum is not necessarily related to its
+ability to generalize.

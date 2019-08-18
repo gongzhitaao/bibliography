@@ -1,0 +1,29 @@
+#+TITLE: Notes on: Wong}, C. (2017): Dancin seq2seq: fooling text classifiers with adversarial text example generation
+#+KEYWORDS: black-box attack, reinforment
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- [[http://nlp.cs.aueb.gr/software_and_datasets/Enron-Spam][Enron Spam]] spam/ham emails
+
+*** Metrics
+
+** Method
+
+GAN like structure
+1. generator is a seq2seq model
+2. discriminator is the target model
+
+Similarity of two sentences are calculated as the distance between their
+embedded vectors obtained through seq2seq model.  This similarity is added as a
+regularizer in the reinforcement model.  It serves as a control on the quality
+of generated adversarial texts.
+
+target model is Multinomial Naive Bayes model.
+
+* Notes

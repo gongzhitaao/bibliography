@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Metzen, J. H., Genewein, T., Fischer, V., & Bischoff, B. (2017): On Detecting Adversarial Perturbations
+
+* Gist
+
+the gradient propagated back through the detector may be used as a source of
+regularization of the classifier against adversarial examples.
+
+Additional future work will be developing stronger adversaries that are harder
+to detect by adding effective randomization which would make selection of
+adversarial perturbations less regular.

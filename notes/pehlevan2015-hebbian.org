@@ -1,0 +1,13 @@
+#+TITLE: Notes on: Pehlevan, C., & Chklovskii, D. (2015): A normative theory of adaptive dimensionality reduction in neural networks
+
+* Problem
+
+  Dimension reduction
+
+* Method
+
+  It uses a neural network model with novel topology.
+
+* TODO Implementation
+
+* TODO Experiment

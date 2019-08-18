@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Peters, M. E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K., & Zettlemoyer, L. (2018): Deep contextualized word representations
+
+* Gist
+
+** Problem
+
+Improve word embedding via context, i.e., each token is represented as a
+function of the entire input sentence.
+
+** Evaluation
+
+*** Datasets
+
+- SQuAD cite:rajpurkar2016-squad, QA
+- SNLI cite:bowman2015-large, text entailment
+- SRL cite:he2017-deep, semantic role labeling
+- Coref cite:lee2017-end, coreference resolution
+- NER cite:peters2017-semi, named entity extraction
+- SST cite:socher2013-recursive, sentiment analysis

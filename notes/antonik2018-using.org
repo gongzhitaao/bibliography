@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Antonik, P., Gulina, M., Ja\"el Pauwels, & Massar, S. (2018): Using a reservoir computer to learn chaotic attractors, with applications to chaos synchronisation and cryptography
+
+* Gist
+
+Dataset:
+1. Mackey-Glass
+2. Lorenz

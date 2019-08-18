@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Jaderberg, M., Czarnecki, W.~M., Osindero, S., Vinyals, O., Graves, A., & Kavukcuoglu, K. (2016): Decoupled Neural Interfaces using Synthetic Gradients
+
+* First Pass
+
+  The authors introduce an scalable asynchronous learning model, /DNI
+  using synthetic gradients/, for neural network, which eliminates
+  forward, update and backward locking.
+
+* Second Pass
+
+  - decoupled neural interface (DNI)

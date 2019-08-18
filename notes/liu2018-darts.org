@@ -1,0 +1,29 @@
+#+TITLE: Notes on: Liu}, H., Simonyan, K., & Yang, Y. (2018): Darts: differentiable architecture search
+
+* Gist
+
+** Problem
+
+Neural architecture search.
+
+** Evaluation
+
+*** Datasets
+
+- CIFAR-10
+- ImageNet
+- Penn Treebank (PTB)
+- WikiText-2 (WT2)
+
+** Method
+
+Each node is a latent representation (i.e., the intermediate result).  Each edge
+is an operation (e.g., convolution, max pooling).  Suppose there are 10
+operations to consider, then the operation from node a to node b is represented
+by a 10-dim vector, each denoting the mixing coefficient for corresponding
+operation.  The final operation is the one with the max coefficient.
+
+- The network parameters are trained on training set.
+- The mixing coefficients are trained on validation set.
+
+Bi-level optimization problem.

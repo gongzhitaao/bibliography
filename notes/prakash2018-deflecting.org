@@ -1,0 +1,31 @@
+#+TITLE: Notes on: Prakash, A., Moran, N., Garber, S., DiLillo, A., & Storer, J. A. (2018): Deflecting Adversarial Attacks With Pixel Deflection
+
+* Gist
+
+** Problem
+
+Defend against adversarial images by denoising in wavelet space.
+
+** Evaluation
+
+*** Datasets
+
+- 10k images covering 1k categories from ImageNet
+
+*** Models
+
+- ResNet-50
+- VGG-19
+- Inception v3
+
+** Method
+
+- *Pixel deflection* corrupts the adversarial noise.
+  - Generate a robust activation map, used to approximate the probability of a
+    pixel containing interesting objects.
+  - Randomly perturb (deflect) pixel by pixel with the probability inversely
+    proportional to the probability of the pixel containing objects.
+- Thresholding *wavelet* softens the impact of pixel deflection.
+  - convert to YCC color space
+  - denoise in the wavelet space
+  - transform back to RGB image space

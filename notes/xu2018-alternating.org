@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Xu, C., Yao, J., Lin, Z., Ou, W., Cao, Y., Wang, Z., & Zha, H. (2018): Alternating multi-bit quantization for recurrent neural networks
+
+* Gist
+
+** Problem
+
+Quantize the network after training.
+
+** Evaluation
+
+*** Datasets
+
+- Penn Tree Bank (PTB) cite:marcus1993-building
+- WikiText-2 cite:merity2016-pointer
+- Text8 [[mikolov2014-learning]]
+
+*** Metrics
+
+- Perplexity per word (PPW)
+
+** Method
+
+Seems like an iterative version of cite:guo2017-network.  Iteratively refine the
+code book.

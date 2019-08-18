@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Samanta, S., & Mehta, S. (2017): Towards Crafting Text Adversarial Samples
+
+* Gist
+
+Our algorithm works best for the datasets which have sub-categories within each
+of the classes of examples.
+
+Similar to JSMA, calculate the saliency score for each word, they call it
+the /contribution/ for each word.
+
+Crafting the adversarial samples
+1. removal of words
+2. Addition of words
+3. Replacement of words

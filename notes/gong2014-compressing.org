@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Gong, Y., Liu, L., Yang, M., & Bourdev, L. (2014): Compressing Deep Convolutional Networks Using Vector Quantization
+
+* First Pass
+
+  The authors compress CNN with vector quantization.
+
+* Second Pass
+
+  Compressing CNNs for computer vision tasks.
+
+  information theoretical /vector quantization/ methods
+  1. Take the sign of weights, 1 if \(w \geq 0\), -1 otherwise.  And
+     turn off neuron when it is negative.
+  2. Use \(k\)-means to cluster weights.
+  3. Divide matrix \(W\) column-wise, \(k\)-mean each submatrix.
+  4. Residue quantization, i.e., first quantize the vectors into \(k\)
+     centers and then to recursively quantize the residuals.

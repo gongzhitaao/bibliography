@@ -1,0 +1,5 @@
+#+TITLE: Gist From Papers
+
+- Pre-trained word embeddings are considered to be an integral part of modern
+  NLP systems, offering significant improvements over embeddings learned from
+  scratch cite:turian2010-word.

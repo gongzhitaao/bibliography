@@ -1,0 +1,45 @@
+#+TITLE: Notes on: Huang, E. H., Socher, R., Manning, C. D., & Ng, A. Y. (2012): Improving word representations via global context and multiple word prototypes
+
+* Gist
+
+** Problem
+
+New neural network architecture which
+1. improves single word embedding, and
+2. extends to multiple embedding vectors per word for homonymy and polysemy.
+
+** Assumption
+
+** Evaluation
+
+*** Datasets
+
+1. Training: Wikipedia (Apr 2010), 2M articles, 990M tokens, 30K most frequent
+   words as dictionary.
+2. Testing:
+   1. WordSim-353
+   2. New dataset similar to WordSim-353, more word pairs and each word is
+      associated with a sentence (i.e., the context).
+
+*** Metrics
+
+Spearman's correlation.
+
+** Methods
+
+Margin rank loss with margin fixed to 1.
+
+Given a word sequence \(s\) and document \(d\) in which the sequence occurs, the
+goal is to discriminate the /correct last word/ in \(s\) from other random
+words.
+
+\[L = \sum_{w\in V}\max(0, 1-g(s, d)+g(s^w, d))\]
+
+Where \(s^w\) is sequence \(s\) with the last word replaced by word \(w\).
+
+- local context score: \(score_l = W_l\cdot f([w_1;w_2;\dots;w_m]) + b_l\)
+- global context score: \(score_g = W_g\cdot f([c;w_m]) + b_g\)
+- final score: \(g = score_l + score_g\)
+
+First learn the single word embedding, then use word sense discovery (WSD) to
+learn the embeddings for multiple senses.

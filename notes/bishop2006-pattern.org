@@ -1,0 +1,18 @@
+#+TITLE: Notes on: Bishop, C. M. (2006): Pattern recognition and machine learning
+
+* Random
+
+** Local Smoothness
+
+#+BEGIN_QUOTE
+
+p37/57 Second, real data will typically exhibit some smoothness properties (at
+least locally) so that for the most part small changes in the input variables
+will produce small changes in the target variables, and so we can exploit local
+interpolation-like techniques to allow us to make predictions of the target
+variables for new values of the input variables.
+
+#+END_QUOTE
+
+For classification problems, adversarial samples shows the contrary.  What about
+regression problems?

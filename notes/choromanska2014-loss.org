@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Choromanska, A., Henaff, M., Mathieu, M., Ben Arous, G., & LeCun, Y. (2014): The Loss Surfaces of Multilayer Networks
+
+* Gist
+
+This paper establishes a connection between the neural network and the
+spin-glass model.

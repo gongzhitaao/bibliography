@@ -1,0 +1,6 @@
+#+TITLE: Notes on: G\'abor Melis, Dyer, C., & Blunsom, P. (2017): On the state of the art of evaluation in neural language models
+
+* Gist
+
+This apparent tradeoff between /the amount of computation/ and /the reliability
+of results/ seems to lie at the heart of the matter.

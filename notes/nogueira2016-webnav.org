@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Nogueira, R., & Cho, K. (2016): Webnav: A new large-scale task for natural language based sequential decision making
+
+* First Pass
+
+  The authors proposes a new benchmark task to evaluate model's
+  abilities to understand and plan on natural language.
+
+  They provide software (WebNav) and data set (WikiNav).
+
+* Second Pass
+
+  - Q&A pair from [[http://www.j-archive.com][J! Archive]].
+  - Given a target page, starting from "Main Topic Classification",
+    try to navigate to the target.  The agent receives rewards only at
+    stop action, 1 if landing in the correct page, 0 otherwise.

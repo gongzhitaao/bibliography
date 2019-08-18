@@ -1,0 +1,38 @@
+#+TITLE: Notes on: Guo, Y., Yao, A., Zhao, H., & Chen, Y. (2017): Network sketching: exploiting binary structure in deep cnns
+
+* Gist
+
+** Problem
+
+Compress and (possibly) speedup the network by approximating weight matrix with
+a series of scaled binary matrix.
+
+** Evaluation
+
+*** Datasets
+
+- ImageNet
+
+*** Metrics
+
+- Accuracy
+- Parameter size
+- number of float multiplication (FMUL) and addition (FADD)
+- Energy cost cite:zhang2015-efficient
+
+*** Comparison
+
+- XNOR-net cite:rastegari2016-xnor
+- Binary-Connect cite:courbariaux2015-binaryconnect
+
+** Method
+
+Approximate \(W\) with the following
+
+\[W\prime = \sum_i^m a_i B_i\]
+
+\(a_i\) is a float scalar, \(B_i\) a binary matrix with only +1/-1.  And
+*minimize* \(\|W-W\prime\|_2\).
+
+Directly solving the above optimization is NP-hard.  Instead, iteratively
+minimize the residue, similar to the cascade network training idea.

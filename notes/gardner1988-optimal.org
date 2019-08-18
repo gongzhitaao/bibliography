@@ -1,0 +1,13 @@
+#+TITLE: Notes on: Gardner, E., & Derrida, B. (1988): Optimal storage properties of neural network models
+
+* Gist
+
+Given \(p\) spin configurations (which we call patterns),
+\(\{S_i^\mu\}\) for \(1\leq i\leq N\) and \(1\leq \mu \leq p\) , what
+is the probability that randomly chosen interactions \(J_{ij}\), have
+these patterns as metastable states?
+
+This question is an important one in the theory of neural networks
+where one usually represents the patterns one wants to store by spin
+configurations \(\{S_i^\mu\}\) and the synapses by pair interactions,
+J_{ij}.

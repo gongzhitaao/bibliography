@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Pathria, R. K., & Beale, P. D. (2011): Statistical Mechanics
+
+* Gist
+
+A physical system, left to itself, proceeds naturally in a direction
+that enables it to assume an ever-increasing number of microstates
+until it finally settles down in a macrostate that affords the largest
+possible number of microstates.

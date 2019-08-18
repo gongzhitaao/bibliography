@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Wu, J., Leng, C., Wang, Y., Hu, Q., & Cheng, J. (2015): Quantized convolutional neural networks for mobile devices
+
+* First Pass
+
+  The authors propose framework to quantize CNN, Q-CNN, which achieves
+  4-6x speedup and 15-20x compression with accuracy drop less than 1%.
+
+* Second Pass
+
+  We leverage /product quantization/ to implement the efficient inner
+  product computation.

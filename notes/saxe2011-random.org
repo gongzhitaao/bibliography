@@ -1,0 +1,13 @@
+#+TITLE: Notes on: Saxe, A., Koh, P. W., Chen, Z., Bhand, M., Suresh, B., & Ng, A. Y. (2011): On random weights and unsupervised feature learning
+#+KEYWORDS: random weights, pooling, square pooling, circular convolution, frequency selective, translation invariant
+
+* Gist
+
+Convolutional pooling architectures can be inherently frequency selective and
+translation invariant, even when initialized with random weights.
+
+We suggest distinguishing the contributions of architectures from those of
+learning systems by reporting random weight performance.
+
+1. Search architectures initialized with random weights.
+2. Fine-tune those architectures that perform well with random weights.

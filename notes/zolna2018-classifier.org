@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Zolna}, K., Geras, K.~J., & Cho, K. (2018): Classifier-agnostic saliency map extraction
+
+* Gist
+
+This is motivated by earlier work which showed that SGD performs approximate
+Bayesian posterior inference.

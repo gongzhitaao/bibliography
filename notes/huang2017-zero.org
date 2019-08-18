@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Huang, L., Ji, H., Cho, K., & Voss, C.~R. (2017): Zero-Shot Transfer Learning for Event Extraction
+
+* Gist
+
+The goal of *event extraction* is to extract event triggers and arguments from
+unstructured data.

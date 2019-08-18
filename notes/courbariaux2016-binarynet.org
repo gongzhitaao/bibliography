@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Courbariaux, M., & Bengio, Y. (2016): Binarynet: training deep neural networks with weights and activations constrained to +1 or -1
+
+* First Pass
+
+* Second Pass

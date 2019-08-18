@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Agliari}, E., Barra, A., Galluzzi, A., Tantari, D., & Tavani, F. (2014): A walk in the statistical mechanical formulation of neural networks
+
+* Gist
+
+Scientist from different fields are studying neural networks
+- engineers (mainly involved in electronics and robotics)
+- physicists (mainly involved in statistical mechanics and stochastic processes)
+- and mathematicians (mainly working in logic and graph theory)
+- (neuro-) biologists
+- (cognitive) psychologists.

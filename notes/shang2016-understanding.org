@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Shang, W., Sohn, K., Almeida, D., & Lee, H. (2016): Understanding and improving convolutional neural networks via concatenated rectified linear units
+
+* First Pass
+
+  The authors studied the property of filters learned lower layers in
+  CNN because they want to better understand the properties of CNN in
+  order to improve the performance.
+
+* Second Pass
+
+  - opposite pairs: closest w.r.t cosine similarity
+  - pairs introduce redundancy
+  - they propose Concatenated Rectified Linear Units, or CReLU.
+  - invariance scores
+
+* Related Work
+
+  - max-min scheme, ON/OFF ReLU, Antirecitifier, Leaky ReLU, Absolute
+    Value Rectification Units (AVR)
+  - cite:goodfellow2009

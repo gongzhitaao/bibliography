@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Hinton, G. E., & Van Camp, D. (1993): Keeping the neural networks simple by minimizing the description length of the weights
+
+* Gist
+
+Supervised neural networks generalize well if there is much less information in
+the weights than there is in the output vectors of the training cases.  So
+during learning, it is important to keep the weights simple by penalizing the
+amount of information they contain.
+
+The Minimum Description Length Principle asserts that the best model of some
+data is the one that minimizes the combined cost of describing the model (*model
+cost*) and describing the misfit between the model and the data (*data misfit*).
+
+For supervised neural networks with a predetermined architecture, the model cost
+is the number of bits it takea to describe the weights, and the data-misfit cost
+is the number of bits it takea to describe the discrepancy between the correct
+output and the out- put of the neural network on each training case.

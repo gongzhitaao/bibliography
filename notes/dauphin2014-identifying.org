@@ -1,0 +1,35 @@
+#+TITLE: Notes on: Dauphin, Y., Pascanu, R., Gulcehre, C., Cho, K., Ganguli, S., & Bengio, Y. (2014): Identifying and attacking the saddle point problem in high-dimensional non-convex optimization
+
+* Contribution
+
+  1. non-convex error surfaces in high dimensional spaces generically
+     suffer from a proliferation of saddle points, and
+  2. in contrast to conventional wisdom derived from low dimensional
+     intuition, local minima with high error are exponentially rare in
+     high dimensions.
+  3. Theoretically justify the generalized trust region method.  They
+     name it *Saddle-free Newton* (SFN) method
+
+* Future Work
+
+  1. The first direction is to explore methods beyond Kyrylov
+     subspaces, such as one in (Sohl-Dickstein et al., 2014), that
+     allow the saddle-free Newton method to scale to high dimensional
+     problems, where we cannot easily compute the entire Hessian
+     matrix.
+  2. The theoretical properties of critical points in the problem of
+     training a neural network will be further analyzed.
+  3. it is likely that a deeper understanding of the statistical
+     properties of high dimensional error surfaces will guide the
+     design of novel non-convex optimization algorithms that could
+     impact many fields across science and engineering.
+
+* Summary
+
+  In high dimension, saddle points are more of a problem than local
+  minima.
+
+  1. How to prove the prevalence of saddle points? cite:bray2007
+  2. How various optimization algorithms behave near them?
+
+  Critical point is a point on a curve where the gradient is zero.

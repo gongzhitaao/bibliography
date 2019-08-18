@@ -1,0 +1,42 @@
+#+TITLE: Notes on: Reisinger, J., & Mooney, R. J. (2010): Multi-prototype vector-space models of word meaning
+
+* Gist
+
+** Problem
+
+Get Context-dependent vector representation of word meanings.
+
+** Assumption
+
+Psychological concept models can be roughly divided into two classes:
+- Prototype :: models represented concepts by an abstract prototypical instance,
+     similar to a cluster centroid in parametric density estimation.
+- Exemplar :: models represent concepts by a concrete set of observed instances,
+     similar to non-parametric approaches to density estimation in statistics.
+
+** Methods
+
+First-order unigram contexts vectors -> cluster to get prototype
+
+Uses clustering to produce multiple /sense-specific/ vectors for each word.
+
+The similarity of two isolated words A and B is defined as the minimum distance
+between one of A's vectors and one of B's vectors.
+
+The set of vectors for a word is determined by unsupervised word sense discovery
+(WSD), which clusters the contexts in which a word appears.
+
+** Evaluation
+
+*** Datasets
+
+1. Training:
+   1. English Wikipedia (Sep 29, 2009).  2.8M articles, 2.05B words.  The markup
+      is removed.  Articles with fewer than 100 words are removed.
+   2. The 3rd edition English Gigaword corpus.  6.6M articles and 3.9B words.
+      Articles with fewer than 100 words are removed.
+2. Testing: WordSim-353.
+
+*** Metrics
+
+Spearman's rank correlation with average human judgments.

@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Li, F., & Liu, B. (2016): Ternary Weight Networks
+
+* First Pass
+
+The authors propose compressing network by discretizing weight values to -1,
+0, 1.  The compressed model achieves near state-of-the-art performance on
+benchmark problems, e.g., MNIST, CIFAR-10, etc.

@@ -1,0 +1,25 @@
+#+TITLE: Notes on: Baldassi, C., Borgs, C., Chayes, J. T., Ingrosso, A., Lucibello, C., Saglietti, L., & Zecchina, R. (2016): Unreasonable effectiveness of learning neural networks: from accessible states and robust ensembles to basic algorithmic schemes
+
+* Gist
+
+There are many parallels between the studies of algorithmic stochastic
+processes and out-of-equilibrium processes in complex systems, e.g.,
+jamming process in Physics.
+
+It was shown that the system can exhibit different phases,
+characterized by the arrangement of the space of solutions in one,
+many, or a few connected clusters.
+
+Efficient (polynomial-time) algorithms seem to exist only if the
+system has so-called "unfrozen" clusters: extensive and connected
+regions of solutions in which at most a sublinear number of variables
+have a fixed value.
+
+If, on the contrary, all solutions are "frozen" (belonging to clusters
+in which an extensive fraction of the variables take a fixed value,
+thus confined to sub- spaces of the space of configurations), no
+efficient algorithms are known.
+
+In the limiting case in which all variables, except at most a
+sublinear number of them, are fixed, the clusters are isolated
+point-like regions, and the solutions are called "locked"

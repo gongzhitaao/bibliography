@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Zhang, S., Wu, Y., Che, T., Lin, Z., Memisevic, R., Salakhutdinov, R., & Bengio, Y. (2016): Architectural Complexity Measures of Recurrent Neural Networks
+
+* First Pass
+
+  The authors studied different RNN complexity measurements in order
+  to understand the factors that influence RNN performance because
+  they want to explore more novel architectures.
+
+* Second Pass
+
+  Three criteria:
+  - recurrent depth :: captures the RNN over-time nonlinear complexity
+  - feedforward depth :: captures the local input-output nonlinearity
+  - recurrent skip coefficient :: captures how rapidly the information
+       propagates over time.

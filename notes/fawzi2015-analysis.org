@@ -1,0 +1,27 @@
+#+TITLE: Notes on: Fawzi, A., Fawzi, O., & Frossard, P. (2015): Analysis of classifiers' robustness to adversarial perturbations
+
+* Gist
+
+- Robustness :: The average norm of the minimal perturbations required to flip
+     the estimated labels of the data points.
+
+We restrict our analysis to the binary classification task, for simplicity.  We
+expect similar conclusions for the multi-class case, but we leave that for
+future work.
+
+- risk :: The classifier accuracy
+
+All zero-risk linear classifiers are not robust to adversarial perturbations,
+for this classification task.
+
+1. Accuracy and adversarial robustness are two distinct properties of a
+   classifier.
+2. To capture orientation (i.e., the most visual concept), one has to use a
+   classifier that is *flexible* enough for the task.
+3. The robustness to adversarial perturbations provides a quantitative measure
+   of the strength of a concept.
+
+If the model captures the *concepts* behind the task, it should be difficult to
+create adversarial samples.
+
+the depth plays a crucial role in the adversarial robustness.

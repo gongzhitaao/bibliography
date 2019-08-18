@@ -1,0 +1,30 @@
+#+TITLE: Notes on: Zhao}, Z., Dua, D., & Singh, S. (2017): Generating Natural Adversarial Examples
+
+* Gist
+
+** Problem
+
+Generate adversarial examples in a transformed space.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- Church image in LSUN cite:yu2015-lsun
+- Stanford Natural Language Inference (SNLI) cite:bowman2015-large
+
+*** Metrics
+
+- Accuracy for classifiers, entailment models
+- Dropping gerund for NMT system.
+
+** Method
+
+x \(\to\) Inverter \(\to\) z \(\to\) Generator \(\to\) \(x^\prime\) \(\to\)
+model \(\to\) y
+
+- Use encoder-decoder to find a dense low-dimension space \(z\) for the input
+- Randomly sample in \(z\)
+- Map back to the input space by generator to filter out unsuccessful
+  adversarial samples.

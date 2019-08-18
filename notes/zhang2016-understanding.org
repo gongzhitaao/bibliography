@@ -1,0 +1,1 @@
+#+TITLE: Notes on: Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2016): Understanding Deep Learning Requires Rethinking Generalization

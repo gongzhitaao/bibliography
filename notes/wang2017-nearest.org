@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Wang, Z., Hamza, W., & Song, L. (2017): $k$-Nearest Neighbor Augmented Neural Networks for Text Classification
+
+* Gist
+
+The final prediction is made from three sources:
+1. input texts embedding
+2. the attentive kNN label distribution
+3. the attentive kNN text embedding

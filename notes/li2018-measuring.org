@@ -1,0 +1,36 @@
+#+TITLE: Notes on: Li, C., Farkhoor, H., Liu, R., & Yosinski, J. (2018): Measuring the intrinsic dimension of objective landscapes
+
+* Gist
+
+** Problem
+
+Finding the dimension of the subspace needed to solve a problem with neural
+network.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- CIFAR-10
+- ImageNet
+
+*** Metrics
+
+- Accuracy, 90% of the baseline accuracy.  Since achieving 100% of the baseline
+  accuracy requires almost exact the same dimension.
+
+** Method
+
+\[\theta^{(D)} = \theta^{(D)}_0 + P\theta^{(d)} \]
+
+1. \(\theta^{(D)}_0\) is randomly initialized and fixed.
+2. \(P\) is a (D, d) matrix, random initialized and fixed.
+
+* Note
+
+- On MNIST with  random pixels:
+  - FC intrinsic dimension does not change
+  - CNN's becomes larger, which shows that CNN uses local structure information
+    for the final prediction.
+- We may need exponentially more parameters to push the boost accuracy.

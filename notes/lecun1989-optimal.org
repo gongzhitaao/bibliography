@@ -1,0 +1,29 @@
+#+TITLE: Notes on: LeCun, Y., Denker, J. S., Solla, S. A., Howard, R. E., & Jackel, L. D. (1989): Optimal brain damage.
+
+
+* Gist
+
+Cost function consists of two parts:
+1. ordinary training error,
+2. plus some measure of the network complexity.
+
+model complexity, vapnik-chervonenkis dimensionality, description
+length, number of non-zero free parameters,
+
+Remove parameters with small saliency.
+
+magnitude as saliency,
+
+OBD uses second derivative of the objective function w.r.t the
+parameters to compute the saliencies.
+
+Justification for using Hessian values as saliency measure.
+
+\[\delta E = \sum_i g_i\delta w_i + \frac{1}{2}\sum_i h_i\delta w_i^2 + \frac{1}{2}\sum_{i\neq j} h_{ij}\delta w_i \delta w_j + O(||\delta W||^3)\]
+
+1. At local minimum, first term vanishes.
+2. Ignore third term and higher order term for simplicity.
+
+Thus the above reduces to the following, which is the saliency score.
+
+\[\delta E = \frac{1}{2}\sum_i h_i\delta w_i^2\]

@@ -1,0 +1,30 @@
+#+TITLE: Notes on: He, J., Chen, J., He, X., Gao, J., Li, L., Deng, L., & Ostendorf, M. (2015): Deep reinforcement learning with an unbounded action space
+
+* First Pass
+
+  The authors studied RL problems (two text games) where state and
+  action spaces are characterized by natural language,
+  i.e. potentially /unlimited/ and /discrete/.
+
+  They use deep network to map state and action space to separate
+  embedding vectors.
+
+  They propose deep reinforcement relevance network (DRRN).
+
+  They claim that the model is extracting meaning rather than
+  memorizing strings of text.
+
+* Second Pass
+
+  - Compared to max-action DQN and per-action DQN
+  - DRRN: separate network for state and action, inner product to
+    approximate Q value.
+  - Reward signal
+    - manually final reward for all distinct endings, magnitude
+      describing how good/bad the ending is.
+    - small negative reward for each step
+  - I do not think the model understand meanings of text.
+
+* Related work
+
+  - cite:watkins1992

@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Murdoch, W. J., Liu, P. J., & Yu, B. (2018): Beyond word importance: contextual decomposition to extract interactions from LSTMs
+#+KEYWORDS: contextual decomposition, sentiment analysis
+
+* Gist
+
+#+BEGIN_EXPORT latex
+\begin{equation}
+ \label{eq:cd}
+ \begin{aligned}
+  h_t &= \beta_t + \gamma_t\\
+  c_t &= \beta_t^c + \gamma_t^c
+ \end{aligned}
+\end{equation}
+#+END_EXPORT
+
+The hidden state \(h\) and output \(c\) are decomposed into two terms:
+1. \(\beta\) corresponds to contributions made solely by the current phrase
+2. \(\gamma\) corresponds to contributions involving, at in part, elements
+   outside of the phrase.
+
+Linearize the gate activation function.

@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Anonymous,  (2018): Adversarial examples for natural language classification problems
+
+* Gist
+
+- *Semantic similarity* is measured in terms of *thought vectors*
+  cite:bengio2003-neural,mikolov2013-efficient, which are computed as the
+  average of the vectors for individual words.
+- *Syntactic similarity* is calculated from a language model trained on the same
+  dataset.
+
+Black-box attack on three models
+1. Naive Bayes
+2. LSTM
+3. Word-level CNN cite:kim2014-convolutional
+4. Character-level CNN cite:conneau2016-very

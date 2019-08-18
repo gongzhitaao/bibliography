@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Wen, W., Wu, C., Wang, Y., Chen, Y., & Li, H. (2016): Learning structured sparsity in deep neural networks
+
+* Gist
+
+Group lasso can effectively zero out all weights in some groups
+cite:kim2010-tree,yuan2006-model.
+
+After SSL converges, layers with all zero weights are removed and the net is
+finally fine-tuned.
+
+* Summary
+
+Add group lasso as an extra regularizer.
+
+* Related
+
+- cite:liu2015-sparse
+- cite:feng2015-learning
+- cite:lebedev2016-fast

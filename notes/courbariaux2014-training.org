@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Courbariaux, M., David, J., & Bengio, Y. (2014): Training Deep Neural Networks With Low Precision Multiplications
+
+* First Pass
+
+  The authors showed that full precision for parameter updates
+  combined with low precision for propagation can achieved competing
+  result with full precision network.

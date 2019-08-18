@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Pearl, J. (2018): Theoretical impediments to machine learning with seven sparks from the causal revolution
+
+* Gist
+
+** Problem
+
+Automated reasoning.
+- The current model-free does not and cannot produce strong AI due to lacking of
+  reasoning ability.
+- Structural causal models (SCM) are promising.
+
+** Seven Pillars
+
+1. Encoding causal assumptions – transparency and testability.
+2. Do-calculus and the control of confounding.
+3. The algorithmization of counterfactuals.
+4. Mediation analysis and the assessment of direct and indirect effects.
+5. External validity and sample selection bias.
+6. Missing data.
+7. Causal discovery.

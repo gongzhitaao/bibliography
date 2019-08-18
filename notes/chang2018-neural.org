@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Chang}, O., & Lipson, H. (2018): Neural Network Quine
+
+* Gist
+
+Von Neumann argued that a non-trivial self-replicator necessarily includes three
+components that by themselves do not suffice to be self-replicators:
+1. a description of the replicator,
+2. a copying mechanism that can clone descriptions, and
+3. a mechanism that can embed the copying mechanism within the replicator
+   itself.

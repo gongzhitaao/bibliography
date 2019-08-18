@@ -1,0 +1,295 @@
+#+TITLE: Adversarial Samples
+#+STARTUP: content
+#+COLUMNS: %TODO %40ITEM %20TAGS
+
+* Highlights [1/1]
+
+** DONE cite:szegedy2013-intriguing
+
+the first paper that discovers this phenomenon.
+
+* Related [16/43]
+
+** TODO cite:zheng2018-distributionally
+** TODO cite:zhou2018-taking
+** TODO cite:song2018-defense
+** DONE cite:prakash2018-deflecting                                 :def:img:
+
+Defend against adversarial images by first pixel deflection and then denoising
+in wavelet space.
+
+** TODO cite:kwon2018-friend
+** DONE cite:kuleshov2018-adversarial                               :gen:txt:
+** DONE cite:iyyer2018-adversarial                                  :gen:txt:
+
+Proposes the syntactically controlled paraphrase network (SCPN) which is used to
+generate the adversarial texts with desired syntax template.  Dataset: SST and
+SICK.
+
+** TODO cite:heng2018-harmonic
+** DONE cite:gilmer2018-adversarial                                     :hyp:
+
+Derives a theoretical relationship between the data dimension and the minimum
+distance between a good and a bad samples.  The derivation is based on an
+1-layer quadratic network trained synthesized concentric spheres dataset.
+
+** DONE cite:galloway2018-attacking                                 :gen:img:
+
+Shows that binarized network (+1/-1) is /not/ robust to FGSM, JSMA and CW-L2.
+White/black-box attack are both tested.  Models trained with
+PGD cite:madry2017-towards is also tested.  Dataset: MNIST, CIFAR10.
+
+** TODO cite:bao2018-mitigation
+** DONE cite:athalye2018-obfuscated                                     :hyp:
+
+Breaks 9 defense methods published in ICLR 2018 and concludes that the false
+sense security is due to obfuscated gradient (gradient masking).
+
+** DONE cite:zhao2017-generating                                :gen:img:txt:
+
+Employs an encoder-decoder structure to find the adversarials in the embedding
+space.  The encoder is a reverse-GAN (inverter), while the decoder is a GAN.
+Dataset: MNIST, LSUN, SNLI.
+
+** DONE cite:yao2017-automated                                  :gen:def:txt:
+
+Generates fake good reviews by replacing related nouns in machine-generated
+texts.  It also proposes to filter out these machine-generated texts by
+character-level distribution.
+
+** DONE cite:xie2017-mitigating                                     :def:img:
+** TODO cite:xie2017-adversarial
+** DONE cite:wong2017-dancin                                        :gen:txt:
+
+Low quality
+
+** DONE cite:wang2017-analyzing                                     :hyp:def:
+** DONE cite:tramer2017-space                                   :hyp:img:txt:
+
+- Shows that for linear models, the non-robustness in the input space is
+  inherited by the model to the feature space.
+- Artifact XOR experiment to show that adversarial samples are crafted by
+  perturbing features used by the model in making decisions.
+
+** DONE cite:tramer2017-ensemble                                    :def:img:
+
+Augment training data with adversarial examples from other models.
+
+** DONE cite:su2017-one                                             :gen:img:
+
+Generate adversarials with genetic evolution.
+
+** TODO cite:song2017-multi
+** TODO cite:sengupta2017-securing
+** TODO cite:samanta2017-towards
+
+Semi-automatic way to construct examples.  Take advantage of sub-category level
+information, synonyms, typos of salient words.
+
+** TODO cite:rozsa2017-adversarial
+** DONE cite:pei2017-deepxplore                                     :gen:img:
+** TODO cite:peck2017-lower
+** TODO cite:park2017-adversarial
+** TODO cite:pang2017-towards
+** TODO cite:norton2017-adversarial
+** TODO cite:na2017-cascade
+** TODO cite:mopuri2017-fast
+
+proposes a /data-independent/ approach to construct adversarial samples.  The
+perturbation is optimized so that the activation function is saturated.
+
+** TODO cite:miyato2017-virtual
+** TODO cite:metzen2017-universal
+
+demonstrates an universal noise for image segmentation.
+
+** TODO cite:metzen2017-detecting
+** TODO cite:meng2017-magnet
+** TODO cite:madry2017-towards
+** TODO cite:lu2017-safetynet
+** TODO cite:hu2017-generating
+** TODO cite:tanay2016-boundary
+** TODO cite:grosse2016-adversarial
+** TODO cite:laskov2014-practical
+** DONE cite:lowd2005-adversarial                                   :gen:txt:
+
+Studies the adversarial classifier reverse engineering (ACRE) problem.  The
+author tries to bypass the linear filter by replacing words in emails body.
+
+* Wait [27/46]
+
+** TODO cite:amsaleg2017-vulnerability
+** DONE cite:liu2017-delving
+did extensive experiments on transferability of adversarial samples.  Many
+interesting yet only empirical findings.
+** TODO cite:lin2017-tactics
+** DONE cite:liang2017-detecting
+proposes to detect adversarial images by comparing the classification results of
+a given sample and its denoised version.
+** DONE cite:liang2017-deep
+manually insert, modify, remove hot training phrases (HTP) which are selected by
+contribution similar to saliency score in JSMA.
+** TODO cite:kos2017-delving
+** DONE cite:kos2017-adversarial
+proposes three ways to construct adversarial samples from an encoder-decoder
+generative models:
+- Build a classifier on encoded inputs and original labels.
+- Match outputs from the decoder between original and adversarial.
+- Match outputs from the encoder between original and adversarial.
+** DONE cite:jia2017-adversarial
+generate adversarial paragraphs in a naive way.
+** DONE cite:hosseini2017-deceiving
+manually test against Google Perspective API, exposes some interesting
+phenomenons, but generally not of good quality.
+** DONE cite:he2017-adversarial
+implies that ensemble of weak defenses is not sufficient to provide strong
+defense against adversarial examples.
+** DONE cite:hayes2017-machine
+trains end-to-end an attacking model to automatically generate adversarial
+samples in /black-box attack/ settings, instead of relying on transferability of
+adversarial samples.
+** DONE cite:guo2017-countering
+shows that image transformation may effectively remove adversarial noise.
+** TODO cite:grosse2017-detection
+uses classical statistical testing to investigate the adversarial detection and
+robustness.
+** TODO cite:gondara2017-detecting
+density ratio of real-real is close to 1, while real-adversarial is far away
+from 1.
+** TODO cite:gao2017-deepcloak
+masks off "redundant" features to defend against adversarials.  However it also
+limits the model's ability to generalize.
+** DONE cite:ebrahimi2017-hotflip
+hotflip
+** DONE cite:dong2017-towards
+leverages adversarial examples to help interpret the mechanism of DNN.
+** TODO cite:dong2017-boosting
+** TODO cite:cisse2017-parseval
+** TODO cite:chen2017-ead
+** DONE cite:bradshaw2017-adversarial
+DNNs combined with gaussian processes are shown to be more robust to adversarial
+examples.
+** TODO cite:baluja2017-adversarial
+ATN
+** TODO cite:wang2016-theoretical
+** TODO cite:rozsa2016-towards
+** DONE cite:papernot2016-transferability
+shows that the /transferability/ of adversarial samples is not limited to the
+same class of models, but rather extend across different model techniques, e.g.,
+deep network, support vector machine, logistic regression, decision tree and
+ensembles.
+** DONE cite:papernot2016-practical
+introduces a /black-box/ attack against oracle systems, i.e., the attacker has
+only access to the target system's output, by leveraging the /transferability/
+of adversarial samples.  In addition also it demonstrate that the attack also
+applies to non-DNN systems, specifically \(k\)NN, however with much less success
+rate.
+** DONE cite:papernot2016-crafting
+successfully applies fast gradient method and forward derivative method to RNN
+classifiers.
+** DONE cite:moosavi-dezfooli2016-universal
+generates one noise vector that will alter predictions for most images.
+** DONE cite:kurakin2016-adversarial-1
+label leaking problem, adversarial training, model capacity.
+** DONE cite:kurakin2016-adversarial
+proposes fast gradient method, and shows that photo transformation does not
+prevent adversarial images.
+** TODO cite:fawzi2016-robustness
+** TODO cite:carlini2016-towards
+CW
+** DONE cite:tabacof2015-exploring
+shows that adversarial images appear in large and dense regions in the pixel
+space.
+** TODO cite:sabour2015-adversarial
+** DONE cite:papernot2015-limitations
+shows that with a small change in pixel intensity, most images in MNIST can be
+crafted to a desired target category different from its actual one.
+** DONE cite:papernot2015-distillation
+smoothes out the gradient around data samples with distilling technique which
+successfully enhance the model's resilience to adversarial noise with minimum
+impact on the model's performance.
+** TODO cite:moosavi-dezfooli2015-deepfool
+** TODO cite:miyato2015-distributional
+** TODO cite:luo2015-foveation
+** DONE cite:huang2015-learning
+proposes a min-max training procedure to enhance the model robustness.
+Basically maximize the least perturbation needed to generate adversarial samples
+from each data points.
+** DONE cite:fawzi2015-analysis
+defines the adversarial robustness as the average norm of the minimal
+perturbations required to flip the estimated labels of the data points and
+derives upper bounds for linear and quadratic classifiers.
+** DONE cite:gu2014-towards
+tried (de-noise) autoencoder to recover adversarial samples.  Despite that their
+experiment looks promising, they only use MNIST as benchmark.
+** DONE cite:goodfellow2014-explaining
+
+hypothesizes that neural networks are too linear to resist linear adversarial
+perturbation, e.g., FGSM.
+
+** DONE cite:huang2011-adversarial
+
+proposes taxonomy of adversarial machine learning.  And the authors formulate it
+as a game between defender and attacker.  It is a high level discussion about
+adversarial machine learning.
+
+** TODO cite:xu2009-robustness
+** DONE cite:dalvi2004-adversarial
+
+assumes that training data may be adversarially manipulated by attackers, e.g.,
+spam/fraud/intrusion detection.  They view formulate this as a game between the
+defender and attacker.
+
+* Future Work
+
+- Binarized network is not robust cite:galloway2018-attacking, what about other
+  precision?  Does the number of bits influence the robustness?
+- What if we interpolate in the latent space?  Does it generate adversarial
+  samples cite:zhao2017-generating?
+- Can we detect adversarial samples based on neuron
+  coverage cite:pei2017-deepxplore?  We hypothesize that
+  1. the excited neurons for one category are more or less the same.
+  2. the excited neurons for the adversarial samples are different from the good
+     ones in both categories.
+  Moreover, we may extend the notion of neuron coverage by signature distance.
+  Flatten into a vector inputs of all the neurons in the network.  Each input is
+  corresponding with one such vector.  We hypothesize that input of one category
+  will be closer together.
+- Investigate why one-pixel padding/resizing is
+  effective cite:xie2017-mitigating?  It is really counter-intuitive.  Just like
+  the one-pixel attack cite:su2017-one.
+- Does the adversarial problem disappear in low dimension space?  What is the
+  relationship between the robustness of classifier and the number of data
+  dimensions?
+- By removing confusing samples from the training set, we can increase the
+  robustness of a kNN binary classifier without compromising its accuracy on
+  clean samples cite:wang2017-analyzing?  This is interesting.  Does it apply to
+  neural network as well?
+- Adversarial samples are crafted by modifying /features/ used by a model to
+  make predictions cite:tramer2017-space.  Can we somehow
+  define/know/represent/visualize what features are used by a model to make the
+  predictions?
+- Does few-pixel attack cite:su2017-one apply to ImageNet?
+
+** Feature Encoding
+
+- The raw features for the image classification model are the raw pixel values.
+- The raw features are all used for the final prediction, but some make
+  negligible contribution.
+- The /active feature set/ is defined as an arbitrary collection of raw features
+  that are used by the model in the decision making.
+- It is difficult (?) to decide what active features are used by the model.
+- The /active feature path/ is defined as the vector of neuron excitement.  This
+  is how the model use the active feature sets to make the final decisions.
+- We have different active feature set.  Adversarial examples perturb the values
+  in a feature set to change the final decision.
+- For one feature set, if we change the values, we could see that the active
+  feature path is also changed.
+- Models only use a fraction of all the possible active feature sets to make
+  predictions.
+- Change pixels not in the active feature sets does not influence the final
+  decision making.
+- Removing non-useful features might actually be helpful.  Augmenting the
+  training set with more diverse adversarial samples help to provide enough data
+  points for each of the feature set the model are using in the final
+  decisions.

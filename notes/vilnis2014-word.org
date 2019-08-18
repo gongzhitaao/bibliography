@@ -1,0 +1,44 @@
+#+TITLE: Notes on: Vilnis, L., & McCallum, A. (2014): Word Representations Via Gaussian Embedding
+
+* Gist
+
+** Problem
+
+Learning text embeddings.
+
+Advocates for density-based distributed embeddings and presents a method for
+learning representations in the space of Gaussian distributions.
+
+** Assumption
+
+In linguistic semantics, work on the /distributional inclusion hypothesis/
+cite:geffet2005-distributional , uses traditional count-based vectors to define
+regions in vector space such that subordinate concepts are included in these
+regions.
+
+** Evaluation
+
+*** Datasets
+
+1. Training: ukWaC and WaCkypedia, 3B tokens.  280K word types remain after
+   removing <100 words.
+2. Testing:
+   1. SimLex cite:hill2015-simlex
+   2. WordSim-353 cite:finkelstein2001-placing
+   3. MEN cite:bruni2014-multimodal
+   4. MC cite:miller1991-contextual
+   5. RG cite:rubenstein1965-contextual
+   6. YP cite:yang2006-verb
+   7. Rel-122 cite:szumlanski2013-new
+
+*** Metrics
+
+1. Cosine similarity,
+2. Average precision, and
+3. best F1 score.
+
+** Method
+
+The word vector is interpreted as the mean vector of a Gaussian distribution,
+the variance is estimated with an estimator.  Pick an energy function (EL or KL)
+to get the score for positive and negative pairs, and finally margin-rank loss.

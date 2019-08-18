@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Zhi-Hua Zhou, & Feng, J. (2017): Deep forest: towards an alternative to deep neural networks
+#+KEYWORDS: gcforest, multi-grained cascade forest, representation learning,
+#+KEYWORDS: cascade forest, multi-grained scanning, random
+
+* Gist
+
+Disadvantage of neural network:
+1. data hungry
+2. computationally expensive
+3. focus only on hyper-parameters tuning
+4. elude theoretical analysis
+
+The number of cascade levels can be adaptively determined such that the model
+complexity can be automatically set, enabling gcForest to perform excellently
+even on small-scale data.
+
+* Comment
+
+1. What about recurrent neural network?  How could you apply gcForest to
+   sequential data?

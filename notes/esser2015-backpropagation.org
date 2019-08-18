@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Esser, S. K., Appuswamy, R., Merolla, P., Arthur, J. V., & Modha, D. S. (2015): Backpropagation for energy-efficient neuromorphic computing
+
+* First Pass
+
+  The authors propose training spiking neural network using
+  backpropagation by restricting weights and input to [0,1] which are
+  interpreted as probabilities of spikes.  Tested on TrueNorth, the
+  author obtained state-of-the-art benchmarks on MNIST.

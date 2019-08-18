@@ -1,0 +1,17 @@
+#+TITLE: Notes on: Wu, Y., Schuster, M., Chen, Z., Le, Q.~V., Norouzi, M., Macherey, W., Krikun, M., Cao}, Y., Gao, Q., Macherey, K., Klingner, J., Shah, A., Johnson, M., Liu, X., Kaiser, \L., Gouws, S., Kato, Y., Kudo, T., Kazawa, H., Stevens, K., Kurian, G., Patil}, N., Wang, W., Young, C., Smith, J., Riesa, J., Rudnick, A., Vinyals, O., Corrado}, G., Hughes, M., Dean, J., ... (2016): Google's Neural Machine Translation System: Bridging the Gap Between Human and Machine Translation
+
+* Gist
+
+During training, the bottom bi-directional encoder layers compute in parallel
+first.  Once both finish, the uni-directional encoder layers can start computing.
+
+Residual connections greatly improve the gradient flow in the backward pass.
+
+*Quantized inference* using reduced precision arithmetic is one technique that
+can significantly reduce the cost of inference for these models, often providing
+efficiency improvements on the same computational devices.
+
+The inherent weaknesses of Neural Machine Translation (NMT)
+- its slower training and inference speed
+- ineffectiveness in dealing with rare words and
+- sometimes failure to translate all words in the source sentence

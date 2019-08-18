@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Marino, K., Salakhutdinov, R., & Gupta, A. (2016): The More You Know: Using Knowledge Graphs for Image Classification
+
+* Notes
+
+  The focus of this work is to exploit *structured* visual knowledge
+  and reasoning to improve image classification.

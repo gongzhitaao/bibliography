@@ -1,0 +1,30 @@
+#+TITLE: Notes on: Lee, J., Cho, K., & Hofmann, T. (2016): Fully Character-Level Neural Machine Translation Without Explicit Segmentation
+#+KEYWORDS: nmt, char2char
+
+* Gist
+
+1. we can train character-to-character NMT model without any explicit
+   segmentation; and
+2. we can share a single character-level encoder across multiple languages to
+   build a multilingual translation system without increasing the model size.
+
+Character-level models advantages mentioned in cite:chung2016-character:
+1. do not suffer from out-of-vocabulary issues,
+2. are able to model different, rare morphological variants of a word, and
+3. do not require segmentation.
+
+Advantage mentioned in this paper
+1. a character-level translation system can easily be applied to a multilingual
+   translation setting.
+2. we encourage the model to discover an internal structure of a sentence by
+   itself and learn how a sequence of symbols can be mapped to a continuous
+   meaning representation.
+
+Challenges:
+1. Training/decoding latency.
+   1) cite:chung2016-character report that character-level decoding is 14%
+     slower than subword-level decoding,
+   2) computational complexity of the attention mechanism grows quadratically
+      with respect to the sentence length,
+2. Mapping character sequence to continuous representation.
+3. Long range dependencies in characters.

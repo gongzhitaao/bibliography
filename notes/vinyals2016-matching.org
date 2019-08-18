@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Vinyals, O., Blundell, C., Lillicrap, T., Kavukcuoglu, K., & Wierstra, D. (2016): Matching Networks for One Shot Learning
+
+* First Pass
+
+  The authors studied one-shot learning and proposed a non-parametric
+  model, matching network and a training method.  Beside they defined
+  a new one-shot learning task, reduced ImageNet.
+
+* Second Pass

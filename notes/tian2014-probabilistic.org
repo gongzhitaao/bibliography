@@ -1,0 +1,29 @@
+#+TITLE: Notes on: Tian, F., Dai, H., Bian, J., Gao, B., Zhang, R., Chen, E., & Liu, T. (2014): A probabilistic model for learning multi-prototype word embeddings
+
+* Gist
+
+** Problem
+
+Improve the embeddings for polysemous words by using multiple embedding vectors
+to represent different meanings of a word.
+
+** Assumption
+
+** Evaluation
+
+*** Datasets
+
+SCWS cite:huang2012-improving
+
+*** Metrics
+
+Spearman's rank correlation
+
+maximum and weighted cosine similarity
+
+** Method
+
+Variant of the skip-gram model cite:mikolov2013-distributed: the \(P(w_o\|
+w_I)\) is modeled as a mixture model.
+
+\[P(w_o\| w_I) = \frac{\exp(V w_o)}{\sum_{w\in W}\exp(V w)}\]

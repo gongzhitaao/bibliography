@@ -1,0 +1,212 @@
+#+TITLE: Compression and Quantization
+#+STARTUP: content
+
+* Quantization [22/26]
+
+** DONE cite:shayer2018-learning
+
+** DONE cite:ullrich2017-soft
+
+quantize by soft weight sharing regularizer.
+
+** DONE cite:li2017-training
+
+** DONE cite:xu2016-local
+
+binary initialized random features
+
+** DONE cite:rastegari2016-xnor
+
+learns a scaled binary estimator by minimizing the L2 norm between the estimator
+and the original weight during training.
+
+** DONE cite:miyashita2016-convolutional
+
+log-quantize the weights
+
+** DONE cite:li2016-ternary
+
+introduces a neural network model compression method via discretizing weights in
+well trained network to ternary values, i.e., -1, 0, 1 by minimizing the L2
+distance between the two networks.
+
+** DONE cite:kim2016-bitwise
+
+retrain a well-trained network with binary weights and inputs.
+
+** TODO cite:baldassi2016-learning
+** DONE cite:wu2015-quantized
+
+proposed a framework to compress CNN with produce quantization, Q-CNN, which
+achieves 4-6x speedup and 15-20x compression with negligible accuracy drop (less
+than 1%).
+
+** DONE cite:machado2015-computational
+
+proposes several computation reduction techniques for Learning Algorithm for
+Soft-Thresholding classifier (LAST).
+
+** DONE cite:lin2015-neural
+
+proposes to quantize hidden layer outputs with 3-4 bits during the
+backpropagation by replacing matrix multiplication with bit shifting, thus
+reducing the training time.
+
+** DONE cite:esser2015-backpropagation
+
+uses conventional backpropagation to train spiking neural network by restricting
+weights and inputs to \([0,1]\) which are interpreted as probability of spikes.
+
+** DONE cite:courbariaux2015-binaryconnect
+
+proposes forward quantized and backward full-precision training scheme.
+
+** DONE cite:courbariaux2015-binaryconnect
+
+,[[#courbariaux2016-binarynet][courbariaux2016-binarynet]] proposes a run-time binary network which achieved
+state of the art results on various benchmark problem.  However the gradients
+during training are not binary since error information needs to be accumulated
+in small steps.
+
+** DONE cite:cheng2015-training
+
+applied expectation backpropagation to binarized feedforward network and
+experiment on MNIST was successful.
+
+** TODO cite:baldassi2015-subdominant
+
+proves both experimentally and theoretically the existence of dense solution
+regions for single-layer network with discrete synapses.
+
+** DONE cite:anwar2015-fixed
+
+uses Lloyd-Max quantization method to quantize CNN weights in a layer by layer
+fashion.  This quantization step is done along the network training with full
+precision weights.
+
+** DONE cite:soudry2014-expectation
+
+uses Bayesian rule instead of error gradient based back-propagation to update
+the weights.  Thus, it may be used to train network with discrete weight
+directly.
+
+** DONE cite:hwang2014-fixed
+
+ternary, quantize and retrain
+
+** DONE cite:huang2014-origin
+
+uses Franz-Parisi potential to show that the solution is isolated.
+
+** DONE cite:courbariaux2014-training
+
+showed that low precision for forward and backward propagation combined with
+full precision for parameter updates could achieve competing result as full
+precision network.
+
+** TODO cite:baldassi2009-generalization
+
+** TODO cite:baldassi2007-efficient
+** DONE cite:oconnor2005-graded
+
+biological information storage events are often rapid transitions between
+*discrete states*.
+
+** DONE cite:nowlan1992-simplifying
+
+soft weight sharing achieved by add a penalty term which comprises of a mixture
+of Gaussians.
+
+* Compression [20/21]
+
+** DONE cite:wang2017-training
+** DONE cite:molchanov2017-variational
+** DONE cite:wen2016-learning
+** DONE cite:see2016-compression
+** DONE cite:lebedev2016-fast
+** DONE cite:joulin2016-fasttext
+** DONE cite:iandola2016-squeezenet
+** DONE cite:han2016-ese
+** DONE cite:guo2016-dynamic
+** DONE cite:liu2015-sparse
+** DONE cite:hinton2015-distilling
+** DONE cite:han2015-learning
+** DONE cite:chen2015-compressing
+** DONE cite:jaderberg2014-speeding
+** DONE cite:gong2014-compressing
+** DONE cite:denton2014-exploiting
+** TODO cite:bucila2006-model
+** DONE cite:hinton1993-keeping
+** DONE cite:hassibi1993-second
+** DONE cite:lecun1989-optimal
+** DONE cite:hanson1989-comparing
+* Dynamic Network [0/0]
+
+* Recent Work [1/66]
+
+** TODO cite:wen2017-coordinating
+** TODO cite:park2017-faster
+** TODO cite:mellempudi2017-ternary
+** TODO cite:louizos2017-bayesian
+** TODO cite:liu2017-dynamic
+** TODO cite:lin2017-runtime
+** TODO cite:lin2017-runtime
+** TODO cite:li2017-towards
+** TODO cite:leng2017-extremely
+** TODO cite:howard2017-mobilenets
+** TODO cite:dong2017-learning
+** TODO cite:chai2017-low
+** TODO cite:bolukbasi2017-adaptive
+** TODO cite:alvarez2017-compression
+** TODO cite:zhou2016-less
+** TODO cite:zhou2016-dorefa
+** TODO cite:yang2016-designing
+** TODO cite:wen2016-learning
+** TODO cite:venkatesh2016-accelerating
+** TODO cite:molchanov2016-pruning
+** TODO cite:merolla2016-deep
+** TODO cite:li2016-pruning
+** TODO cite:hu2016-network
+** TODO cite:courbariaux2016-binarynet
+** TODO cite:babaeizadeh2016-noiseout
+** TODO cite:alvarez2016-learning
+** TODO cite:alvarez2016-decomposeme
+** TODO cite:tai2015-convolutional
+** TODO cite:sun2015-pronet
+** TODO cite:nalisnick2015-scale
+** TODO cite:murray2015-auto
+** TODO cite:murray2015-auto
+** TODO cite:lin2015-fixed
+** TODO cite:karaletsos2015-automatic
+** TODO cite:ioannou2015-training
+** TODO cite:han2015-deep
+** TODO cite:gupta2015-deep
+** TODO cite:carreira-perpinan2015-hashing
+** TODO cite:blundell2015-weight
+** TODO cite:bengio2015-conditional
+** TODO cite:baldassi2015-max
+** TODO cite:anwar2015-structured
+** TODO cite:almahairi2015-dynamic
+** TODO cite:szegedy2014-going
+** TODO cite:collins2014-memory
+** TODO cite:carreira-perpinan2014-distributed
+** TODO cite:sun2013-deep
+** TODO cite:gong2013-iterative
+** DONE cite:denil2013-predicting
+** TODO cite:bengio2013-estimating
+** TODO cite:neal2012-bayesian
+** TODO cite:graves2011-practical
+** TODO cite:braunstein2006-learning
+** TODO cite:mackay1995-probable
+** TODO cite:simard1994-backpropagation
+** TODO cite:reed1993-pruning
+** TODO cite:marchesi1993-fast
+** TODO cite:kwan1993-multiplierless
+** TODO cite:hassibi1993-optimal
+** TODO cite:weigend1991-generalization
+** TODO cite:sompolinsky1990-learning
+** TODO cite:saad1990-training
+** TODO cite:fiesler1990-weight
+** TODO cite:mozer1989-skeletonization
+** TODO cite:krauth1989-storage
+** TODO cite:gardner1988-optimal

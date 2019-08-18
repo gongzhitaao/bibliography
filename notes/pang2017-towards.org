@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Pang, T., Du, C., & Zhu, J. (2017): Towards robust detection of adversarial examples
+
+* Gist
+
+By minimizing /reverse cross-entropy/ (RCE), our training procedure encourages
+the classifiers to return a high confidence on the true class while a uniform
+distribution on false classes for each data point, and further makes the
+classifiers map the normal examples to the neighborhood of low-dimensional
+manifolds in the final-layer hidden space.

@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Mumford}, D. (2002): Pattern theory: the mathematics of perception
+
+* Gist
+
+** Notes
+
+but the work of the last 30 years has made clear that perception is a matter of
+Bayesian statistical inference, based on stochastic models of the signals
+delivered by our senses and the structures in the world producing them.

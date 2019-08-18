@@ -1,0 +1,30 @@
+#+TITLE: Notes on: Papernot, N., McDaniel, P. D., Goodfellow, I. J., Jha, S., Celik, Z. B., & Swami, A. (2016): Practical Black-Box Attacks Against Deep Learning Systems Using Adversarial Examples
+
+* First Pass
+
+  The authors introduce and evaluate a /black-box/ attack against
+  machine learning oracles by leveraging the /transferability/ of
+  adversarial samples.
+
+* Second Pass
+
+  It is not yet known whether adversarial example generation requires
+  greater control over the image than can be ob- tained by physically
+  altering the sign.
+
+  Jacobian-based Dataset Augmentation.
+
+  Our augmentation technique is not aimed at improving the substitute
+  DNN's accuracy but rather ensuring that it approximates the oracle's
+  decision boundaries.
+
+  First we need to explore the input domain.  Part of its novelty lies
+  in train a substitute network with less data.
+
+  For two "similar" architectures \(F\) and \(G\) distributions,
+  \(D_F\) and \(D_G\) induced by a population distribution \(D\) are
+  highly correlated.
+
+  This suggests that our attack is applicable to oracles using machine
+  learning algorithms fully different from deep learning, specifically
+  the \(k\)NN.  however the attack success rate is much lower.

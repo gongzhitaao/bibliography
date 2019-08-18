@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Gao, J., Wang, B., Lin, Z., Xu, W., & Qi, Y. (2017): Deepcloak: masking deep neural network models for robustness against adversarial samples
+
+* Gist
+
+It was observed that an adversary could easily generate adversarial samples by
+making a small perturbation on /irrelevant/ feature dimensions that are
+unnecessary for the current classification task.

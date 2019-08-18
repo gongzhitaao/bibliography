@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Spring, R., & Shrivastava, A. (2016): Scalable and Sustainable Deep Learning Via Randomized Hashing
+
+* Gist
+
+We briefly review *dropouts* and its variants, which are popular sparsity
+promoting techniques relying on sparse activations.  Although such randomized
+sparse activations have been found favorable for better generalization of deep
+networks, to the best of our knowledge, this sparsity has not been adequately
+exploited to make deep networks computationally cheap and parallelizable.

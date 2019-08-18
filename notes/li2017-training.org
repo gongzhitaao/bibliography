@@ -1,0 +1,22 @@
+#+TITLE: Notes on: Li, H., De, S., Xu, Z., Studer, C., Samet, H., & Goldstein, T. (2017): Training quantized nets: a deeper understanding
+#+KEYWORDS: stochastic rounding, binary connect, markov chain
+
+* Gist
+
+empirical risk minimization ERM
+
+Under convex assumption
+1. They first bound the quantization error expectation during each iteration.
+2. Then, they bound the loss expectation during each iteration.
+
+For general non-convex problems, we proved that SR differs from conventional
+stochastic methods in that it is unable to exploit greedy local search.
+
+* Thoughts
+
+First prove something in simpler settings, e.g., convex and finite case.  Then
+extend to general case with certain approximation.
+
+This paper focuses on stochastic rounding and binary connect, we could extend to
+more general case {-a, 0, a} instead {-1, 1} following their analysis, and
+explain why my \sigma-quantizer works.

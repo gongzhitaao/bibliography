@@ -1,0 +1,42 @@
+#+TITLE: Notes on: Toneva, M., Sordoni, A., Combes, R. T. d., Trischler, A., Bengio, Y., & Gordon, G. J. (2018): An empirical study of example forgetting during deep neural network learning
+
+* Gist
+
+** Problem
+
+Empirical study of forgettable and unforgettable examples during training.
+
+** Evaluation
+
+*** Metrics
+
+- Accuracy
+- # of (un)forgettable examples
+- # of forgetting events (learned and forgot)
+
+*** Datasets
+
+- MNIST
+- Permuted MNIST
+- CIFAR-10
+
+** Method
+
+- Partition training.
+  - Random partition training sets to two, alternatively train on each, test
+    accuracy on the other.
+  - Partition by forgettable/unforgettable examples.
+- Remove large portion of unforgettable examples from training set.
+
+** Conclusion
+
+- Most unforgettable examples can be safely removed without compromising
+  generalization.
+- Noisy examples rank higher in terms of number of forgetting events, they are
+  never unforgettable.
+
+** Related
+
+- Support vector machine (SVM).
+- Curriculum learning cite:bengio2009-curriculum.
+- Intrinsic dimension of object dimension cite:li2018-measuring.

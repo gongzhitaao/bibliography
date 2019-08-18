@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Machado, E. L., Miosso, C. J., von Borries, R., Coutinho, M., Berger, P. d. A., Marques, T., & Jacobi, R. P. (2015): Computational cost reduction in learned transform classifications
+
+* First Pass
+
+  The authors propose several techniques to reduce computation in
+  Learning Algorithm for Soft-Thresholding classifier (LAST).
+
+  /Note/: I do not think this paper is well organized, nor convincing.

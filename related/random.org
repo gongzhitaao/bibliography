@@ -1,0 +1,23 @@
+#+TITLE: It is totally RANDOM
+
+* Related [3/3]
+
+- [X] cite:saxe2011-random
+- [X] cite:achlioptas2002-sampling
+- [X] cite:xu2016-local
+
+* TODO Recent Work [1/7]
+:PROPERTIES:
+:LAST_REPEAT: [2018-02-18 Sun 07:50]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2018-02-18 Sun 07:50]
+- State "DONE"       from "TODO"       [2018-02-05 Mon 08:21]
+:END:
+
+- [ ] cite:arora2014-provable
+- [ ] cite:blum2006-random
+- [ ] cite:jarrett2009-what
+- [ ] cite:lillicrap2016-random
+- [ ] cite:pinto2009-high
+- [ ] cite:rahimi2008-random

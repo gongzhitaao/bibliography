@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Abadi, M., & Andersen, D.~G. (2016): Learning To Protect Communications With Adversarial Neural Cryptography
+
+* First Pass
+
+* Second Pass

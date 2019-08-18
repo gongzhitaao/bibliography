@@ -1,0 +1,37 @@
+#+TITLE: Notes on: Tai, K. S., Socher, R., & Manning, C. D. (2015): Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks
+
+* Gist
+
+** Problem
+
+Propose tree-LSTM for tree structured networks.
+
+** Evaluation
+
+*** Datasets
+
+- sentiment, Sanford Sentiment Treebank (SST) cite:socher2013-recursive
+- semantic relatedness, Sentences Involving Compositional Knowledge
+  (SICK) cite:marelli2014-sick
+
+*** Metrics
+
+- Pearson’s
+- Spearman’s
+- MSE
+
+** Method
+
+1. The input sentence is parsed (with separate tools, e.g., a parser) into a
+   dependency or a constituency tree
+2. The tree is traversed in a DFS-fashion by the LSTM node.
+
+Since the input has to be fixed size,
+1. if branching factor is high, the hidden states from the children are summed.
+2. if we have N children, then each child's hidden state may be associated with
+   a trainable weight matrix.
+
+* Thoughts
+
+- Interesting
+- Is the extra effort worth it?  Only minor, if not negligible, improvement.

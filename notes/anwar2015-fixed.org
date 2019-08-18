@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Anwar, S., Hwang, K., & Sung, W. (2015): Fixed point optimization of deep convolutional neural networks for object recognition
+
+* First Pass
+
+  The authors quantize CNN weights in a layer by layer fashion via
+  Lloyd-Max quantization method.  The quantization induces sparsity,
+  thus improving the generalization.

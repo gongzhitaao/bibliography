@@ -1,0 +1,16 @@
+#+TITLE: Notes on: Meng, D., & Chen, H. (2017): Magnet: a two-pronged defense against adversarial examples
+
+* Gist
+
+MagNet learns to differentiate between normal and adversarial examples by
+approximating the manifold of normal examples.
+
+Basically use autoencoder.
+
+Detector based on
+1. reconstruction error,
+2. Jensen-Shannon divergence.
+
+Remove adversarial noise:
+1. add Gaussian noise
+2. de-noise autoencoder

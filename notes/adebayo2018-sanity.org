@@ -1,0 +1,40 @@
+#+TITLE: Notes on: Adebayo, J., Gilmer, J., Muelly, M., Goodfellow, I., Hardt, M., & Kim, B. (2018): Sanity checks for saliency maps
+
+* Gist
+
+** Problem
+
+Access popular saliency map algorithms.
+
+** Evaluated Algorithms
+
+- Gradient
+- SmoothGrad
+- Guided BackProp
+- Guided GradCAM
+- Integrated Gradients
+- Integrated Gradients SmoothGrad
+- Gradient times input
+- Edge detector, /baseline/.
+
+** Evaluation
+
+*** Datasets
+
+- ImageNet
+- MNIST
+
+*** Method
+
+- Randomization test
+  - Randomize weights in a network in a cascading fashion.
+  - Randomize the labels.
+
+*** Metrics
+
+- Visualization
+- Similarity
+  - Spearman rank correlation with absolute value
+  - Spearman rank correlation without absolute value
+  - The structural similarity index (SSI)
+  - Pearson correlation of histogram of gradients (HOG)

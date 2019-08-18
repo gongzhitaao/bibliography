@@ -1,0 +1,29 @@
+#+TITLE: Notes on: Papernot, N., McDaniel, P., & Goodfellow, I. (2016): Transferability in Machine Learning: From Phenomena To Black-Box Attacks Using Adversarial Samples
+
+* First Pass
+
+  By leveraging the transferability of adversarial samples, the
+  authors successfully launch black-box attacks against different
+  classes of machine learning systems, including support vector
+  machine (SVM), logistic regression (LR), decision tree (DT), nearest
+  neighbors (kNN) and ensembles (Ens).
+
+* Second Pass
+
+  Poisoning attacks at training time remain largely to be
+  investigated, leaving room for contributions to the field.
+
+  - intra-technique transferability :: models trained with the same
+       machine learning technique but different parameter
+       initializations or datasets, e.g., neural network with
+       different hyper-parameter.
+  - cross-technique transferability :: models trained using two
+       techniques, e.g., neural network and decision tree.
+
+
+  The existence of adversarial samples calls for input validation in
+  production systems using machine learning.
+
+  We show that differentiable models like DNNs and LR are more
+  vulnerable to intra-technique transferability than
+  non-differentiable models like SVMs, DTs, and kNNs.

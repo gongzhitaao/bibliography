@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Zhang}, X., & LeCun, Y. (2018): Byte-level recursive convolutional auto-encoder for text
+
+* Gist
+
+By studying the auto-encoding error when the samples contain randomized noisy
+bytes, we show that the model does not degenerate to the identity
+function. However, /it can neither denoise the input very well/.

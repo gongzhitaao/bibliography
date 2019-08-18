@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016): You only look once: unified, real-time object detection
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- Pascal VOC
+
+*** Metrics
+
+** Method

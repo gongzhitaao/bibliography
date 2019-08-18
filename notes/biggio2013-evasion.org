@@ -1,0 +1,6 @@
+#+TITLE: Notes on: Biggio, B., Corona, I., Maiorca, D., Nelson, B., \vSrndi\'c, Nedim, Laskov, P., Giacinto, G., Roli, F., ... (2013): Evasion attacks against machine learning at test time
+
+* First Pass
+
+  The authors studied evasion attacks against classifiers because they
+  want to evaluate the robustness of current classifying algorithms.

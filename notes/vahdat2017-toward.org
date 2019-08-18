@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Vahdat, A. (2017): Toward robustness against label noise in training deep discriminative neural networks
+
+* Gist
+
+This paper tackles the problem of training deep CNNs for the image labeling task
+from data points with noisy labels.
+
+We propose a conditional random field (CRF) model to represent the relationship
+between noisy and clean labels, and we show how modern deep CNNs can gain
+robustness against label noise using our proposed structure.  We model the clean
+labels as latent variables during training, and we design our structure such
+that the latent variables can be inferred efficiently.
+
+The main *challenge* in modeling clean labels as latent is the /lack of
+semantics/ on latent variables.

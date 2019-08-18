@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Huang, L., Joseph, A. D., Nelson, B., Rubinstein, B. I., & Tygar, J. (2011): Adversarial machine learning
+
+* First Pass
+
+  The authors studied adversarial machine learning in a high level
+  because they want to provide a guideline in this rising field.
+
+* Second Pass

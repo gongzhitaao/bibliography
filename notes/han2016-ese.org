@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Kang, J., Mao, H., Hu, Y., Li, X., Li, Y., Xie, D., Luo, H., … (2016): Ese: efficient speech recognition engine with compressed lstm on fpga
+
+* Gist
+
+load-balance-aware pruning, compress LSTM by 20x (10x from pruning, 2x
+from quantization)
+
+*Basic pruning*, i.e., removing small weights, leads to Pruning could
+lead to unbalanced non-zero weights distribution.
+
+*Load balance-aware pruning* obtains hardware-friendly sparse network
+which produces the same sparsity ratio among all the sub-matrices.
+
+* Comment
+
+- It is basically removing small weights.
+- 90%+ weights are pruned.
+
+* Related
+
+- [ ] cite:han2015-learning

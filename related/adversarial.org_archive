@@ -1,0 +1,138 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/gongzhitaao/.local/data/bibliography/related/adversarial.org
+
+
+* Related [32/70]
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-08-24 Fri 15:29
+:ARCHIVE_FILE: ~/.local/data/bibliography/related/adversarial.org
+:ARCHIVE_CATEGORY: adversarial
+:END:
+
+- [X] cite:gilmer2018-adversarial concentric sphere dataset
+- [X] cite:peck2017-lower
+- [ ] cite:fawzi2016-robustness
+- [ ] cite:athalye2018-obfuscated
+- [ ] cite:anonymous2018-adversarial
+- [X] cite:zhao2017-generating employs an encoder-decoder structure to find the
+  adversarials in the embedding space.  The decoder is a GAN, while the encoder
+  is a reverse-GAN, which maps data to Gaussian noise.
+- [ ] cite:yao2017-automated
+- [ ] cite:xie2017-mitigating
+- [ ] cite:xie2017-adversarial
+- [X] cite:wong2017-dancin
+- [ ] cite:wang2017-analyzing
+- [ ] cite:tramer2017-space
+- [ ] cite:tramer2017-ensemble
+- [ ] cite:su2017-one
+- [ ] cite:song2017-multi
+- [ ] cite:sengupta2017-securing
+- [X] cite:samanta2017-towards semi-automatic way to construct examples.  Take
+  advantage of sub-category level information, synonyms, typos of salient words.
+- [ ] cite:rozsa2017-adversarial
+- [ ] cite:park2017-adversarial
+- [ ] cite:pang2017-towards
+- [ ] cite:norton2017-adversarial
+- [ ] cite:na2017-cascade
+- [X] cite:mopuri2017-fast proposes a /data-independent/ approach to construct
+  adversarial samples.  The perturbation is optimized so that the activation
+  function is saturated.
+- [ ] cite:miyato2017-virtual
+- [X] cite:metzen2017-universal demonstrates an universal noise for image
+  segmentation.
+- [ ] cite:metzen2017-detecting
+- [ ] cite:meng2017-magnet
+- [ ] cite:madry2017-towards
+- [ ] cite:lu2017-safetynet
+- [X] cite:liu2017-delving did extensive experiments on transferability of
+  adversarial samples.  Many interesting yet only empirical findings.
+- [ ] cite:lin2017-tactics
+- [X] cite:liang2017-detecting proposes to detect adversarial images by
+  comparing the classification results of a given sample and its denoised
+  version.
+- [X] cite:liang2017-deep manually insert, modify, remove hot training phrases
+  (HTP) which are selected by contribution similar to saliency score in JSMA.
+- [ ] cite:kos2017-delving
+- [X] cite:kos2017-adversarial proposes three ways to construct adversarial
+  samples from an encoder-decoder generative models:
+  1. Build a classifier on encoded inputs and original labels.
+  2. Match outputs from the decoder between original and adversarial.
+  3. Match outputs from the encoder between original and adversarial.
+- [X] cite:jia2017-adversarial generate adversarial paragraphs in a naive way.
+- [X] cite:hosseini2017-deceiving manually test against Google Perspective API,
+  exposes some interesting phenomenons, but generally not of good quality.
+- [X] cite:he2017-adversarial implies that ensemble of weak defenses is not
+  sufficient to provide strong defense against adversarial examples.
+- [X] cite:hayes2017-machine trains end-to-end an attacking model to
+  automatically generate adversarial samples in /black-box attack/ settings,
+  instead of relying on transferability of adversarial samples.
+- [X] cite:guo2017-countering shows that image transformation may effectively
+  remove adversarial noise.
+- [-] cite:grosse2017-detection uses classical statistical testing to
+  investigate the adversarial detection and robustness.
+- [-] cite:gondara2017-detecting density ratio of real-real is close to 1, while
+  real-adversarial is far away from 1.
+- [-] cite:gao2017-deepcloak masks off "redundant" features to defend against
+  adversarials.  However it also limits the model's ability to generalize.
+- [X] cite:ebrahimi2017-hotflip hotflip
+- [X] cite:dong2017-towards leverages adversarial examples to help interpret the
+  mechanism of DNN.
+- [ ] cite:dong2017-boosting
+- [-] cite:cisse2017-parseval
+- [ ] cite:chen2017-ead
+- [X] cite:bradshaw2017-adversarial DNNs combined with gaussian processes are
+  shown to be more robust to adversarial examples.
+- [ ] cite:baluja2017-adversarial ATN
+- [ ] cite:wang2016-theoretical
+- [ ] cite:rozsa2016-towards
+- [X] cite:papernot2016-transferability shows that the /transferability/ of
+  adversarial samples is not limited to the same class of models, but rather
+  extend across different model techniques, e.g., deep network, support vector
+  machine, logistic regression, decision tree and ensembles.
+- [X] cite:papernot2016-practical introduces a /black-box/ attack against oracle
+  systems, i.e., the attacker has only access to the target system's output, by
+  leveraging the /transferability/ of adversarial samples.  In addition also it
+  demonstrate that the attack also applies to non-DNN systems, specifically
+  \(k\)NN, however with much less success rate.
+- [X] cite:papernot2016-crafting successfully applies fast gradient method and
+  forward derivative method to RNN classifiers.
+- [X] cite:moosavi-dezfooli2016-universal generates one noise vector that will
+  alter predictions for most images.
+- [X] cite:kurakin2016-adversarial-1 label leaking problem, adversarial
+  training, model capacity.
+- [X] cite:kurakin2016-adversarial proposes fast gradient method, and shows that
+  photo transformation does not prevent adversarial images.
+- [ ] cite:carlini2016-towards CW
+- [X] cite:tabacof2015-exploring shows that adversarial images appear in large
+  and dense regions in the pixel space.
+- [ ] cite:sabour2015-adversarial
+- [X] cite:papernot2015-limitations shows that with a small change in pixel
+  intensity, most images in MNIST can be crafted to a desired target category
+  different from its actual one.
+- [X] cite:papernot2015-distillation smoothes out the gradient around data
+  samples with distilling technique which successfully enhance the model's
+  resilience to adversarial noise with minimum impact on the model's
+  performance.
+- [ ] cite:moosavi-dezfooli2015-deepfool
+- [ ] cite:miyato2015-distributional
+- [ ] cite:luo2015-foveation
+- [X] cite:huang2015-learning proposes a min-max training procedure to enhance
+  the model robustness.  Basically maximize the least perturbation needed to
+  generate adversarial samples from each data points.
+- [X] cite:fawzi2015-analysis defines the adversarial robustness as the average
+  norm of the minimal perturbations required to flip the estimated labels of the
+  data points and derives upper bounds for linear and quadratic classifiers.
+- [X] cite:gu2014-towards tried (de-noise) autoencoder to recover adversarial
+  samples.  Despite that their experiment looks promising, they only use MNIST
+  as benchmark.
+- [X] cite:goodfellow2014-explaining hypothesizes that neural networks are too
+  linear to resist linear adversarial perturbation, e.g., FGSM.
+- [X] cite:huang2011-adversarial proposes taxonomy of adversarial machine
+  learning.  And the authors formulate it as a game between defender and
+  attacker.  It is a high level discussion about adversarial machine learning.
+- [ ] cite:xu2009-robustness
+- [X] cite:dalvi2004-adversarial assumes that training data may be adversarially
+  manipulated by attackers, e.g., spam/fraud/intrusion detection.  They view
+  formulate this as a game between the defender and attacker.

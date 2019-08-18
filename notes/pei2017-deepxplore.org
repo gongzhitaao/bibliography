@@ -1,0 +1,43 @@
+#+TITLE: Notes on: Pei, K., Cao, Y., Yang, J., & Jana, S. (2017): Deepxplore: automated whitebox testing of deep learning systems
+
+* Gist
+
+** Problem
+
+Design a white-box test framework for deep learning models that maximizes
+/neuron coverage/ and /behavioral differences/ between DL systems.
+
+** Evaluation
+
+*** Datasets
+
+- MNIST
+- ImageNet
+- [[https://github.com/udacity/self-driving-car][Udacity self-driving car challenge]]
+- PDF malware from Contagio/Virustotal
+- Android malware from Drebin
+
+*** Models
+
+- LeNet-1/4/5 for MNIST
+- VGG-16, VGG-19, ResNet-50 for ImageNet
+- DAVE-2 for self-driving, three implementations
+  - DAVE-orig :: replicates the original model.
+       https://github.com/0bserver07/Nvidia-Autopilot-Keras
+  - DAVE-norminit :: removes the first batch normalization layer and normalizes
+       the randomly initialized network weights.
+       https://github.com/jacobgil/keras-steering-angle-visualizations
+  - DAVE-dropout :: simplifies DAVE-orig by cutting down the numbers of
+       convolutional layers and fully connected layers.  It also adds two
+       dropout layer between the final three fully-connected layers.
+       https://github.com/navoshta/behavioral-cloning
+- MLP for PDF malware, fed with 135 static features from PDFrate.
+
+** Method
+
+- Neuron coverage (of a test set) :: the number of excited neurons divided by
+     the total number of neurons in the network.  The /excited neuron/ is a
+     neuron with output value above a threshold for at least one input in the
+     test set.
+- Differential behaviors :: at least one different DL system among many produces
+     different a prediction from the rest.

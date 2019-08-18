@@ -1,0 +1,31 @@
+#+TITLE: Notes on: Andor, D., Alberti, C., Weiss, D., Severyn, A., Presta, A., Ganchev, K., Petrov, S., Collins, M., ... (2016): Globally Normalized Transition-Based Neural Networks
+#+KEYWORDS: NLP, part-of-speech tagging, dependency parsing, sentence compression
+
+* First Pass
+
+  The authors tried feed-forward network on classic NLP tasks, i.e.,
+  part-of-speech tagging, dependency parsing, sentence compression to
+  see if recurrent is necessary.
+
+  With /globally normalized transition-based/ net, they produce
+  comparable or better result than state-of-the-art recurrent models.
+
+  The by-product is SyntaxNet, implemented in TensorFlow.
+
+* Second Pass
+
+  - global vs local normalization.  Beam search and early updates are
+    used to approximate global normalization.  *Conclusion*: global
+    models can be strictly more expressive than local models.
+  - transition system.  Assumption: one-to-one mapping between
+    decision sequences \(d_{1:j-1}\) and states \(s_j\), i.e., a state
+    encodes the entire history of decisions.
+  - role of feed-forward net
+  - label bias problem
+  - part-of-speech (POS) tagging
+  - dependency parsing
+  - sentence compression
+
+* Related Work
+
+  - cite:nivre2006

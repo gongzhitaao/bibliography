@@ -1,0 +1,3 @@
+#+TITLE: Notes on: Cao, Z., Qin, T., Liu, T., Tsai, M., & Li, H. (2007): Learning to rank: from pairwise approach to listwise approach
+
+* Gist

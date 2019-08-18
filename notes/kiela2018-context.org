@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Kiela}, D., Wang, C., & Cho, K. (2018): Context-attentive embeddings for improved sentence representations
+
+* Gist
+
+In this work, we address some of the weaknesses of word embeddings by making
+them /context-attentive/: we learn to represent word meaning as a weighted
+combination of a multitude of different word embeddings, where the weighting
+depends on the context.
+
+We examine the usefulness of this idea in the setting of sentence
+representations.

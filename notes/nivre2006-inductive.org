@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Nivre, J. (2006): Inductive dependency parsing
+
+* First Pass
+
+  The author wanted to find out whether inductive machine learning may
+  help a deterministic parser for unrestricted natural language text.
+
+  The author observes a significant improvement over the baseline,
+  which uses a table without contextual information.
+
+* Second Pass
+
+  - dependency parsing
+  - shift-reduce for context-free grammar
+  - guided parsing.  A mapping from parser state to transitions.

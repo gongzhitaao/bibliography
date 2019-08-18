@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Bengio, Y., Ducharme, R\'ejean, Vincent, P., & Jauvin, C. (2003): A Neural Probabilistic Language Model
+
+* Gist
+
+We propose to fight the curse of dimensionality by *learning a distributed
+representation for words* which allows each training sentence to inform the
+model about an exponential number of semantically neighboring sentences.  The
+model learns simultaneously
+1. a distributed representation for each word, along with
+2. the probability function for word sequences, expressed in terms of these
+   representations.
+
+- *Perplexity* :: the /geometric mean/ of 1/p, where p is the final conditional
+     probability.
+
+* Comment
+
+This paper uses perplexity as the sole metric for comparison.
+
+Only feedforward structured is used.

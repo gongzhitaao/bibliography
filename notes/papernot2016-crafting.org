@@ -1,0 +1,9 @@
+#+TITLE: Notes on: Papernot, N., McDaniel, P., Swami, A., & Harang, R. E. (2016): Crafting adversarial input sequences for recurrent neural networks
+
+* First Pass
+
+  The authors adapt forward gradient and fast sign method to
+  adversarial sequences generation and successfully fool RNN
+  classifies.
+
+* Second Pass

@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., Hassabis, D., ... (2015): Human-level control through deep reinforcement learning
+
+* Gist
+
+A polished version of cite:mnih2013-playing.
+
+Improvement: the target Q-network is a clone of the Q-network and fixed for
+\(C\) steps.

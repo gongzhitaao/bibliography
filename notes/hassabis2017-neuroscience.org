@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Hassabis, D., Kumaran, D., Summerfield, C., & Botvinick, M. (2017): Neuroscience-Inspired Artificial Intelligence
+
+* Gist
+
+Neuroscience supports AI development, examples:
+1. Attention mechanism.
+2. Episodic Memory.  Replay buffer in DQN, adapts quickly to learning samples.
+3. Working Memory.  LSTM, differential neural computer (DNC).  DNC can solve
+   shortest path on graph-like structure, manipulating blocks in a variant of
+   the Tower of Hanoi task.
+4. Continual Learning.  Elastic weight consolidation (EWC).
+
+The relevance of neuroscience, both as a roadmap for the AI research agenda and
+as a source of computational tools is particularly salient in the following key
+areas.
+1. intuitive understanding of the physical world.
+2. Efficient learning.  "Characters challenge", one-shot concept learning,
+   learning to learn.
+3. Transfer learning.  Progressive network.  Neural coding.
+4. Imagination and planning.
+5. Virtual brain analysis.

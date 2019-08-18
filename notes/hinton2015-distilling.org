@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Hinton}, G., Vinyals, O., & Dean, J. (2015): Distilling the knowledge in a neural network
+#+KEYWORDS: knowledge distillation, specialist,
+
+* Gist
+
+Core idea is to train a smaller model using the outputs of another already
+trained model.
+
+Ensemble of specialists trained on a subsets of the training set.
+
+Soft targets as regularizer
+
+dustbin class
+
+1. For each test case, we find the \(n\) most probable classes according to the
+   generalist model.  Call this set of classes k. In our experiments, we used
+   \(n = 1\).
+2. We then take all the specialist models, m, whose special subset of confusable
+   classes, \(S^m\), has a non-empty intersection with k and call this the
+   active set of specialists \(A_k\) (note that this set may be empty).  We then
+   find the full probability distribution \(q\) over all the classes that
+   minimizes:
+
+   \[\text{KL}(p^g, q) + \sum_{m\in A_k}KL(p^m, q)\]

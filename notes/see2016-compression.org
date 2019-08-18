@@ -1,0 +1,25 @@
+#+TITLE: Notes on: See, A., Luong, M., & Manning, C. D. (2016): Compression of neural machine translation models via pruning
+
+* Gist
+
+  - Pruning as a regularizer.
+
+    Firstly, we found that the less-pruned models perform better on
+    the training set than the validation set, whereas the more-pruned
+    models have closer performance on the two sets.  This indicates
+    that pruning has a *regularizing effect* on the retraining phase,
+    though clearly more is not always better, as the 50% pruned and
+    retrained model has better validation set performance than the 90%
+    pruned and retrained model.  Nonetheless, this regularization
+    effect may explain why the pruned and retrained models outperform
+    the baseline.
+
+  - Pruning escapes a local optimum.
+
+  - Interleaving pruning with training.
+
+    Staring training from scratch with a sparse model obtained from
+    pruning comes close to the baseline but slightly worse than
+    pruning and retrain.
+
+  - Iterative pruning and training worth trying.

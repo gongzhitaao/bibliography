@@ -1,0 +1,33 @@
+#+TITLE: Notes on: Toderici, G., Vincent, D., Johnston, N., Hwang, S.~J., Minnen, D., Shor, J., & Covell, M. (2016): Full Resolution Image Compression with Recurrent Neural Networks
+
+* First Pass
+
+  The authors studied image compression with recurrent neural network.
+
+* Second Pass
+
+  Solution to image of arbitrary size:
+  1) design a stronger patch-based residual encoder; and
+  2) design an entropy coder that is able to capture long-term
+     dependencies between patches in the image.
+
+
+  Evaluation metrics
+  1. PSNR-HVS
+  2. MS-SSIM
+
+
+  Most image compression neural networks use a /fixed compression
+  rate/ based on the size of a bottleneck layer.  This work extends
+  previous methods by supporting /variable rate compression/ while
+  maintaining high compression rates beyond thumbnail-sized images.
+
+  Encoder -> Binarizer -> Decoder
+
+  Reconstruction
+  1. One-shot Reconstruction
+  2. Additive Reconstruction
+  3. Residual Scaling
+
+
+  Entropy encoding

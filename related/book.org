@@ -1,0 +1,38 @@
+#+TITLE: Books
+
+* Statistic Physics
+
+- [ ] cite:griffiths2016-introduction
+- [ ] cite:pathria2011-statistical
+- [ ] cite:nearing2010-mathematical
+- [ ] cite:engel2001-statistical
+- [-] cite:chandler1987-introduction
+
+* Optimization
+
+- [ ] cite:borwein2010-convex
+- [ ] cite:boyd2004-convex
+- [ ] cite:rockafellar2015-convex
+
+* Reinforcement Learning
+
+- [ ] cite:sutton2014-reinforcement
+- [ ] cite:busoniu2010-reinforcement
+
+* Evolution
+
+- [ ] cite:koza1992-genetic
+
+* Misc
+
+- [ ] cite:callahan2010-advanced
+- [ ] cite:mackay2003-information
+- [ ] cite:smolensky1986-parallel
+- [ ] cite:lawvere2009-conceptual
+- [-] cite:hogben2013-handbook
+- [-] cite:easley2010-networks
+
+* Linear Algebra
+
+- [ ] cite:hogben2013-handbook
+- [ ] cite:hiai2014-introduction

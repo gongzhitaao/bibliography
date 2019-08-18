@@ -1,0 +1,14 @@
+#+TITLE: Notes on: Brendel, W., & Bethge, M. (2019): Approximating CNNs with bag-of-local-features models works surprisingly well on imagenet
+
+* Gist
+
+** Conclusion
+
+DNNs might be more powerful than previous hand-tuned bag-of-feature algorithms
+in discovering weak statistical regularities, but that does not necessarily mean
+that they learn substantially different representations.
+
+* Excerpt
+
+- Interpretability :: refers to the way in which evidence from small image
+     patches is integrated to reach an image-level decision.

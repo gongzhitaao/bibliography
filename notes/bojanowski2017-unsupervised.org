@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Bojanowski, P., & Joulin, A. (2017): Unsupervised Learning By Predicting Noise
+
+* Gist
+
+deep unsupervised learning
+
+self-supervision, these approaches are domain dependent since they
+require explicit derivation of weak supervision directly from the
+input.
+
+Their approach, noise as target (NAT), learns discriminative features
+in an unsupervised way.

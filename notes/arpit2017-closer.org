@@ -1,0 +1,36 @@
+#+TITLE: Notes on: Arpit}, D., Jastrz\c ebski, S., Ballas, N., Krueger, D., Bengio, E., Kanwal, M.~S., Maharaj, T., … (2017): A closer look at memorization in deep networks
+
+* Gist
+
+Our analysis suggests that the notions of /effective capacity which are dataset
+independent/ are unlikely to explain the generalization performance of deep
+networks when trained with gradient based methods because training data itself
+plays an important role in determining the degree of memorization.
+
+we investigate this intuitive notion of memorization by training DNNs to fit
+random data.
+
+- There are qualitative differences in DNN optimization behavior on real data
+  vs. noise.  In other words, DNNs do not just memorize real data
+- *DNNs learn simple patterns first, before memorizing*.  In other words, DNN
+  *optimization is content-aware*, taking advantage of patterns shared by
+  multiple training examples.
+- Regularization techniques can differentially hinder memorization in DNNs while
+  preserving their ability to learn about real data.
+
+We observe (the Gini score plot) that, when trained on real data, the network
+has a high gradient loss for a few examples, while on random data the network is
+sensitive to most examples.
+
+An interpretation of this is that for real data there are more interesting
+cross-category patterns that can be learned than for random data.
+
+we build on the intuition that the number of different decision regions into
+which an input space is partitioned reflects the complexity of the learned
+hypothesis.
+
+if we were to randomly sample points from the data distribution, a smaller
+fraction of points in the proximity of a decision boundary suggests that the
+learned hypothesis is simpler.
+
+critical samples

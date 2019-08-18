@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Papernot, N., McDaniel, P. D., Wu, X., Jha, S., & Swami, A. (2015): Distillation as a defense to adversarial perturbations against deep neural networks
+
+* First Pass
+
+  The authors use distilling technique to smooth out the gradient
+  around data samples, increasing the model's resilience to
+  adversarial noises with minimum impact on the model performance.
+
+* Second Pass
+
+  1. *Direction sensitivity estimation*: evaluate the sensitivity of
+     class change to each input feature with saliency map.
+  2. *Perturbation selection*: use the sensitivity information to
+     select a perturbation \(\delta X\) among the input dimension
+
+
+  They are not necessarily extracted from the input distribution that
+  the DNN architecture tries to model during training.
+
+  New architectures to defend adversarials are not yet studied.
+
+  In a word, the authors first train a larger model, use its softmax
+  outputs (the probability vectors) as the target and train a second
+  but smaller model which shows resilience to adversarial noise.

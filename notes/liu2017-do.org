@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Liu}, C., Bansal, A., Fragoso, V., & Ramanan, D.  (2017): Do Convolutional Neural Networks Act As Compositional Nearest Neighbors?
+
+* Gist
+
+Convolution neural network is just compositional nearest neighbor.

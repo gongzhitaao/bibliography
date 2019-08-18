@@ -1,0 +1,32 @@
+#+TITLE: Notes on: Qin, T., Liu, T., Xu, J., & Li, H. (2010): Letor: a benchmark collection for research on learning to rank for information retrieval
+
+* Gist
+
+- Learning to rank approach
+  - Point-wise approach :: regards a single document as its input in learning
+       and defines its loss function based on individual documents.
+    - regression based
+    - classification based
+    - ordinal regression based
+    Some refs in this category:
+    - cite:li2008-mcrank
+    - cite:li2007-ordinal
+  - Pairwise approach :: takes document pairs as instances in learning, and
+       formalizes the problem of learning to rank as that of pairwise
+       classification.  Some work in this category:
+    - cite:burges2005-learning
+    - cite:freund2003-efficient
+  - List-wise approach :: takes document lists as instances in learning and the
+       loss function is defined on that basis.
+    - cite:cao2007-learning
+- non-learning approach
+
+In learning to rank, each /query-document pair/ is represented by a
+/multi-dimensional feature vector/, and each dimension of the vector is a
+feature indicating how relevant or important the document is with respect to the
+query.
+
+* Comment
+
+- Are the documents associated with test queries seen during training or held
+  out?

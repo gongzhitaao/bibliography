@@ -1,0 +1,25 @@
+#+TITLE: Notes on: Karras, Tero, Laine, Samuli, & Aila, Timo (2018): A Style-Based Generator Architecture for Generative Adversarial Networks
+
+* Gist
+
+** Problem
+
+Style-based generator, disentangle features in the generator.
+
+** Evaluation
+
+*** Datasets
+
+- Flickr-Face-HQ (FFHQ)
+- Celeb A-HQ
+
+*** Metrics
+
+- Fréchet inception distance (FID) cite:heusel2017-gans
+- Perceptual path length
+- Linear separability
+- LSUN cite:yu2015-lsun
+
+*** Misc
+
+Roughly one week on an NVIDIA DGX-1 with 8 Tesla V100 GPUs.

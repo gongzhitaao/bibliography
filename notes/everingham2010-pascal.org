@@ -1,0 +1,11 @@
+#+TITLE: Notes on: Everingham, M., Van Gool, L., Williams, C. K., Winn, J., & Zisserman, A. (2010): The pascal visual object classes (voc) challenge
+
+* Gist
+
+PASCAL: pattern analysis, statistical modelling and computational learning.
+
+- Classification :: does the image contain any instances of a particular object
+     class?  Where the object classes include cars, people, dogs, etc.
+- Detection :: Where are the instances of a particular object class in the
+     image, if any?
+- Segmentation :: pixel level segmentation, assign each pixel a class label.

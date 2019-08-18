@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Li, J., Monroe, W., & Jurafsky, D. (2017): Learning to decode for future success
+
+* Gist
+
+Train a RNN to predict the sequence in forward, train another RNN to predict the
+sequence in backward, forward and backward /state/ at the same position need to
+match.  This is an intuitive regularization to explicitly bias the network
+towards meaningful global structure.
+
+* Comment
+
+- Why we need a transformation on forward hidden state?

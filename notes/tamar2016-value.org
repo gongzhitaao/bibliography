@@ -1,0 +1,33 @@
+#+TITLE: Notes on: Tamar, A., Levine, S., & Abbeel, P. (2016): Value Iteration Networks
+
+* First Pass
+
+  The authors studied 2d route planning with value iteration (VI) since
+  they want to re-represent VI with convolution network (CNN).
+
+* Second Pass
+
+  The problem is treated as a classification problem
+  - Input :: image, current position, goal position
+  - Output :: optimal policy
+
+
+  Analogy between VI and convolution
+  - Each iteration of VI may be seen as passing the previous value
+    function \(V_n\) and reward function \(R\) through a convolution
+    layer and max-pooling layer.
+  - Each channel in the convolution layer corresponds to the
+    \(Q\)-function for a specific action.
+  - Convolution-kernel weights correspond to the discounted transition
+    probabilities.
+  - By recurrently applying a convolution layer \(K\) times, \(K\)
+    iterations of VI can be performed.
+
+
+  The image processing network (CNN) can be trained to learn a mapping
+  from the /image features/ to a /reward map/ representing the
+  planning process underlying the data.
+
+  We emphasize that this learned reward mapping need not be the true
+  MDP reward, instead it is learning a reward shaping
+  cite:ng1999-policy.

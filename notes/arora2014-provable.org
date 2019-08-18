@@ -1,0 +1,3 @@
+#+TITLE: Notes on: Arora, S., Bhaskara, A., Ge, R., & Ma, T. (2014): Provable bounds for learning some deep representations.
+
+* First Pass

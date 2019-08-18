@@ -1,0 +1,36 @@
+#+TITLE: Notes on: Wang}, Y., Jha, S., & Chaudhuri, K. (2017): Analyzing the robustness of nearest neighbors to adversarial examples
+
+* Gist
+
+** Problem
+
+- Analysis robustness of kNN binary classifier.
+- Propose a robust version of kNN binary classifier.
+
+** Evaluation
+
+*** Datasets
+
+- halfmoon, standard benchmark for KNN classifier
+- Abalone, subset
+- MNIST, subset
+
+*** Metrics
+
+- accuracy vs noise magnitude
+
+** Method
+
+The conclusion *seems* to be that by removing confusion samples from the
+training set, we actually increase the robustness of the kNN binary classifier
+without compromising its accuracy on clean samples.
+
+Nearest neighbor binary classifier: voting.
+
+/Robustness/ is measured by the minimum distance between two samples with
+different labels.
+
+Three different levels of robustness:
+- distributional,
+- finite samples, and
+- algorithmic

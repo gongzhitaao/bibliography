@@ -1,0 +1,20 @@
+#+TITLE: Notes on: Miikkulainen, R., Liang, J., Meyerson, E., Rawal, A., Fink, D., Francon, O., Raju, B., Shahrzad, H., Navruzyan, A., Duffy, N., Hodjat, B., ... (2017): Evolving Deep Neural Networks
+
+* Gist
+
+- how to design the components of the architecture,
+- how to put them together into a full network topology, and
+- how to set the hyperparameters for the components and the global
+  design
+
+- Fitness :: The fitness of the evolved networks is determined based
+     on how well they can be trained.  During each generation, each
+     network is trained for a few epochs before being evaluated on the
+     validation set, the result of which is used as the fitness value.
+
+This network utilizes the same modules multiple times, resulting in a
+*deep* and *repetitive* structure typical of many successful DNNs.
+
+* Experiment
+
+CIFAR10, Penn Tree Bank (PTB) dataset, image captioning

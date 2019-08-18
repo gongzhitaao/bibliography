@@ -1,0 +1,18 @@
+#+TITLE: Notes on: Veit, A., Belongie, S., & Karaletsos, T. (2016): Disentangling Nonlinear Perceptual Embeddings With Multi-Query Triplet Networks
+
+* First Pass
+
+  The authors studied similarity based learning problem and proposed
+  multi-query triplet network (MQN) because they want to build a
+  single system to classify objects based on different criteria.
+
+* Second Pass
+
+  - Goal is to classify objects according to different criteria.
+    E.g., green square, red square, red circle.  Color-wise, last two
+    fall in the same category, which shale-wise, the first two fall in
+    the same category.
+  - In future work, it would be interesting to generalize our work and
+    consider the setting of learning from unlabeled triplets by
+    introducing a clustering mechanism for triplets and masks in order
+    to discover similarity substructures in an unsupervised way.

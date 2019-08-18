@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Baldassi, C., & Braunstein, A. (2015): A max-sum algorithm for training discrete neural networks
+
+* First Pass
+
+* Second Pass
+
+  I think the authors discuss the possibility of training a discrete
+  neural network.

@@ -1,0 +1,1 @@
+#+TITLE: Notes on: Mathieu, M. F., Zhao, J. J., Zhao, J., Ramesh, A., Sprechmann, P., & LeCun, Y. (2016): Disentangling factors of variation in deep representation using adversarial training

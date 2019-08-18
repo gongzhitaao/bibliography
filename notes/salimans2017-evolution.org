@@ -1,0 +1,8 @@
+#+TITLE: Notes on: Salimans, T., Ho, J., Chen, X., & Sutskever, I. (2017): Evolution Strategies As a Scalable Alternative To Reinforcement Learning
+
+* Gist
+
+Our finding continues the modern trend of achieving strong results
+with decades-old ideas.
+
+natural evolution strategies

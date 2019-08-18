@@ -1,0 +1,32 @@
+#+TITLE: Notes on: Dubey}, R., Agrawal, P., Pathak, D., Griffiths, T.~L., & Efros, A.~A. (2018): Investigating human priors for playing video games
+#+KEYWORDS: prior knowledge
+
+* Gist
+
+We quantified human performance on each version of the game by recruiting 120
+participants from Amazon Mechanical Turk.  Each participant was instructed to
+finish the game as quickly as possible using the arrow keys as controls, but no
+information about the goals or the reward structure of the game was
+communicated.
+
+For each participant, we recorded
+1. the (x, y) position of the player at every step of the game,
+2. the total time taken by the participant to finish the game, and
+3. the total number of deaths before finishing the game.
+
+Note that each participant was only allowed to complete a game once, and could
+not participate again (i.e. different 120 participants played each version of
+the game).
+
+* Conclusions and Hypothesis
+
+1. Masking semantics hurts human performance.
+2. A natural question is how do humans make use of semantic information?  One
+   hypothesis is that knowledge of semantics enables humans to infer the latent
+   reward structure of the game.
+3. Concept of objects, i.e., knowing that visibly distinct entities are
+   interesting and can be used as sub-goals for exploration, is a critical prior
+   and perhaps more important than knowledge of semantics.
+4. The affordance prior is as important as the semantics prior in our setup.
+5. Visual similarity is the second most important prior used by humans in
+   gameplay after the knowledge of directing exploration towards objects.

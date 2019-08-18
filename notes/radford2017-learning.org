@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Radford, A., Rafal J\'ozefowicz, & Sutskever, I. (2017): Learning to generate reviews and discovering sentiment
+
+* Gist
+
+By inspecting the relative contributions of features on various datasets, we
+discovered a single unit within the mLSTM that directly corresponds to
+sentiment.
+
+We also demonstrate the sentiment unit has a direct influence on the generative
+process of the model.  Simply fixing its value to be positive or negative
+generates samples with the corresponding positive or negative sentiment.
+
+But some of the classification tasks they are evaluated on, such as sentiment
+analysis of reviews of consumer goods, do not have much overlap with the text of
+novels.

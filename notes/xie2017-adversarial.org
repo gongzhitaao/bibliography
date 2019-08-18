@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Xie, C., Wang, J., Zhang, Z., Zhou, Y., Xie, L., & Yuille, A. (2017): Adversarial examples for semantic segmentation and object detection
+
+* Gist
+
+** Problem
+
+** Evaluation
+
+*** Datasets
+
+- Semantic segmentation
+  - train on DeepLab cite:chen2018-deeplab
+  - test on validation set in cite:long2015-fully
+- Object detection
+  - train either on PascalVoc 2007/2012 or combined
+  - test on PascalVoc 2007 test set
+  - http://host.robots.ox.ac.uk/pascal/VOC/voc2007
+
+*** Models
+
+- Semantic segmentation, AlexNet/VGG16-based cite:long2015-fully
+- Object detection, faster-rcnn, ZFNet/VGG16-based
+
+** Method

@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Keskar, N. S., Mudigere, D., Nocedal, J., Smelyanskiy, M., & Tang, P. T. P. (2016): On large-batch training for deep learning: generalization gap and sharp minima
+
+* Gist
+
+larger batch sizes correlate with sharper minima

@@ -1,0 +1,19 @@
+#+TITLE: Notes on: Pan, X., & Srikumar, V. (2015): Expressiveness of rectifier networks
+
+* First Pass
+
+  The authors study the expressiveness of shallow rectifier (ReLU)
+  networks and show both theoretically and empirically that rectifier
+  networks are exponentially more expressive than threshold networks.
+
+* Second Pass
+
+  In this paper, we address the following question:
+
+  /Which Boolean functions do ReLU networks express?/
+
+  1. ReLU networks are less affected by the vanishing gradient problem
+     cite:bengio1994-learning,pan2015-expressiveness,glorot2011-deep.
+  2. rectifying neurons encourage sparsity in the hidden layers cite:glorot2011-deep
+  3. gradient back propagation is efficient because of the piece-wise
+     linear nature of the function cite:glorot2011-deep

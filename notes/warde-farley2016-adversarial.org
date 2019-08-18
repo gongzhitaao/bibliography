@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Warde-Farley, D., & Goodfellow, I. (2016): Adversarial perturbations of deep neural networks
+
+* Gist
+
+  - church window plot p11
+  - label smoothing p20
+  - virtual adversarial training p22

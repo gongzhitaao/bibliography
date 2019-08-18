@@ -1,0 +1,5 @@
+#+TITLE: Notes on: Jaeger, H. (2007): Echo state network
+
+It is rather surprising that this actually works!  Even given the same
+input, the reservoir would be in a completely different state, thus
+the readout reads different information from the reservoir.

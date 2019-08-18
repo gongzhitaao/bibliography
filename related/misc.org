@@ -1,0 +1,20 @@
+#+TITLE: Random Interesting Topics
+
+* Recent Work [0/10]
+
+- [ ] Learning explanatory rules from noisy data,
+  cite:marcus2018-deep,evans2017-learning and [[https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/][David Barber's blog]], simple
+  experiment, we can train a seq2seq model that learns to evaluate math
+  equations, e.g., 3+2=5, the input sequence is "3+2", output sequence is "=5".
+- [ ] https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/
+  Bayesian theories related
+- [ ] cite:sabour2017-dynamic capsule network
+- [ ] https://github.com/taivop/joke-dataset Train a character-level language
+  model on a corpus of jokes. https://openai.com/requests-for-research/#funnybot
+- [ ] https://openai.com/requests-for-research/#im2latex math equation images to
+  LaTeX source code, with the help of seq2seq model.
+- [ ] cite:zhou2017-atrank
+- [ ] cite:shrivastava2016-learning adversarial training
+- [ ] cite:liu2015-ssd
+- [ ] cite:srivastava2015-training
+- [ ] Implement Lorenz Waterwheel
