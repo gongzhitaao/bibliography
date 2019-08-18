@@ -1,0 +1,6 @@
+#+TITLE: Bibliography Database
+
+This repo contains my bibliography database, used within Emacs.
+- [[notes/][notes/]] contains notes for papers, each note name is the bibtex key.
+- [[related/][related/]] contains related work (might be outdated) for subject I'm interested
+  in.
