@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Chandak, Y., Theocharous, G., Kostas, J., Jordan, S., & Thomas, P. (2019): Learning action representations for reinforcement learning
+
+* Gist
+
+- Learning an action representation as a /supervised/ learning.
+- aligning actions based on the similarity of their *impact on the state*.
+- State set may be continuous.
+- Action set is finite.
+- State to action embedding is stochastic, action embedding to action is
+  deterministic.
+- Representation is squashed [-1, 1] via =tanh=.
+
+** Evaluation
+
+Recommendation
