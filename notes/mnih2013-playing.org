@@ -32,6 +32,7 @@ from raw pixels.
 - \epsilon-greedy with \epsilon annealed linearly from 1 to 0.1 in the first 1e6
   frames, fixed after.
 - Train for 10 million frames.
+- Input to the Q-network is a stack of \(m\) frames, i.e., [B, W, H, m]
 - Replay memory 1 million, *most recent* frames.
 - The agent /sees/ and /selects actions/ every \(k\) frames, and the action is
   repeated on skipped frames.
