@@ -1,0 +1,56 @@
+#+TITLE: Notes on: Jaderberg, M., Dalibard, V., Osindero, S., Czarnecki, W. M., Donahue, J., Razavi, A., Vinyals, O., … (2017): Population based training of neural networks
+
+* Gist
+
+Two main methods of hyperparameter tuning
+- parallel search :: grid search, random search
+- sequential optimization :: perform hyperparameter optimisation using
+     information obtained from earlier training runs to inform later ones, e.g.,
+     hand tuning and Bayesian optimization
+
+Improvements:
+1. automatic selection of hyperparameters during training
+2. online model selection to maximise the use of computation spent on promising
+   models, and
+3. the ability for online adaptation of hyperparameters to enable non-stationary
+   training regimes and the discovery of complex hyperparameter schedules.
+
+** Results
+
+*** PBT for RL
+
+- Hyperparameters, learning rate, entropy cost, etc.
+- Eval, last 10 episodic rewards during training
+- Ready, max number of steps reached
+- Exploit
+  - T-test selection :: uniformly sample another agent in the population, and
+       compare the last 10 episodic rewards using Welch's t-test.  If the
+       sampled agent has a higher mean episodic reward and satisfies the t-test,
+       the weights and hyperparameters are copied to replace the current agent.
+  - Truncation selection :: rank all agents in the population by episodic
+       reward.  If the current agent is in the bottom 20% of the population, we
+       sample another agent uniformly from the top 20% of the population, and
+       copy its weights and hyperparameters.
+- Explore
+  - Perturb :: each hyperparameter independently is randomly perturbed by a
+       factor of 1.2 or 0.8.
+  - Resample :: each hyperparameter is resampled from the original prior
+       distribution defined with some probability
+
+*** PBT for Machine Translation
+
+- Hyperparameters, learning rate, attention dropout, layer dropout, and ReLU
+  dropout rates.
+- Eval, the BLEU score
+- Ready, max number of steps reached
+- Exploit, T-test
+- Explore, perturb
+
+** Analysis
+
+- Population size, too small <10, poor result due to being greedy, 20-40 is
+  good, larger population comes with diminishing returns
+- Exploitation Type, not clear, but truncation selection seems good
+- PBT Targets, copy both hyperparameters and weights are the best.
+- Hyperparameter Adaptivity, PBT allows the hyperparameters to be adaptive, not
+  merely in finding a good prior on the space of hyperparameters
