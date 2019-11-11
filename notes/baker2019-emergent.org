@@ -1,0 +1,70 @@
+#+TITLE: Notes on: Baker}, B., Kanitscheider, Ingmar, Markov, Todor, Wu, Yi, Powell, Glenn, McGrew, Bob, & Mordatch, Igor (2019): Emergent Tool Use From Multi-Agent Autocurricula
+
+* Gist
+
+** Reward
+
+- No explicit incentives for agents to interact with objects in the environment
+- Agents are given a team based reward:
+  - hiders a reward of 1 if all hiders are hidden and -1 if any hider is seen by a seeker.
+  - Seekers -1 if all hiders are hidden and +1 otherwise
+- To confine agent behavior to a reasonable space, agents are penalized if they
+  go too far outside the play area.
+- An episode lasts 240 timesteps, the first 40% of which are the preparation
+  phase where all agents are given zero reward.
+
+** Environment
+
+- The world is populated with
+  - 1 to 3 hiders
+  - 1 to 3 seekers
+  - 3 to 9 movable boxes, at least 3 are elongated, 2 movable ramps, and
+  - randomly generated static walls and rooms
+- Quadrant environment trained for demonstration
+
+** Signals
+
+- Agents observe the *position*, *velocity*, and *size* (in the case of the randomly
+  shaped boxes) of objects and other agents.
+- If entities are not in *line-of-sight* of the agent or not in a *135-degree* cone
+  /in front of/ the agent, then they are masked out in the policy.
+- Agents also have 30 range sensors arrayed evenly around them, similar to a
+  lidar.
+- each agent observes its own team and other agents' teams
+- agent observers how much time is left in the preparation phase.
+
+** Agent Moves
+
+- Agents are simulated as *spherical objects*
+- Agents have 3 action types that can be chosen simultaneously at each time
+  step.
+- Move :: by setting a *discretized* force along their x and y axis and torque
+     around their z-axis.
+- Grab :: They have a single binary action to grab objects, which binds the
+     agent to the closest object while the action is enabled.
+- Lock :: Agents may also lock objects in place with a single binary action.
+     Objects may be unlocked only by agents on the team of the agent who
+     originally locked the object.
+- Agents may only grab or lock objects that are in front of them and within a
+  small radius.
+
+** Training and Evaluation
+
+Policies are composed of two separate networks:
+1. policy network that produces an action distribution
+2. a critic network that predicts the discounted future returns
+
+Policies are optimized with PPO cite:schulman2017-proximal and
+GAE cite:schulman2015-high
+
+We utilize /decentralized execution/ and /centralized training/.
+- At optimization time, we use a centralized omniscient value function for each
+  agent, which has access to the full environment state *without* any information
+  masked due to visibility.
+- At execution time, each agent acts given only its own observations and memory
+  state.
+
+*All agents* share the same policy parameters but act and observe independently.
+
+During each episode, players have a 5% chance of using a policy uniformly
+sampled from past versions, which is commonly used to improve policy robustness.
