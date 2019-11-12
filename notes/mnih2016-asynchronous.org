@@ -1,0 +1,44 @@
+#+TITLE: Notes on: Mnih, V., Adri\`a Puigdom\`enech Badia, Mirza, M., Graves, A., Lillicrap, T. P., Harley, T., Silver, D., … (2016): Asynchronous methods for deep reinforcement learning
+
+* Gist
+
+The combination of simple *online* RL algorithms with deep neural networks was
+fundamentally unstable.
+1. the sequence of observed data encountered by an online RL agent is
+   /non-stationary/, and
+2. online RL updates are strongly /correlated/
+
+** Benefits
+
+- stabilize learning
+- training time reduces roughly *linearly* in the number of parallel
+  actor-learners
+- on-policy without replay buffer
+
+** Proposed Methods
+
+*** Asynchronous One-Step Q-learning
+
+- each thread interacts with its own copy of the environment
+- Q-network and target Q-network are globally shared
+- a *shared* and *slowly* changing target network in computing the Q-learning loss
+- accumulate gradients over multiple timesteps before they are applied, similar
+  to mini-batch
+- policy diversity by periodically sampling \epsilon (used in \epsilon-greedy)
+  from some distribution by each thread
+
+*** Asynchronous One-Step SARSA
+
+Similar to above, different in the target value for non-terminal states:
+
+- one-step Q-learning: \[r + \gamma\max_{a^\prime}Q(s^\prime, a^\prime;
+  \theta^{-_})\], \(a^\prime\) is the action taken at *last* state \(s\)
+- one-step SARSA: \[r + \gamma Q(s^\prime, a^\prime; \theta^{-_})\],
+  \(a^\prime\) is the action taken at *new* state \(s^\prime\)
+
+*** Asynchronous N-Step Q-learning
+
+- no eligibility traces, actually unroll for n steps or till the end of episode
+- update parameters
+
+*** Asynchronous advantage actor-critic
