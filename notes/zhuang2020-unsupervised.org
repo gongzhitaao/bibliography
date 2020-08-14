@@ -1,0 +1,23 @@
+#+TITLE: Notes on: Zhuang, C., Yan, S., Nayebi, A., Schrimpf, M., Frank, M., DiCarlo, J., & Yamins, D. (2020): Unsupervised neural network models of the ventral visual stream
+
+* Gist
+
+These results suggest that deep contrastive embedding objectives may be a
+biologically-plausible computational theory of primate visual development.
+
+These results suggest that semi-supervised learning methods may capture a
+feature of real visual learning that builds on, but goes beyond,
+task-independent self-supervision.
+
+Goal-driven deep learning theory of visual cortex
+
+It is interesting to note that the *neural predictivity* of the best unsupervised
+method only slightly surpasses that of supervised categorization models.
+Moreover, the detailed pattern of neural predictivities across units of the best
+unsupervised models also generally aligns with that of the supervised models
+
+** Datasets
+
+- SAYCam cite:sullivan2020-saycam, which contains head-mounted video camera data
+  from three children about 2 hours/week spanning ages 6-32 months
+- PBRNet
