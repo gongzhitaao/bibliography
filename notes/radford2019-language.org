@@ -1,0 +1,12 @@
+#+TITLE: Notes on: Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019): Language Models Are Unsupervised Multitask Learners
+
+* Gist
+
+** Dataset
+
+- WebText :: >8M documents, 40G pure text from 45 million links scraped from all
+  outbound links from Reddit, which received at least 3 karma.  Scraper are
+  [[https://github.com/codelucas/newspaper][newspaper]] and [[https://github.com/dragnet-org/dragnet][dragnet]], after dedup and heuristic based cleaning.  Wikipedia
+  documents are removed to avoid training and test overlapping.
+
+Use Bloom filters to analysis training and test set overlapping.

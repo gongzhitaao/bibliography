@@ -1,0 +1,10 @@
+#+TITLE: Notes on: Motamedi, Y., Schouwstra, M., Smith, K., Culbertson, J., & Kirby, S. (2019): Evolving artificial sign languages in the lab: from improvised gesture to systematic sign
+
+* Gist
+
+One of the central challenges of language evolution research is to determine the
+mechanisms through which systematicity arises.
+
+Cultural evolutionary accounts propose that it develops as language adapts to
+pressures arising from /language use/ and /the transmission of language to new
+learners/.
