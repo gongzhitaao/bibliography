@@ -1,0 +1,16 @@
+#+TITLE: Notes on: Levina, E., & Bickel, P. J. (2005): Maximum likelihood estimation of intrinsic dimension
+
+Trace of my search
+
+intrinsic dimension
+Poisson process
+manifold
+non-linear manifold is a manifold that is /not/ an affine space.
+affine space
+vector space
+field: https://en.wikipedia.org/wiki/Field_(mathematics)
+abelian group
+commutative ring
+group
+ring
+set

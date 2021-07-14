@@ -1,0 +1,86 @@
+#+TITLE: Notes on: Stone, P., Brooks, R., Brynjolfsson, E., Calo, R., Etzioni, O., Hager, G., Hirschberg, J., … (2016): Artificial intelligence and life in 2030: the one hundred year study on artificial intelligence
+
+* Thought
+
+Define what AI is via the AI system.  For example, the goal is to build a (good)
+terminator.  Once we have a terminator, we can say we achieved AI.  We focus on
+all technologies and areas that are crucial in making a terminator, e.g.,
+computer vision (CV), audio processing, natural language processing (NLP),
+robotics, control theory, reinforcement learning, lifelong learning, deep
+learning, etc.
+
+* Gist
+
+No machines with self-sustaining long-term goals and intent have been developed.
+
+Eight domains focused in this report:
+- transportation
+- healthcare
+- education
+- low-resource communities
+- public safety and security
+- employment and workplace
+- home/service robots
+- entertainment.
+
+These trends drive the currently “hot” areas of AI research into both
+fundamental methods and application areas
+- Large-scale macine learning
+- Deep learning
+- Reinforcement learning
+- Robotics
+- Computer Vision :: Much current research is focused on automatic image and
+  video captioning.
+- Natural language processing :: Research is now shifting towards developing
+  refined and capable systems that are able to interact with people through
+  dialog, not just react to stylized requests.
+- Collaborative systems :: investigates models and algorithms to help develop
+  autonomous systems that can work collaboratively with other systems and with
+  humans.
+- Crowdsourcing and human computation :: Crowdsourcing focuses on devising
+  innovative ways to harness human intelligence, e.g., Wikipedia.  Current
+  research efforts explore ideal divisions of tasks between humans and machines
+  based on their differing capabilities and costs.
+- Algorithmic game theory and computational social choice
+- Internet of Things (IoT)
+- Neuromorphic computing
+
+The measure of success for AI applications is the value they create for human
+lives.
+
+the Study Panel recommends that all layers of government acquire technical
+expertise in AI.
+
+And though AI algorithms may be capable of making less biased decisions than a
+typical person, it remains a deep technical challenge to ensure that the data
+that inform AI-based decisions can be kept free from biases that could lead to
+discrimination based on race, sexual orientation, or other factors.
+
+One definition of AI:
+
+#+begin_quote
+Artificial intelligence is that activity devoted to making machines intelligent,
+and intelligence is that quality that enables an entity to function
+appropriately and with foresight in its environment.
+                                                        -- Nils J. Nilsson
+#+end_quote
+
+Intelligence lies on a multi-dimensional spectrum.  According to this view, the
+difference between an arithmetic calculator and a human brain is not one of
+kind, but of /scale/, /speed/, /degree of autonomy/, and /generality/.
+
+- AI effect :: AI brings a new technology into the common fold, people become
+  accustomed to this technology, it stops being considered AI, and newer
+  technology emerges.
+
+This report views AI primarily as a branch of computer science that studies the
+properties of intelligence by synthesizing intelligence
+
+Robotic navigation, at least in static environments, is largely solved.
+
+Current projects seek to model common student misconceptions, predict which
+students are at risk of failure, and provide real-time student feedback that is
+tightly integrated with learning outcomes.
+
+Through the creation of efficiently outsourced labor markets enabled by AI,
+enterprises may tend towards that natural size

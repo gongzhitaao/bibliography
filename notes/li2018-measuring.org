@@ -34,3 +34,7 @@ network.
   - CNN's becomes larger, which shows that CNN uses local structure information
     for the final prediction.
 - We may need exponentially more parameters to push the boost accuracy.
+
+* Future Work
+
+Main drawback is that we need to retrain the whole network multiple times.

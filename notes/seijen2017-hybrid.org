@@ -1,0 +1,15 @@
+#+TITLE: Notes on: Seijen, H. v., Fatemi, M., Romoff, J., Laroche, R., Barnes, T., & Tsang, J. (2017): Hybrid reward architecture for reinforcement learning
+
+* Gist
+
+\begin{aligned}
+r_{env}(s, a, s^\prime) &= \sum_{k=1}^{n}r_k(s, a, s^\prime), \forall s, a, s^\prime \\
+q(s, a; \theta) &= \sum_{k=1}^{n}q_k(s, a; \theta), \forall s, a \\
+y_{k,i} &= R_k(s, a, s^\prime) + \gamma\sum_{a^\prime\in\mathcal{A}}\frac{1}{|\mathcal{A}|}Q_k(s^\prime, a^\prime; \theta_{i-1})
+\end{aligned}
+
+This is referred to as the /agnostic/ method in cite:laroche2017-multi.
+
+It also uses high-level domain knowledge to boost performance.
+
+Why choosing Pacman as the benchmark?  It seems to be an arbitrary choice.

@@ -1,0 +1,24 @@
+#+TITLE: Notes on: Laroche, R., Fatemi, M., Romoff, J., & Seijen, H. v. (2017): Multi-Advisor Reinforcement Learning
+
+* Gist
+
+Rewards is linearly decomposed.
+
+\[R(x, a) = \sum_j w_j R_j(x_j, a)\]
+
+which implies the same decomposition of return if they share the same γ.  The
+aggregator is greedy over \(Q_j\)-function aggretation \(Q_\footnotesize\sum\).
+
+\begin{aligned}
+Q_{\footnotesize\sum} (x, a) &= \sum_j w_j Q_j(x_j, a) \\
+f_{\footnotesize\sum} (x) &= \operatorname{argmax}_{a\in \mathcal{A}}Q_{\footnotesize\sum} (x, a)
+\end{aligned}
+
+Three advisor behaviors are studied
+- Egocentric :: Each advisor acts greedily w.r.t its own Q function.  It may
+  overestimate the \(Q_\footnotesize\sum\), creating attractors.
+- Agnostic :: Each advisor takes an averaged Q function.  It is only guaranteed
+  to be better than optimal, but far from being optimal.
+- /Emphatic/ :: Proposed in this paper.  Each advisor is bootstrapped from the
+  aggregated Q function, \[Q_j(x_j, a) = \mathop{\mathbb{E}}\left[r_j + \gamma
+  Q_j(x_j^\prime, f_{\footnotesize\sum}(x^\prime))\right]\].

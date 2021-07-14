@@ -1,0 +1,30 @@
+#+TITLE: Notes on: Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K., Sifre, L., Schmitt, S., Guez, A., … (2020): Mastering atari, go, chess and shogi by planning with a learned model
+
+* Gist
+
+The model predicts three quantities
+1. the policy \(P^k_t \approx \pi(a_{t+k+1 \middle|
+   o_1,\dots,o_t,a_{t+1},\dots,a_{t+k}})\)
+2. the value function \(v^k_t \approx \mathbb{E}\left[u_{t+k+1} + \gamma
+   u_{t+k+1 + \dots \middle| o_1,\dots,o_t,a_{t+1},\dots,a_{t+k}}\right]\)
+3. the immediate reward \(r^k_t \approx u_{t+k}\)
+
+Where \(u\) is the true observed reward, \(\pi\) the policy used to select real
+actions, and \(\gamma\) the discount function of the environment.
+
+Subscripts for real time step, superscript for hypothetical time step.
+
+- Representation function: \(h\): \(s_0 = h(o_1, ..., o_t)\), internal state has no
+  semantics of environment state attached to it.
+- dynamics function: \(g\): \(r^k, s^k = g(s^{k-1}, a^k)\)
+
+The loss function: three errors
+- predicted policy and search policy
+- predicted value and the value target
+- the predicted reward and the observed reward
+- plus a L2 regularization.
+
+MuZero in deterministic env, dpi tries to apply to stochastic env by adding a
+termination action, i.e., fix action sequence length
+MuZero estimates \(\pi\) by an action sequence, but execute only one action,
+i.e, with interruption.

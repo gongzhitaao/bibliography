@@ -1,0 +1,35 @@
+#+TITLE: Notes on: Chan, K. H. R., Yu, Y., You, C., Qi, H., Wright, J., & Ma, Y. (2021): Redunet: A white-box deep network from the principle of maximizing rate reduction
+
+* Gist
+
+We will argue that, at least in the classification setting, a principled
+objective for a deep network is to learn a low-dimensional linear discriminative
+representation of the data.
+
+Recent work of cite:zhu2021-geometric,fang2021-layer,papyan2020-prevalence shows
+that the representations learned via the cross-entropy loss exhibit a neural
+collapsing phenomenon, where within-class variability and structural information
+are getting suppressed and ignored.
+
+- Neural collapsing \\
+  To address this, our framework uses the label \(y\) as only side information
+  to assist learning distcriminative yet diverse (not minimal) representations;
+  these representations optimize a different intrinsic objective based on the
+  principle of rate reduction.
+- Mode collapsing \\
+  To address this, we propose a principled rate reduction measure (on \(z\))
+  that promotes both the within-class compactness and between-class
+  discrimination of the features for data with mixed structures.
+- Network architecture \\
+  We will attempt to derive network architectures and components as entirely a
+  "white box" from the desired objective (say, rate reduction).
+
+Therefore, the compactness of learned features as a whole can be measured in
+terms of the average coding length per sample (as the sample size \(m\) is
+large), a.k.a. the coding rate subject to the distortion \(\epsilon\):
+
+o\[R(\mathbf{Z}, \epsilon) \doteq \frac{1}{2}\log\operatorname{det}\left(\mathbf{I} + \frac{n}{m\epsilon^2}\mathbf{ZZ}^*\right)
+\]
+
+Learned features should follow the basic rule that /similarity contracts/ and
+/dissimilarity contrasts/.

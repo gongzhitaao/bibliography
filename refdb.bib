@@ -4068,11 +4068,13 @@
   timestamp       = {20181201T1029}
 }
 
-@phdthesis{sutskever2013,
-  title           = {Training recurrent neural networks},
+@Thesis{sutskever2013-training,
   author          = {Sutskever, Ilya},
-  year            = {2013},
-  school          = {University of Toronto}
+  title           = {Training Recurrent Neural Networks},
+  type            = {PhD},
+  institution     = {University of Toronto},
+  year            = 2013,
+  timestamp       = {20210708T1448}
 }
 
 @Article{dieng2016-topicrnn,
@@ -4720,7 +4722,7 @@
   adsnote         = {Provided by the SAO/NASA Astrophysics Data System},
   adsurl          = {http://adsabs.harvard.edu/abs/2018arXiv180201561E},
   archiveprefix   = "arXiv",
-  keywords        = {impala, rl},
+  keywords        = {impala, vtrace},
   primaryclass    = "cs.LG",
   timestamp       = {20181201T1030}
 }
@@ -6781,6 +6783,7 @@
 @Article{hasselt2015-deep,
   author          = {Hado van Hasselt and Arthur Guez and David Silver},
   title           = {Deep Reinforcement Learning With Double Q-Learning},
+  keywords        = {double dqn},
   journaltitle    = {CoRR},
   year            = 2015,
   volume          = {abs/1509.06461},
@@ -10552,6 +10555,7 @@
 @InProceedings{li2018-measuring,
   author          = {Chunyuan Li and Heerad Farkhoor and Rosanne Liu and Jason Yosinski},
   title           = {Measuring the Intrinsic Dimension of Objective Landscapes},
+  keywords        = {intrinsic dimension, codimension, compression},
   year            = 2018,
   booktitle       = {International Conference on Learning Representations},
   url             = {https://openreview.net/forum?id=ryup8-WCW},
@@ -15457,6 +15461,7 @@
 @Article{schaul2015-prioritized,
   author          = {Tom Schaul and John Quan and Ioannis Antonoglou and David Silver},
   title           = {Prioritized Experience Replay},
+  keywords        = {per},
   journaltitle    = {CoRR},
   year            = 2015,
   volume          = {abs/1511.05952},
@@ -16906,18 +16911,19 @@
 
 @Article{sutton1999-between,
   author          = "Richard S. Sutton and Doina Precup and Satinder Singh",
-  title           = {Between Mdps and Semi-Mdps: A Framework for Temporal Abstraction in Reinforcement Learning},
-  journaltitle    = "Artificial Intelligence",
+  title           = {Between Mdps and Semi-Mdps: a Framework for Temporal Abstraction in Reinforcement Learning},
+  journaltitle    = {Artificial Intelligence},
   year            = 1999,
   volume          = 112,
   number          = 1,
-  pages           = "181 - 211",
-  issn            = "0004-3702",
-  doi             = "https://doi.org/10.1016/S0004-3702(99)00052-1",
+  pages           = {181 - 211},
+  issn            = {0004-3702},
+  doi             = {https://doi.org/10.1016/S0004-3702(99)00052-1},
   url             = {https://doi.org/https://doi.org/10.1016/S0004-3702(99)00052-1},
-  journal         = "Artificial Intelligence",
-  keywords        = "Temporal abstraction, Reinforcement learning, Markov decision processes, Options, Macros, Macroactions, Subgoals,
-                  Intra-option learning, Hierarchical planning, Semi-Markov decision processes"
+  journal         = {Artificial Intelligence},
+  keywords        = {Temporal abstraction, Reinforcement learning, Markov decision processes, Options, Macros, Macroactions, Subgoals,
+                  Intra-option learning, Hierarchical planning, Semi-Markov decision processes},
+  timestamp       = {20210524T0926}
 }
 
 @Book{sutton2014-reinforcement,
@@ -17829,6 +17835,7 @@
 @Article{wang2015-dueling,
   author          = {Ziyu Wang and Nando de Freitas and Marc Lanctot},
   title           = {Dueling Network Architectures for Deep Reinforcement Learning},
+  keywords        = {human normalized},
   journaltitle    = {CoRR},
   year            = 2015,
   volume          = {abs/1511.06581},
@@ -20791,7 +20798,7 @@
   adsnote         = {Provided by the SAO/NASA Astrophysics Data System},
   adsurl          = {https://ui.adsabs.harvard.edu/abs/2019arXiv191006764P},
   archiveprefix   = {arXiv},
-  keywords        = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Statistics - Machine Learning},
+  keywords        = {gtrxl},
   primaryclass    = {cs.LG},
   timestamp       = {20191016T0952}
 }
@@ -20816,6 +20823,7 @@
   author          = {Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and
                   Horgan, Dan and Piot, Bilal and Azar, Mohammad and Silver, David},
   title           = {Rainbow: Combining improvements in deep reinforcement learning},
+  keywords        = {rainbow, dqn},
   year            = 2018,
   booktitle       = {Thirty-Second AAAI Conference on Artificial Intelligence},
   timestamp       = {20191021T1056}
@@ -21419,4 +21427,673 @@
   keywords        = {silent gesture, iterated learning, interaction, transmisison, sign language, language evolution},
   publisher       = {Elsevier Science B.V.},
   timestamp       = {20210209T1530}
+}
+
+@Article{schrittwieser2020-mastering,
+  author          = {Schrittwieser, Julian and Antonoglou, Ioannis and Hubert, Thomas and Simonyan, Karen and Sifre, Laurent and Schmitt,
+                  Simon and Guez, Arthur and Lockhart, Edward and Hassabis, Demis and Graepel, Thore and others},
+  title           = {Mastering Atari, Go, Chess and Shogi By Planning With a Learned Model},
+  keywords        = {muzero},
+  journaltitle    = {Nature},
+  year            = 2020,
+  volume          = 588,
+  number          = 7839,
+  pages           = {604--609},
+  journal         = {Nature},
+  publisher       = {Nature Publishing Group},
+  timestamp       = {20210301T0925}
+}
+
+@Article{tolstikhin2021-mlp,
+  author          = {{Tolstikhin}, Ilya and {Houlsby}, Neil and {Kolesnikov}, Alexander and {Beyer}, Lucas and {Zhai}, Xiaohua and
+                  {Unterthiner}, Thomas and {Yung}, Jessica and {Keysers}, Daniel and {Uszkoreit}, Jakob and {Lucic}, Mario and
+                  {Dosovitskiy}, Alexey},
+  title           = {{MLP-Mixer: an All-Mlp Architecture for Vision}},
+  journaltitle    = {arXiv e-prints},
+  year            = 2021,
+  eid             = {arXiv:2105.01601},
+  month           = may,
+  pages           = {arXiv:2105.01601},
+  eprint          = {2105.01601},
+  journal         = {arXiv e-prints},
+  archiveprefix   = {arXiv},
+  keywords        = {arch, mlp-mixer},
+  primaryclass    = {cs.CV},
+  timestamp       = {20210507T0804}
+}
+
+@InProceedings{dosovitskiy2021-image,
+  author          = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas
+                  Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil
+                  Houlsby},
+  title           = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  keywords        = {vision,transformer,vit},
+  year            = 2021,
+  booktitle       = {International Conference on Learning Representations},
+  url             = {https://openreview.net/forum?id=YicbFdNTTy},
+  timestamp       = {20210507T0807}
+}
+
+@InProceedings{kapturowski2018-recurrent,
+  author          = {Kapturowski, Steven and Ostrovski, Georg and Quan, John and Munos, Remi and Dabney, Will},
+  title           = {Recurrent experience replay in distributed reinforcement learning},
+  keywords        = {r2d2},
+  year            = 2018,
+  booktitle       = {International conference on learning representations},
+  timestamp       = {20210508T1834}
+}
+
+@InProceedings{horgan2018-distributed,
+  author          = {Dan Horgan and John Quan and David Budden and Gabriel Barth-Maron and Matteo Hessel and Hado van Hasselt and David
+                  Silver},
+  title           = {Distributed Prioritized Experience Replay},
+  keywords        = {ape-x},
+  year            = 2018,
+  booktitle       = {International Conference on Learning Representations},
+  url             = {https://openreview.net/forum?id=H1Dy---0Z},
+  timestamp       = {20210508T1840}
+}
+
+@InProceedings{oh2017-value,
+  author          = {Oh, Junhyuk and Singh, Satinder and Lee, Honglak},
+  title           = {Value Prediction Network},
+  keywords        = {vpn},
+  year            = 2017,
+  booktitle       = {Advances in Neural Information Processing Systems},
+  editor          = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  volume          = 30,
+  publisher       = {Curran Associates, Inc.},
+  url             = {https://proceedings.neurips.cc/paper/2017/file/ffbd6cbb019a1413183c8d08f2929307-Paper.pdf},
+  timestamp       = {20210509T0831}
+}
+
+@Article{silver2012-temporal,
+  author          = {Silver, David and Sutton, Richard S and M{\"u}ller, Martin},
+  title           = {Temporal-Difference Search in Computer Go},
+  journaltitle    = {Machine learning},
+  year            = 2012,
+  volume          = 87,
+  number          = 2,
+  pages           = {183--219},
+  journal         = {Machine learning},
+  publisher       = {Springer},
+  timestamp       = {20210509T0852}
+}
+
+@InProceedings{silver2017-predictron,
+  author          = {Silver, David and Hasselt, Hado and Hessel, Matteo and Schaul, Tom and Guez, Arthur and Harley, Tim and Dulac-Arnold,
+                  Gabriel and Reichert, David and Rabinowitz, Neil and Barreto, Andre and others},
+  title           = {The Predictron: End-to-end Learning and Planning},
+  keywords        = {predictron},
+  year            = 2017,
+  booktitle       = {International Conference on Machine Learning},
+  organization    = {PMLR},
+  pages           = {3191--3199},
+  timestamp       = {20210509T0905}
+}
+
+@InProceedings{osband2016-deep,
+  author          = {Osband, Ian and Blundell, Charles and Pritzel, Alexander and Van Roy, Benjamin},
+  title           = {Deep Exploration via Bootstrapped DQN},
+  keywords        = {dqn, bootstrap},
+  year            = 2016,
+  booktitle       = {Advances in Neural Information Processing Systems},
+  editor          = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+  volume          = 29,
+  publisher       = {Curran Associates, Inc.},
+  url             = {https://proceedings.neurips.cc/paper/2016/file/8d8818c8e140c64c743113f563cf750f-Paper.pdf},
+  timestamp       = {20210513T2044}
+}
+
+@Article{zheng2021-learning,
+  author          = {Zeyu Zheng and Vivek Veeriah and Risto Vuorio and Richard L. Lewis and Satinder Singh},
+  title           = {Learning State Representations From Random Deep Action-Conditional Predictions},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2102.04897},
+  url             = {https://arxiv.org/abs/2102.04897},
+  journal         = {CoRR},
+  biburl          = {https://dblp.org/rec/journals/corr/abs-2102-04897.bib},
+  timestamp       = {20210521T1224}
+}
+
+@InProceedings{farquhar2018-treeqn,
+  author          = {Gregory Farquhar and Tim Rocktaeschel and Maximilian Igl and Shimon Whiteson},
+  title           = {Tree{QN} and {AT}reeC: Differentiable Tree Planning for Deep Reinforcement Learning},
+  keywords        = {treeqn},
+  year            = 2018,
+  booktitle       = {International Conference on Learning Representations},
+  url             = {https://openreview.net/forum?id=H1dh6Ax0Z},
+  timestamp       = {20210523T0835}
+}
+
+@Article{hessel2019-inductive,
+  author          = {Hessel, Matteo and van Hasselt, Hado and Modayil, Joseph and Silver, David},
+  title           = {On Inductive Biases in Deep Reinforcement Learning},
+  journaltitle    = {arXiv preprint arXiv:1907.02908},
+  year            = 2019,
+  journal         = {arXiv preprint arXiv:1907.02908},
+  timestamp       = {20210523T1230}
+}
+
+@InProceedings{sutton1998-intra,
+  author          = {Richard S. Sutton and Doina Precup and Satinder P. Singh},
+  title           = {Intra-Option Learning about Temporally Abstract Actions},
+  keywords        = {option},
+  year            = 1998,
+  booktitle       = {ICML},
+  pages           = {556-564},
+  cdate           = 883612800000,
+  crossref        = {conf/icml/1998},
+  timestamp       = {20210523T1310}
+}
+
+@Book{griffiths2018-introduction,
+  author          = {Griffiths, David J and Schroeter, Darrell F},
+  title           = {Introduction to quantum mechanics},
+  year            = 2018,
+  publisher       = {Cambridge University Press},
+  timestamp       = {20210601T2117}
+}
+
+@Article{chen2021-decision,
+  author          = {{Chen}, Lili and {Lu}, Kevin and {Rajeswaran}, Aravind and {Lee}, Kimin and {Grover}, Aditya and {Laskin}, Michael and
+                  {Abbeel}, Pieter and {Srinivas}, Aravind and {Mordatch}, Igor},
+  title           = {{Decision Transformer: Reinforcement Learning Via Sequence Modeling}},
+  journaltitle    = {arXiv e-prints},
+  year            = 2021,
+  month           = jun,
+  pages           = {arXiv:2106.01345},
+  journal         = {arXiv e-prints},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210607T0950}
+}
+
+@Article{icarte2020-act,
+  author          = {Rodrigo Toro Icarte and Richard Anthony Valenzano and Toryn Q. Klassen and Phillip Christoffersen and Amir{-}massoud
+                  Farahmand and Sheila A. McIlraith},
+  title           = {The Act of Remembering: a Study in Partially Observable Reinforcement Learning},
+  keywords        = {pomdp},
+  journaltitle    = {CoRR},
+  year            = 2020,
+  volume          = {abs/2010.01753},
+  eprint          = {2010.01753},
+  url             = {https://arxiv.org/abs/2010.01753},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  bibsource       = {dblp computer science bibliography, https://dblp.org},
+  biburl          = {https://dblp.org/rec/journals/corr/abs-2010-01753.bib},
+  timestamp       = {20210609T1523}
+}
+
+@Article{eysenbach2019-search,
+  author          = {Benjamin Eysenbach and Ruslan Salakhutdinov and Sergey Levine},
+  title           = {Search on the Replay Buffer: Bridging Planning and Reinforcement Learning},
+  journaltitle    = {CoRR},
+  year            = 2019,
+  volume          = {abs/1906.05253},
+  eprint          = {1906.05253},
+  url             = {http://arxiv.org/abs/1906.05253},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  bibsource       = {dblp computer science bibliography, https://dblp.org},
+  biburl          = {https://dblp.org/rec/journals/corr/abs-1906-05253.bib},
+  timestamp       = {20210609T1523}
+}
+
+@Article{vinyals2019-grandmaster,
+  author          = {Vinyals, Oriol and Babuschkin, Igor and Czarnecki, Wojciech M and Mathieu, Micha{\"e}l and Dudzik, Andrew and Chung,
+                  Junyoung and Choi, David H and Powell, Richard and Ewalds, Timo and Georgiev, Petko and others},
+  title           = {Grandmaster Level in Starcraft Ii Using Multi-Agent Reinforcement Learning},
+  journaltitle    = {Nature},
+  year            = 2019,
+  volume          = 575,
+  number          = 7782,
+  pages           = {350--354},
+  journal         = {Nature},
+  publisher       = {Nature Publishing Group},
+  timestamp       = {20210614T1009}
+}
+
+@Article{hessel2021-muesli,
+  author          = {Matteo Hessel and Ivo Danihelka and Fabio Viola and Arthur Guez and Simon Schmitt and Laurent Sifre and Theophane Weber
+                  and David Silver and Hado van Hasselt},
+  title           = {Muesli: Combining Improvements in Policy Optimization},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2104.06159},
+  eprint          = {2104.06159},
+  url             = {https://arxiv.org/abs/2104.06159},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  bibsource       = {dblp computer science bibliography, https://dblp.org},
+  biburl          = {https://dblp.org/rec/journals/corr/abs-2104-06159.bib},
+  keywords        = {muesli},
+  timestamp       = {20210615T1633}
+}
+
+@Article{haarnoja2018-soft,
+  author          = {Tuomas Haarnoja and Aurick Zhou and Kristian Hartikainen and George Tucker and Sehoon Ha and Jie Tan and Vikash Kumar
+                  and Henry Zhu and Abhishek Gupta and Pieter Abbeel and Sergey Levine},
+  title           = {Soft Actor-Critic Algorithms and Applications},
+  keywords        = {sac, mpo},
+  journaltitle    = {CoRR},
+  year            = 2018,
+  volume          = {abs/1812.05905},
+  eprint          = {1812.05905},
+  url             = {http://arxiv.org/abs/1812.05905},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  bibsource       = {dblp computer science bibliography, https://dblp.org},
+  biburl          = {https://dblp.org/rec/journals/corr/abs-1812-05905.bib},
+  timestamp       = {20210616T0744}
+}
+
+@Article{munos2016-safe,
+  author          = {R{\'{e}}mi Munos and Tom Stepleton and Anna Harutyunyan and Marc G. Bellemare},
+  title           = {Safe and Efficient Off-Policy Reinforcement Learning},
+  keywords        = {retrace},
+  journaltitle    = {CoRR},
+  year            = 2016,
+  volume          = {abs/1606.02647},
+  eprint          = {1606.02647},
+  url             = {http://arxiv.org/abs/1606.02647},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  bibsource       = {dblp computer science bibliography, https://dblp.org},
+  biburl          = {https://dblp.org/rec/journals/corr/MunosSHB16.bib},
+  timestamp       = {20210616T0850}
+}
+
+@InProceedings{wang2016-dueling,
+  author          = {Wang, Ziyu and Schaul, Tom and Hessel, Matteo and Hasselt, Hado and Lanctot, Marc and Freitas, Nando},
+  title           = {Dueling network architectures for deep reinforcement learning},
+  year            = 2016,
+  booktitle       = {International conference on machine learning},
+  organization    = {PMLR},
+  pages           = {1995--2003},
+  timestamp       = {20210616T1750}
+}
+
+@InProceedings{precup2000-eligibility,
+  author          = {Precup, Doina and Sutton, Richard S. and Singh, Satinder P.},
+  title           = {Eligibility Traces for Off-Policy Policy Evaluation},
+  year            = 2000,
+  booktitle       = {International Conference on Machine Learning},
+  series          = {ICML '00},
+  publisher       = {Morgan Kaufmann Publishers Inc.},
+  isbn            = 1558607072,
+  pages           = {759-766},
+  address         = {San Francisco, CA, USA},
+  numpages        = 8,
+  timestamp       = {20210617T0842}
+}
+
+@Misc{stone2016-artificial,
+  author          = {Stone, Peter and Brooks, Rodney and Brynjolfsson, Erik and Calo, Ryan and Etzioni, Oren and Hager, Greg and Hirschberg,
+                  Julia and Kalyanakrishnan, Shivaram and Kamar, Ece and Kraus, Sarit and others},
+  title           = {Artificial intelligence and life in 2030: the one hundred year study on artificial intelligence},
+  keywords        = {ai100},
+  year            = 2016,
+  publisher       = {Stanford University},
+  timestamp       = {20210621T1611}
+}
+
+@Article{chan2021-redunet,
+  author          = {Kwan Ho Ryan Chan and Yaodong Yu and Chong You and Haozhi Qi and John Wright and Yi Ma},
+  title           = {Redunet: {A} White-Box Deep Network From the Principle of Maximizing Rate Reduction},
+  keywords        = {redunet},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2105.10446},
+  eprint          = {2105.10446},
+  url             = {https://arxiv.org/abs/2105.10446},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210629T1405}
+}
+
+@Article{zhu2021-geometric,
+  author          = {Zhihui Zhu and Tianyu Ding and Jinxin Zhou and Xiao Li and Chong You and Jeremias Sulam and Qing Qu},
+  title           = {A Geometric Analysis of Neural Collapse With Unconstrained Features},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2105.02375},
+  url             = {https://arxiv.org/abs/2105.02375},
+  journal         = {CoRR},
+  publtype        = {informal},
+  timestamp       = {20210629T1436}
+}
+
+@Article{fang2021-layer,
+  author          = {Cong Fang and Hangfeng He and Qi Long and Weijie J. Su},
+  title           = {Layer-Peeled Model: Toward Understanding Well-Trained Deep Neural Networks},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2101.12699},
+  eprint          = {2101.12699},
+  url             = {https://arxiv.org/abs/2101.12699},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210629T1438}
+}
+
+@Article{papyan2020-prevalence,
+  author          = {Papyan, Vardan and Han, X. Y. and Donoho, David L.},
+  title           = {Prevalence of Neural Collapse During the Terminal Phase of Deep Learning Training},
+  journaltitle    = {Proceedings of the National Academy of Sciences},
+  year            = 2020,
+  volume          = 117,
+  number          = 40,
+  pages           = {24652--24663},
+  issn            = {0027-8424},
+  doi             = {10.1073/pnas.2015509117},
+  eprint          = {https://www.pnas.org/content/117/40/24652.full.pdf},
+  url             = {https://doi.org/10.1073/pnas.2015509117},
+  journal         = {Proceedings of the National Academy of Sciences},
+  publisher       = {National Academy of Sciences},
+  timestamp       = {20210629T1439}
+}
+
+@InProceedings{pope2021-intrinsic,
+  author          = {Phil Pope and Chen Zhu and Ahmed Abdelkader and Micah Goldblum and Tom Goldstein},
+  title           = {The Intrinsic Dimension of Images and Its Impact on Learning},
+  year            = 2021,
+  booktitle       = {International Conference on Learning Representations},
+  url             = {https://openreview.net/forum?id=XJk19XzGq2J},
+  timestamp       = {20210629T1446}
+}
+
+@InProceedings{tishby2015-deep,
+  author          = {Tishby, Naftali and Zaslavsky, Noga},
+  title           = {Deep learning and the information bottleneck principle},
+  year            = 2015,
+  booktitle       = {2015 IEEE Information Theory Workshop (ITW)},
+  organization    = {IEEE},
+  pages           = {1--5},
+  timestamp       = {20210629T1459}
+}
+
+@InProceedings{haeffele2021-critique,
+  author          = {Benjamin David Haeffele and Chong You and Rene Vidal},
+  title           = {A Critique of Self-Expressive Deep Subspace Clustering},
+  year            = 2021,
+  booktitle       = {International Conference on Learning Representations},
+  url             = {https://openreview.net/forum?id=FOyuZ26emy},
+  timestamp       = {20210702T1300}
+}
+
+@Article{macdonald2019-rate,
+  author          = {Jan MacDonald and Stephan W{\"{a}}ldchen and Sascha Hauch and Gitta Kutyniok},
+  title           = {A Rate-Distortion Framework for Explaining Neural Network Decisions},
+  journaltitle    = {CoRR},
+  year            = 2019,
+  volume          = {abs/1905.11092},
+  eprint          = {1905.11092},
+  url             = {http://arxiv.org/abs/1905.11092},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210702T1420}
+}
+
+@Article{ma2007-segmentation,
+  author          = {Ma, Yi and Derksen, Harm and Hong, Wei and Wright, John},
+  title           = {Segmentation of Multivariate Mixed Data Via Lossy Data Coding and Compression},
+  journaltitle    = {IEEE transactions on pattern analysis and machine intelligence},
+  year            = 2007,
+  volume          = 29,
+  number          = 9,
+  pages           = {1546--1562},
+  journal         = {IEEE transactions on pattern analysis and machine intelligence},
+  publisher       = {IEEE},
+  timestamp       = {20210702T1422}
+}
+
+@InProceedings{gong2019-intrinsic,
+  author          = {Gong, Sixue and Boddeti, Vishnu Naresh and Jain, Anil K},
+  title           = {On the Intrinsic Dimensionality of Image Representations},
+  year            = 2019,
+  booktitle       = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages           = {3987--3996},
+  timestamp       = {20210702T1633}
+}
+
+@Article{ansuini2019-intrinsic,
+  author          = {Alessio Ansuini and Alessandro Laio and Jakob H. Macke and Davide Zoccolan},
+  title           = {Intrinsic Dimension of Data Representations in Deep Neural Networks},
+  journaltitle    = {CoRR},
+  year            = 2019,
+  volume          = {abs/1905.12784},
+  eprint          = {1905.12784},
+  url             = {http://arxiv.org/abs/1905.12784},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210702T1635}
+}
+
+@InProceedings{levina2005-maximum,
+  author          = {Levina, Elizaveta and Bickel, Peter J},
+  title           = {Maximum Likelihood Estimation of Intrinsic Dimension},
+  year            = 2005,
+  booktitle       = {Advances in neural information processing systems},
+  pages           = {777--784},
+  timestamp       = {20210702T2116}
+}
+
+@Article{aghajanyan2020-intrinsic,
+  author          = {Armen Aghajanyan and Luke Zettlemoyer and Sonal Gupta},
+  title           = {Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning},
+  journaltitle    = {CoRR},
+  year            = 2020,
+  volume          = {abs/2012.13255},
+  eprint          = {2012.13255},
+  url             = {https://arxiv.org/abs/2012.13255},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210706T1452}
+}
+
+@Article{li2018-measuring,
+  author          = {Chunyuan Li and Heerad Farkhoor and Rosanne Liu and Jason Yosinski},
+  title           = {Measuring the Intrinsic Dimension of Objective Landscapes},
+  journaltitle    = {CoRR},
+  year            = 2018,
+  volume          = {abs/1804.08838},
+  eprint          = {1804.08838},
+  url             = {http://arxiv.org/abs/1804.08838},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210707T1506}
+}
+
+@Article{facco2017-estimating,
+  author          = {Facco, Elena and d'Errico, Maria and Rodriguez, Alex and Laio, Alessandro},
+  title           = {Estimating the Intrinsic Dimension of Datasets By a Minimal Neighborhood Information},
+  keywords        = {two-nn, intrinsic dimension},
+  journaltitle    = {Scientific reports},
+  year            = 2017,
+  volume          = 7,
+  number          = 1,
+  pages           = {1--8},
+  journal         = {Scientific reports},
+  publisher       = {Nature Publishing Group},
+  timestamp       = {20210708T1034}
+}
+
+@InProceedings{krueger2003-continuous,
+  author          = {Kr{\"u}ger, Norbert and Felsberg, Michael},
+  title           = {A Continuous Formulation of Intrinsic Dimension.},
+  year            = 2003,
+  booktitle       = {BMVC},
+  organization    = {Citeseer},
+  pages           = {1--10},
+  timestamp       = {20210708T1042}
+}
+
+@Article{belomestny2021-model,
+  author          = {Denis Belomestny and Ilya Levin and Eric Moulines and Alexey Naumov and Sergey Samsonov and Veronika Zorina},
+  title           = {Model-Free Policy Evaluation in Reinforcement Learning Via Upper Solutions},
+  journaltitle    = {CoRR},
+  year            = 2021,
+  volume          = {abs/2105.02135},
+  eprint          = {2105.02135},
+  url             = {https://arxiv.org/abs/2105.02135},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1043}
+}
+
+@Article{verzelli2019-echo,
+  author          = {Verzelli, Pietro and Alippi, Cesare and Livi, Lorenzo},
+  title           = {Echo State Networks With Self-Normalizing Activations on the Hyper-Sphere},
+  journaltitle    = {Scientific reports},
+  year            = 2019,
+  volume          = 9,
+  number          = 1,
+  pages           = {1--14},
+  journal         = {Scientific reports},
+  publisher       = {Nature Publishing Group},
+  timestamp       = {20210708T1120}
+}
+
+@Article{he2020-continual,
+  author          = {Xu He and Min Lin},
+  title           = {Continual Learning From the Perspective of Compression},
+  journaltitle    = {CoRR},
+  year            = 2020,
+  volume          = {abs/2006.15078},
+  eprint          = {2006.15078},
+  url             = {https://arxiv.org/abs/2006.15078},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1252}
+}
+
+@Article{baldi2019-capacity,
+  author          = {Pierre Baldi and Roman Vershynin},
+  title           = {The Capacity of Feedforward Neural Networks},
+  journaltitle    = {CoRR},
+  year            = 2019,
+  volume          = {abs/1901.00434},
+  eprint          = {1901.00434},
+  url             = {http://arxiv.org/abs/1901.00434},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1418}
+}
+
+@Thesis{drescher1991-made,
+  author          = {Drescher, Gary L},
+  title           = {Made-up Minds: A Constructivist Approach to Artificial Intelligence},
+  type            = {PhD},
+  institution     = {Massachusetts Institute of Technology},
+  year            = 1991,
+  publisher       = {MIT press},
+  timestamp       = {20210708T1447}
+}
+
+@Thesis{ring1994-continual,
+  author          = {Ring, Mark Bishop and others},
+  title           = {Continual learning in reinforcement environments},
+  type            = {PhD},
+  institution     = {The University of Texas at Austin},
+  year            = 1994,
+  timestamp       = {20210708T1446}
+}
+
+@Article{gregor2016-variational,
+  author          = {Karol Gregor and Danilo Jimenez Rezende and Daan Wierstra},
+  title           = {Variational Intrinsic Control},
+  keywords        = {vic},
+  journaltitle    = {CoRR},
+  year            = 2016,
+  volume          = {abs/1611.07507},
+  eprint          = {1611.07507},
+  url             = {http://arxiv.org/abs/1611.07507},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1511}
+}
+
+@Article{laroche2017-multi,
+  author          = {Romain Laroche and Mehdi Fatemi and Joshua Romoff and Harm van Seijen},
+  title           = {Multi-Advisor Reinforcement Learning},
+  keywords        = {rl, voting, mad-rl},
+  journaltitle    = {CoRR},
+  year            = 2017,
+  volume          = {abs/1704.00756},
+  eprint          = {1704.00756},
+  url             = {http://arxiv.org/abs/1704.00756},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1704}
+}
+
+@Article{jiang2021-emphatic,
+  author          = {Ray Jiang and Tom Zahavy and Zhongwen Xu and Adam White and Matteo Hessel and Charles Blundell and Hado van Hasselt},
+  title           = {Emphatic Algorithms for Deep Reinforcement Learning},
+  journaltitle    = {ICML},
+  year            = 2021,
+  volume          = {abs/2106.11779},
+  eprint          = {2106.11779},
+  url             = {https://arxiv.org/abs/2106.11779},
+  journal         = {ICML},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210708T1711}
+}
+
+@Article{guez2019-investigation,
+  author          = {Arthur Guez and Mehdi Mirza and Karol Gregor and Rishabh Kabra and S{\'{e}}bastien Racani{\`{e}}re and Th{\'{e}}ophane
+                  Weber and David Raposo and Adam Santoro and Laurent Orseau and Tom Eccles and Greg Wayne and David Silver and Timothy
+                  P. Lillicrap},
+  title           = {An Investigation of Model-Free Planning},
+  journaltitle    = {CoRR},
+  year            = 2019,
+  volume          = {abs/1901.03559},
+  eprint          = {1901.03559},
+  url             = {http://arxiv.org/abs/1901.03559},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210709T1455}
+}
+
+@Article{emtiyaz2021-bayesian,
+  author          = {{Emtiyaz Khan}, Mohammad and {Rue}, H{\r{a}}vard},
+  title           = {{The Bayesian Learning Rule}},
+  journaltitle    = {arXiv e-prints},
+  year            = 2021,
+  eid             = {arXiv:2107.04562},
+  month           = jul,
+  pages           = {arXiv:2107.04562},
+  eprint          = {2107.04562},
+  journal         = {arXiv e-prints},
+  archiveprefix   = {arXiv},
+  keywords        = {Statistics - Machine Learning, Computer Science - Machine Learning},
+  primaryclass    = {stat.ML},
+  timestamp       = {20210712T1407}
+}
+
+@Article{seijen2017-hybrid,
+  author          = {Harm van Seijen and Mehdi Fatemi and Joshua Romoff and Romain Laroche and Tavian Barnes and Jeffrey Tsang},
+  title           = {Hybrid Reward Architecture for Reinforcement Learning},
+  keywords        = {hra},
+  journaltitle    = {CoRR},
+  year            = 2017,
+  volume          = {abs/1706.04208},
+  eprint          = {1706.04208},
+  url             = {http://arxiv.org/abs/1706.04208},
+  journal         = {CoRR},
+  archiveprefix   = {arXiv},
+  timestamp       = {20210713T1050}
+}
+
+@InProceedings{sutton2011-horde,
+  author          = {Sutton, Richard S and Modayil, Joseph and Delp, Michael and Degris, Thomas and Pilarski, Patrick M and White, Adam and
+                  Precup, Doina},
+  title           = {Horde: A scalable real-time architecture for learning knowledge from unsupervised sensorimotor interaction},
+  keywords        = {horde},
+  year            = 2011,
+  booktitle       = {The 10th International Conference on Autonomous Agents and Multiagent Systems-Volume 2},
+  pages           = {761--768},
+  timestamp       = {20210713T1055}
 }
