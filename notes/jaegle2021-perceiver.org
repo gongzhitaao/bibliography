@@ -1,0 +1,7 @@
+#+TITLE: Notes on: Jaegle, A., Gimeno, F., Brock, A., Zisserman, A., Vinyals, O., & Jo\~ao Carreira (2021): Perceiver: general perception with iterative attention
+
+* Gist
+
+The model leverages an asymmetric attention mechanism to iteratively distill
+inputs into a tight latent bottleneck, allowing it to scale to handle very large
+inputs.

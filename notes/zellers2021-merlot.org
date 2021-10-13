@@ -1,0 +1,21 @@
+#+TITLE: Notes on: Zellers, R., Lu, X., Hessel, J., Yu, Y., Park, J. S., Cao, J., Farhadi, A., … 2021: MERLOT: multimodal neural script knowledge models
+
+* Gist
+
+** Datasets
+
+YouTube-Temporal-180m has 27 million candidate video IDs, including
+- HowTo100M
+- VLOG
+- YouTube audo-suggested videos for popular topics, e.g., science.
+
+180 million segments
+
+Preprocessing:
+- Discard videos:
+  1. without an English ASR
+  2. >20 minutes
+  3. belong to visually /ungrounded/ categories like video game commentaries
+  4. that have thumbnails unlikely to contain objects, according to a
+     lightweight image classifier.
+- Punctuate ASR with a seq2seq model.
